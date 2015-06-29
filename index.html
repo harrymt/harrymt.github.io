@@ -1,74 +1,204 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="index : " />
+  <!-- Hey -->
+  <!-- If you like my work, drop me an email -->
+  <!-- harrymt at me.com -->
+  <title>Harry Mumford-Turner</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <meta name="description" content="Harry Mumford-Turner portfolio, CV.">
+  <meta name="keywords" content="Harry,Mumford,Turner,Mumford-Turner,Harrymt,portfolio,cv,website">
+  <meta name="author" content="Harry Mumford-Turner">
 
-    <title>index</title>
-  </head>
+  <!-- Mobile devices -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
 
-  <body>
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/timesheet.css">
+  <link rel="stylesheet" href="css/player.css">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/harrymt">View on GitHub</a>
-
-          <h1 id="project_title">index</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+</head>
+<body class="desktop player" id="player">
+<div id="wrapper">
+  <div id="intro">
     
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
 
-  </body>
+    <div id="intro-inner">
+      <div id="player-gradient"></div>
+        <div id="intro-pitch">
+          <div id="intro-pitch-inner">
+            <img class="player-avatar" width="80" height="80" src="img/bg_player.jpg" alt="Harry Mumford-Turner">
+            <p>Harry Mumford-Turner</p>
+            <h2 id="player-bio">UoN / CS Student / @mumf_</h2>
+            <ul id="tags">
+              <li class="tag">programmer</li>
+              <li class="tag">designer</li>
+              <li class="tag">violinist</li>
+            </ul>
+          </div>
+        </div>
+      <p id="more-trigger"><a href="#">See My Work</a></p>
+    </div>
+  </div> <!-- ./intro -->
+
+  <div id="more">
+    <div class="section" id="work">
+      <h3>My most popular work</h3>
+        <div> <!-- needed div -->
+          <ul class="shots">
+            <li>
+              <a href="http://loocator.hackathon.tmhwrd.com/" target="_blank" style="background-image:url(img/project/loocator.png)">
+                <span class="likes">
+                <strong>Find campus toilets with loocator</strong>
+                <i class="fa fa-github-square"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://rp.harrymt.com/" target="_blank" style="background-image:url(img/project/routingplus.png)">
+              <span class="likes">
+              <strong>Routing+</strong>
+              <i class="fa fa-github-square"></i>
+              <i class="fa fa-chain"></i>
+              </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://www.harrymt.com" target="_blank" style="background-image:url(img/project/personal.png)">
+              <span class="likes">
+              <strong>Personal Identity</strong>
+              <i class="fa fa-github-square"></i>
+              <i class="fa fa-heart"></i>
+              </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://www.harrymt.com/old" target="_blank" style="background-image:url(img/project/oldpersonal.png)">
+                <span class="likes"><strong>Old Identity</strong>
+                <i class="fa fa-github-square"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+			<li>  <!-- http://i.imgur.com/HfUEw1Y.png http://inspirewit.com/ -->
+              <a href="http://i.imgur.com/HfUEw1Y.png" target="_blank" style="background-image:url(img/project/wit.png)">
+                <span class="likes">
+                <strong>Women In Tech inspirewit.com</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.harrymt.com/mark" target="_blank" style="background-image:url(img/project/markWet.png)">
+                <span class="likes">
+                <strong>Does it rain when Mark leaves</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+
+            </ul>
+            <ul class="shots">
+            <li>
+              <a href="https://github.com/harrymt" target="_blank" style="background-image:url(img/project/github.png)">
+                <span class="likes">
+                <strong>Github</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-github-square"></i>
+                </span>
+              </a>
+            </li>
+<li>
+              <a href="http://somersetcosmic.org/" target="_blank" style="background-image:url(img/project/cosmic.png)">
+                <span class="likes">
+                <strong>COSMiC Website</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+
+            <li> <!-- http://www.hacknottingham.com/ -->
+              <a href="#" target="_blank" style="background-image:url(img/project/hacksoc.png)">
+                <span class="likes">
+                <strong>HackNottingham logo design</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-github-square"></i>
+                </span>
+              </a>
+            </li>
+            </ul>
+          </div> <!-- ./needed div -->
+      </div> <!-- ./work -->
+
+    <div class="section" id="timeline">
+      <h3>My work timeline</h3>
+      <div class="timesheet-wrapper">
+        <div id="timesheet"></div>
+      </div>
+
+    </div><!-- /.section -->
+
+    <div class="section" id="networks">
+      <h3>Let's connect</h3>
+      <ul>
+      <li id="network-github">
+        <a href="http://github.com/harrymt" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li id="network-twitter">
+        <a href="http://twitter.com/mumf_" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li> 
+      <!-- <li id="network-dribbble">
+        <a href="http://dribbble.com/mumf_" target="_blank">
+          <i class="fa fa-dribbble"></i>
+        </a>
+      </li> -->
+      <li id="network-linkedin">
+        <a href="https://www.linkedin.com/profile/view?id=292156735" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </li>
+      </ul>
+    </div><!-- /.section -->
+
+    <div class="section" id="footer">
+      <div style="display:none" id="spotify">
+        <a target="_blank" style="color:inherit;border:none;" id="js-nowplaying-url" href="#">
+          <i class="fa fa-spotify"><span id="js-nowplaying"> not listening to anything</span></i>
+        </a>
+      </div>
+      <p>&copy; 2014 Harry Mumford-Turner&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Crafted with lots of
+        <a href="https://vine.co/v/OzQaIO0IOiu">Love</a>
+      </p>
+    </div>
+  </div><!-- ./more -->
+
+  <div style="clear:both"></div>
+
+</div> <!-- ./wrapper -->
+
+<div style="clear:both"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/timesheet.js"></script>
+<script src="js/player.js"></script>
+<script src="js/googleA.js"></script>
+</body>
 </html>
