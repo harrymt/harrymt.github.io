@@ -194,14 +194,14 @@ html, body {
 //
 
 #work { padding-bottom: 75px; }
-#work .shots { list-style: none; display: none; }
-#work .shots:first-child { display: block; }
-#work .shots li { width: 300px; height: 225px; display: inline-block; margin: 15px 22px; }
-#work .shots li a { color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative; }
-#work .shots li .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
-#work .shots li .likes:hover { background-color: rgba(234,76,137,.75); opacity: 1; }
-#work .shots li .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; }
-#work .shots li .likes i { margin: 0 0 0 20px; }
+#work .pieces { list-style: none; display: none; }
+#work .pieces:first-child { display: block; }
+#work .pieces li { width: 300px; height: 225px; display: inline-block; margin: 15px 22px; }
+#work .pieces li a { color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative; }
+#work .pieces li .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
+#work .pieces li .likes:hover { background-color: rgba(234,76,137,.75); opacity: 1; }
+#work .pieces li .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; }
+#work .pieces li .likes i { margin: 0 0 0 20px; }
 #work #showmore { text-decoration: none; font-size: 18px; font-weight: 600; background-color: #fff; color: #999; padding: 3px 12px; border-radius: 5px; display: inline-block; margin-top: 20px; }
 
 //*****************************************************
@@ -263,8 +263,8 @@ html, body {
   .section h3 { font-size: 25px; margin-bottom: .4em; }
   #work { padding: 45px 5% 40px !important; }
 
-  #work .shots li { height: 175px; width: 233px; }
-  #work .shots li a { height: 175px; width: 233px; }
+  #work .pieces li { height: 175px; width: 233px; }
+  #work .pieces li a { height: 175px; width: 233px; }
 
 }
 
