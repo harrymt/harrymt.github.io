@@ -1,0 +1,32 @@
+
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+
+

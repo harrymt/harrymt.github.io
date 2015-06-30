@@ -1,0 +1,209 @@
+/*
+ *
+ * Created for Mark at 121systems :)
+ *
+ * @author Harry Mumford-Turner
+ *
+ */
+
+/* == $slide-in-effects == */
+@-webkit-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-moz-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-o-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-webkit-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@-moz-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@-o-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}
+
+/* == $base == */
+html, .time__actual { background-color: #10b8ec; }
+html, body { height: 100%; color: white; text-align: center;}
+h2, h3, h4, h5, h6, p, a, ul, li { margin: 0;  padding: 0; }
+
+
+
+/* IS MARK GETTING WET TODAY? */
+h1 {
+    margin: 0;  padding: 0;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* Mark is going home At 5 pm */
+.subtitle {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* Mark is going home */
+.time__title {
+
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* At */
+.time__at {
+    padding-right: 25px;
+}
+
+/* 5 or 5.30 <input> html5 */
+.time__actual {
+    text-align: center;
+    color: white;
+    border: none;
+    border-bottom: 3px solid;
+    width: 100px;
+    font-size: 50px;
+}
+
+/* pm / am */
+.time__m {
+     padding-left: 15px;
+}
+
+#ihourAMPM {
+    color: white;
+    background: #55D4FC;
+    border: white 2px solid;
+}
+
+/* Calculate wrapper for the button */
+/*.calculate {}*/
+
+/* Calculate button */
+/*.time__calculate {}*/
+
+.cover nav a {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  margin-left: -5px;
+}
+
+#back-button {
+    padding-top:20px;
+    bottom: -10px;
+}
+
+/* on button click remove this class*/
+.hideme {
+    display: none;
+}
+
+/* Forecast and calculation result wrapper */
+.result {
+    font-size: 30px;
+}
+
+/* YES or NO */
+.result__answer {
+    font-size: 50px;
+    font-weight: 200;
+    padding-bottom: 20px;
+    padding-right: 8px;
+}
+
+/* MARK IS GETTING WET TODAY */
+.result__text {
+    padding-bottom: 10px;
+    /*TODO merge this, YES/ NO and the top one together as a main title*/
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+
+/* == $forecast == */
+
+/* Wrapper for the forecast result */
+.forecast {
+    font-size: 15px;
+    /*margin-top: 400px;*/
+}
+
+/* Forecast */
+.forecast__text {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Forecast results hour wrapper */
+.forecast__hour {
+    width: 204px;
+    /* text-align: left; */
+    margin-left: -43px;
+
+}
+
+/* General forecast behind the current */
+/*.behind {}*/
+
+/* General forecast current */
+/*.current {}*/
+
+/* General forecast ahead the current */
+/*.ahead {}*/
+
+/* Each Rain, Cloud, Rain, 4pm, 5pm 6pm */
+.fc-result {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* line */
+.divider {
+    border-top: 2px solid white;
+    width: 120px;
+    display: inline-block;
+    padding: 11px;
+    margin-top: 30px;
+}
+
+/* Hour behind current */
+/*.forecast__hour .behind {}*/
+
+/* Hour current */
+/*.forecast__hour .current {}*/
+
+/* Hour ahead current */
+/*.forecast__hour .ahead {}*/
+
+.forecast__weather {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#weather-behind, #weather-current, #weather-ahead {
+    text-align: left;
+}
+
+/* Weather behind current */
+/*.forecast__weather .behind {}*/
+
+/* Weather current */
+/*.forecast__weather .current {}*/
+
+/* Weather ahead current */
+/*.forecast__weather .ahead {}*/
+
+
+
+/* == $footer == */
+
+
+/* harrymt.com */
+.footer {
+    color: #148CBB;
+    text-align: right;
+    /*position: absolute;*/
+    /* padding-right: 30px; */
+    /* padding-bottom: 10px; */
+    bottom: 15px;
+    right: 10px;
+    font-size: 12px;
+    padding: 10px;
+
+}
+
+.footer a {
+    color: white;
+}

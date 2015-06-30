@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Is Mark Getting Wet</title>
+    <meta name="description" content="Is mark getting wet today">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://www.harrymt.com/mark" />
+    <meta property="og:title" content="harrymt.com/mark" />
+    <meta property="og:description" content="Will Mark get wet when he walks home from work today?" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+  </head>
+
+
+  <body>
+    <section class="cover">
+      <div class="centering-table">
+        <div class="centering-table-cell">
+          <div class="centering-center-block">
+            <header>
+              <!-- <div class="am-logo"></div> TODO -->
+              <h1>IS MARK GETTING WET TODAY?</h1>
+              <div class="subtitle">
+                <h2 class="time__title">Mark is going home</h2>
+                <span class="time__at">At</span>
+                <select id="ihourAMPM">
+                  <option value="13">1 PM</option>
+                  <option value="14">2 PM</option>
+                  <option value="15">3 PM</option>
+                  <option value="16">4 PM</option>
+                  <option value="17" selected>5 PM</option>
+                  <option value="18">6 PM</option>
+                  <option value="19">7 PM</option>
+                </select>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <nav id="calc-button"><ul><li><a href="#" class="time__calculate" onclick="GetForecastByHour()">Calculate</a></li></ul></nav>
+      <nav class="hideme" id="back-button"><ul><li><a href="http://www.harrymt.com/mark/" class="back__button">back</a></li></ul></nav>
+
+      <div id="result-tobehidden" class="result hideme">
+        <div class="result__answer">YES</div>
+        <div class="result__text">Mark is getting wet today</div>
+        <div class="forecast">
+          <div class="forecast__text">Forecast</div>
+
+          <table class="forecast__weather">
+          <tbody>
+            <tr>
+              <td id="time-behind" class="fc-result behind">4pm</td>
+              <td id="weather-behind" class="fc-result behind">Rain</td>
+            </tr>
+            <tr>
+              <td id="time-current" class="fc-result current">5pm</td>
+              <td id="weather-current" class="fc-result current">Rain</td>
+            </tr>
+            <tr>
+              <td id="time-ahead" class="fc-result ahead">6pm</td>
+              <td id="weather-ahead" class="fc-result ahead">Dry</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="divider"></div> <!-- ./divider-->
+        </div> <!-- ./forecast -->
+      </div> <!-- ./ id=result-tobehidden -->
+    </section>
+
+    <iframe width="420" height="315" src="//www.youtube.com/embed/PXatLOWjr-k"></iframe>
+<!--     <audio loop="loop" autoplay="autoplay" controls="controls"><source src="music/Why-Rain-On-Me.ogg" /><source src="music/Why-Rain-On-Me.mp3" /></audio> -->
+
+      <div class="footer">Made for Mark <a href="http://www.harrymt.com/">by harrymt.com</a></div>
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Cool animations -->
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/test.js"></script>
+	<script src="js/googleA.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@media (min-width: 900px) {
+  h1 {
+    font-size: 84px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 560px) {
+  .centering-table {
+    width: 100%;
+  }
+
+  .centering-center-block {
+    margin: 0 auto;
+  }
+}
+
+.cover {
+  background-color: #10b8ec;
+}
+
+.cover header {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    -webkit-animation: slide-down 1s;
+    /* Safari 4+ */
+    -moz-animation: slide-down 1s;
+    /* Fx 5+ */
+    -o-animation: slide-down 1s;
+    /* Opera 12+ */
+    animation: slide-down 1s;
+}
+
+.cover .am-logo {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto 10px;
+    background-image: url(../img/logo-small.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cover nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cover nav a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+}
+
+.cover nav a:hover {
+    color: #10b8ec;
+    background-color: white;
+    border: 2px solid white;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.cover nav ul {
+  position: relative;
+  padding-bottom: 15px;
+  -webkit-animation: slide-up 0.8s ease 0s both;
+  -moz-animation: slide-up 0.8s ease 0s both;
+  -o-animation: slide-up 0.8s ease 0s both;
+  animation: slide-up 0.8s ease 0s both;
+}
+
+@media (min-width: 900px) {
+
+  .cover header {
+    padding-top: 16px;
+  }
+
+  .cover .am-logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+    background-image: url(../img/logo-large.svg);
+  }
+
+  .cover nav {
+    width: 100%;
+  }
+
+    .cover nav ul {
+      -webkit-animation: slide-up 0.8s ease 0.2s both;
+      -moz-animation: slide-up 0.8s ease 0.2s both;
+      -o-animation: slide-up 0.8s ease 0.2s both;
+      animation: slide-up 0.8s ease 0.2s both;
+    }
+
+    .cover nav li {
+      display: inline-block;
+      margin: 0 6px;
+    }
+
+    .cover nav a {
+      width: 160px;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 560px) {
+  .cover {
+    position: relative;
+    height: 100%;
+  }
+/*  .cover nav {
+    position: absolute;
+    bottom: 40px;
+  }*/
+  .cover header {
+    margin-top: 100px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .time__at {
+
+    padding-left: 48% !important;
+  }
+
+}
+
+@media (max-width: 400px) {
+  iframe {
+    width: 90%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  .time__at {
+    font-size: 25px;
+    /* padding-left: 100px; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 47%;
+  }
+
+  .time__actual {
+font-size: 35px;
+width: 70px;
+/* display: -webkit-box; */
+display: -moz-box;
+display: -ms-flexbox;
+/* display: -webkit-flex; */
+/* display: flex; */
+/* margin-left: 161px; */
+padding-top: 20px;
+margin-bottom: 20px;
+  }
+}
