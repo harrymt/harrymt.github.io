@@ -94,9 +94,7 @@ html, body {
 
 //******************************************************
 
-.fa-dribbble, .networks #network-dribbble { color: #ea4c89 !important; }
 .fa-twitter,  .networks #network-twitter  { color: #04aceb !important; }
-.fa-facebook, .networks #network-facebook { color: #49639e !important; }
 .fa-linkedin, .networks #network-linkedin { color: #4875b4 !important; }
 .fa-github,  .networks #network-github    { color: #333 !important; }
 
@@ -199,7 +197,6 @@ html, body {
 #work .pieces li .likes:hover { background-color: rgba(234,76,137,.75); opacity: 1; }
 #work .pieces li .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; }
 #work .pieces li .likes i { margin: 0 0 0 20px; }
-#work #showmore { text-decoration: none; font-size: 18px; font-weight: 600; background-color: #fff; color: #999; padding: 3px 12px; border-radius: 5px; display: inline-block; margin-top: 20px; }
 
 //*****************************************************
 
@@ -253,7 +250,6 @@ html, body {
   #player #intro-pitch-inner { display: block; }
   #player #intro-pitch p { margin-bottom: .8em; }
   #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
-  #more-trigger { display: none; }
 
   #tags .tag { font-size: 17px; }
 
