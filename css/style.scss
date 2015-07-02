@@ -190,7 +190,7 @@ html, body {
 #work .pieces li { width: 300px; height: 225px; display: inline-block; margin: 15px 22px; }
 #work .pieces li a { color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative; }
 #work .pieces li .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
-#work .pieces li .likes:hover { background-color: rgba(234,76,137,.75); opacity: 1; }
+#work .pieces li .likes:hover { background-color: rgba(42, 42, 42, 0.75); opacity: 1; }
 #work .pieces li .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; }
 #work .pieces li .likes i { margin: 0 0 0 20px; }
 
