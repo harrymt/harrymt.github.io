@@ -41,32 +41,11 @@ h1 {
     padding-right: 25px;
 }
 
-/* 5 or 5.30 <input> html5 */
-.time__actual {
-    text-align: center;
-    color: white;
-    border: none;
-    border-bottom: 3px solid;
-    width: 100px;
-    font-size: 50px;
-}
-
-/* pm / am */
-.time__m {
-     padding-left: 15px;
-}
-
 #ihourAMPM {
     color: white;
     background: #55D4FC;
     border: white 2px solid;
 }
-
-/* Calculate wrapper for the button */
-/*.calculate {}*/
-
-/* Calculate button */
-/*.time__calculate {}*/
 
 .cover nav a {
   font-style: italic;
@@ -101,7 +80,6 @@ h1 {
 /* MARK IS GETTING WET TODAY */
 .result__text {
     padding-bottom: 10px;
-    /*TODO merge this, YES/ NO and the top one together as a main title*/
     font-size: 30px;
     font-weight: 300;
 
@@ -113,7 +91,6 @@ h1 {
 /* Wrapper for the forecast result */
 .forecast {
     font-size: 15px;
-    /*margin-top: 400px;*/
 }
 
 /* Forecast */
@@ -125,23 +102,6 @@ h1 {
 ul {
     list-style: none;
 }
-
-/* Forecast results hour wrapper */
-.forecast__hour {
-    width: 204px;
-    /* text-align: left; */
-    margin-left: -43px;
-
-}
-
-/* General forecast behind the current */
-/*.behind {}*/
-
-/* General forecast current */
-/*.current {}*/
-
-/* General forecast ahead the current */
-/*.ahead {}*/
 
 /* Each Rain, Cloud, Rain, 4pm, 5pm 6pm */
 .fc-result {
@@ -158,15 +118,6 @@ ul {
     margin-top: 30px;
 }
 
-/* Hour behind current */
-/*.forecast__hour .behind {}*/
-
-/* Hour current */
-/*.forecast__hour .current {}*/
-
-/* Hour ahead current */
-/*.forecast__hour .ahead {}*/
-
 .forecast__weather {
     margin-left:auto;
     margin-right:auto;
@@ -176,16 +127,6 @@ ul {
     text-align: left;
 }
 
-/* Weather behind current */
-/*.forecast__weather .behind {}*/
-
-/* Weather current */
-/*.forecast__weather .current {}*/
-
-/* Weather ahead current */
-/*.forecast__weather .ahead {}*/
-
-
 
 /* == $footer == */
 
@@ -194,9 +135,6 @@ ul {
 .footer {
     color: #148CBB;
     text-align: right;
-    /*position: absolute;*/
-    /* padding-right: 30px; */
-    /* padding-bottom: 10px; */
     bottom: 15px;
     right: 10px;
     font-size: 12px;
