@@ -39,4 +39,4 @@ $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=ha
 //
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var day = days[(new Date()).getDay()];
-$('today-date').text(day);
+$('#today-date').text(day);
