@@ -72,6 +72,7 @@ body {
   font-family: Avenir, sans-serif;
   padding-left: 5px;
 }
+
 #spotify {
   padding-top: 10px;
   color: #ddd;
@@ -247,6 +248,8 @@ html, body {
   #player #intro-pitch-inner { display: block; }
   #player #intro-pitch p { margin-bottom: .8em; }
   #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
+
+  #player-bio { font-size: 12px; }
 
   #tags .tag { font-size: 17px; }
 
