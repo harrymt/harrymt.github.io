@@ -244,20 +244,23 @@ html, body {
     height: auto;
   }
 
+  #player #intro-pitch .player-avatar { margin-top: 5em; }
   #player #intro-pitch { display: block; }
   #player #intro-pitch-inner { display: block; }
-  #player #intro-pitch p { margin-bottom: .8em; }
+  #player #intro-pitch p { margin-bottom: .8em; margin-top: .5em; font-size: 20px; }
   #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
 
-  #player-bio { font-size: 12px; }
+  #intro-pitch h2 { margin-top: 1em; font-size: 19px; }
 
-  #tags .tag { font-size: 17px; }
+  #tags .tag { font-size: 12px; }
 
   .section h3 { font-size: 25px; margin-bottom: .4em; }
   #work { padding: 45px 5% 40px !important; }
 
   #work .pieces li { height: 175px; width: 233px; }
   #work .pieces li a { height: 175px; width: 233px; }
+
+  #footer p { line-height: 1.6em; }
 
 }
 
