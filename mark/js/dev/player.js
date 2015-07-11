@@ -3,12 +3,11 @@ function MakeDate(seconds) {
 }
 
 function PrintHourlyForecast(fc) {
-  $('.forecast').transition({ scale: 0});
+  $(".js-result-wrapper").removeClass("hide");
+  $(".js-back").removeClass("hide");
 
-  $("#result-tobehidden").removeClass("hideme");
-  $("#calc-button").addClass("hideme");
-  $(".subtitle").addClass("hideme");
-  $("#back-button").removeClass("hideme");
+  $(".js-calculate").addClass("hide");
+  $(".js-time-wrapper").addClass("hide");
 
   $("#weather-behind").text(fc[0].summary);
   $("#weather-current").text(fc[1].summary);
@@ -18,17 +17,15 @@ function PrintHourlyForecast(fc) {
   $("#time-current").text(MakeDate(fc[1].time).getHours() + ':00');
   $("#time-ahead").text(MakeDate(fc[2].time).getHours() + ':00');
 
-  $('.forecast').transition({ scale: 1, duration: 50});
-
   PrintYesOrNo(fc[1].summary);
 }
 
 function PrintYesOrNo(f) {
   if (f.toLowerCase().indexOf("rain") > -1) {
-    $('.result__answer').text("YES"); // print yes
+    $('.js-result-bool').text("YES"); // print yes
   } else {
-    $('.result__answer').text("NO");
-    $('.result__text').addClass("hideme");
+    $('.js-result-bool').text("NO");
+    $('.result__text').addClass("hide");
   }
 }
 
@@ -50,10 +47,9 @@ function ExtractForecastAroundHour(fc, hour) {
   return finalFc;
 }
 
-
-function GetForecastByHour() {
+$(".js-calculate").on("click", function() {
   var jqxhr = $.getJSON("https://api.forecast.io/forecast/02a4fe56c45dc599d4befb44dd5aede9/52.93,-1.18?callback=?", function (data) {
-    var time = $('#ihourAMPM :selected').val();
+    var time = $('.js-time :selected').val();
     PrintHourlyForecast(ExtractForecastAroundHour(data, time));
   });
 
@@ -62,5 +58,4 @@ function GetForecastByHour() {
     console.log(jqxhr);
     alert("This project is outdated :(");
   });
-}
-
+});

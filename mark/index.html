@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <section class="cover">
+    <section>
       <header>
         <h1>IS MARK GETTING WET TODAY?</h1>
-        <div class="subtitle">
-          <h2 class="time__title">Mark is going home</h2>
-          <span class="time__at">At</span>
-          <select id="ihourAMPM">
+        <div class="js-time-wrapper time">
+          <h2>Mark is going home</h2>
+          At
+          <select class="js-time">
             <option value="13">1 PM</option>
             <option value="14">2 PM</option>
             <option value="15">3 PM</option>
@@ -33,36 +33,35 @@
           </select>
         </div>
       </header>
-      <nav id="calc-button"><ul><li><a href="#" class="time__calculate" onclick="GetForecastByHour()">Calculate</a></li></ul></nav>
 
-      <div id="result-tobehidden" class="result hideme">
-        <div class="result__answer">YES</div>
+      <button class="js-calculate">Calculate</button>
+
+      <div class="js-result-wrapper hide">
+        <div class="js-result-bool result__answer">YES</div>
         <div class="result__text">Mark is getting wet today</div>
-        <div class="forecast">
-          <div class="forecast__text">Forecast</div>
 
-          <table class="forecast__weather">
-          <tbody>
-            <tr>
-              <td id="time-behind" class="fc-result behind">4pm</td>
-              <td id="weather-behind" class="fc-result behind">Rain</td>
-            </tr>
-            <tr>
-              <td id="time-current" class="fc-result current">5pm</td>
-              <td id="weather-current" class="fc-result current">Rain</td>
-            </tr>
-            <tr>
-              <td id="time-ahead" class="fc-result ahead">6pm</td>
-              <td id="weather-ahead" class="fc-result ahead">Dry</td>
-            </tr>
-            </tbody>
-          </table>
-          <div class="divider"></div> <!-- ./divider-->
-        </div> <!-- ./forecast -->
-      </div> <!-- ./ id=result-tobehidden -->
-       <nav id="back-button" class="hideme">
-        <ul><li><a href="http://www.harrymt.com/mark/" class="back__button">back</a></li></ul>
-      </nav>
+        <table class="forecast__weather">
+        <tbody>
+          <tr>
+            <td id="time-behind" class="fc-result">4pm</td>
+            <td id="weather-behind" class="fc-result">Rain</td>
+          </tr>
+          <tr>
+            <td id="time-current" class="fc-result">5pm</td>
+            <td id="weather-current" class="fc-result">Rain</td>
+          </tr>
+          <tr>
+            <td id="time-ahead" class="fc-result">6pm</td>
+            <td id="weather-ahead" class="fc-result">Dry</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="divider"></div> <!-- ./divider-->
+
+      </div>
+
+      <button class="js-back hide" onclick="window.location = window.location;">back</button>
+
     </section>
 
     <footer>v.5 - Made for Mark <a href="http://www.harrymt.com/">by harrymt.com</a></footer>
