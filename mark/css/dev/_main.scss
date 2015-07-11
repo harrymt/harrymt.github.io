@@ -50,9 +50,12 @@ h1 {
 }
 
 #back-button {
-    padding-top:20px;
-    bottom: -10px;
+  padding-top: 20px;
+  bottom: -10px;
+  width: 50%;
+  margin: 0 auto;
 }
+
 
 /* on button click remove this class*/
 .hideme {
@@ -127,7 +130,7 @@ ul {
 
 
 /* harrymt.com */
-.footer {
+footer {
     color: #148CBB;
     text-align: right;
     bottom: 15px;
@@ -137,6 +140,6 @@ ul {
 
 }
 
-.footer a {
+footer a {
     color: white;
 }
