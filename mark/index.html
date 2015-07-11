@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Is Mark Getting Wet</title>
-    <meta name="description" content="Is mark getting wet today">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Is Mark Getting Wet</title>
+  <meta name="description" content="Is mark getting wet today">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Facebook -->
-    <meta property="og:url" content="http://www.harrymt.com/mark" />
-    <meta property="og:title" content="harrymt.com/mark" />
-    <meta property="og:description" content="Will Mark get wet when he walks home from work today?" />
+  <!-- Facebook -->
+  <meta property="og:url" content="http://www.harrymt.com/mark" />
+  <meta property="og:title" content="harrymt.com/mark" />
+  <meta property="og:description" content="Will Mark get wet when he walks home from work today?" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <section>
-      <header>
-        <h1>IS MARK GETTING WET TODAY?</h1>
-        <div class="js-time-wrapper time">
-          <h2>Mark is going home</h2>
-          At
-          <select class="js-time">
-            <option value="13">1 PM</option>
-            <option value="14">2 PM</option>
-            <option value="15">3 PM</option>
-            <option value="16">4 PM</option>
-            <option value="17" selected>5 PM</option>
-            <option value="18">6 PM</option>
-            <option value="19">7 PM</option>
-          </select>
-        </div>
-      </header>
-
-      <button class="js-calculate">Calculate</button>
-
-      <div class="js-result-wrapper hide">
-        <div class="js-result-bool result__answer">YES</div>
-        <div class="result__text">Mark is getting wet today</div>
-
-        <table class="forecast__weather">
-        <tbody>
-          <tr>
-            <td id="time-behind" class="fc-result">4pm</td>
-            <td id="weather-behind" class="fc-result">Rain</td>
-          </tr>
-          <tr>
-            <td id="time-current" class="fc-result">5pm</td>
-            <td id="weather-current" class="fc-result">Rain</td>
-          </tr>
-          <tr>
-            <td id="time-ahead" class="fc-result">6pm</td>
-            <td id="weather-ahead" class="fc-result">Dry</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="divider"></div> <!-- ./divider-->
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <header>
+      <h1>IS MARK GETTING WET TODAY?</h1>
+      <div class="js-time-wrapper time">
+        <h2>Mark is going home</h2>
+        At
+        <select class="js-time">
+          <option value="13">1 PM</option>
+          <option value="14">2 PM</option>
+          <option value="15">3 PM</option>
+          <option value="16">4 PM</option>
+          <option value="17" selected>5 PM</option>
+          <option value="18">6 PM</option>
+          <option value="19">7 PM</option>
+        </select>
       </div>
+    </header>
 
-      <button class="js-back hide" onclick="window.location = window.location;">back</button>
+    <button class="js-calculate">Calculate</button>
 
-    </section>
+    <div class="js-result-wrapper hide">
+      <div class="js-result-bool result__answer">YES</div>
+      <div class="result__text">Mark is getting wet today</div>
 
-    <footer>v.5 - Made for Mark <a href="http://www.harrymt.com/">by harrymt.com</a></footer>
+      <table class="forecast">
+      <tbody>
+        <tr>
+          <td id="time-behind">4pm</td>
+          <td id="weather-behind">Rain</td>
+        </tr>
+        <tr>
+          <td id="time-current">5pm</td>
+          <td id="weather-current">Rain</td>
+        </tr>
+        <tr>
+          <td id="time-ahead">6pm</td>
+          <td id="weather-ahead">Dry</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <script src="js/main.min.js"></script>
+    <button class="js-back hide" onclick="window.location = window.location;">back</button>
+  </section>
+
+  <footer>v.2 - Made for Mark <a href="http://www.harrymt.com/">by harrymt.com</a></footer>
+
+  <script src="js/main.min.js"></script>
 </body>
 </html>

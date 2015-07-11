@@ -20,8 +20,11 @@ function PrintHourlyForecast(fc) {
   PrintYesOrNo(fc[1].summary);
 }
 
-function PrintYesOrNo(f) {
-  if (f.toLowerCase().indexOf("rain") > -1) {
+//
+// Displays YES or NO if the input contains 'rain'.
+//
+function PrintYesOrNo(forcast) {
+  if (forcast.toLowerCase().indexOf("rain") > -1) {
     $('.js-result-bool').text("YES"); // print yes
   } else {
     $('.js-result-bool').text("NO");
@@ -47,8 +50,10 @@ function ExtractForecastAroundHour(fc, hour) {
   return finalFc;
 }
 
+var coordinate = "52.93,-1.18"; // NG7
+
 $(".js-calculate").on("click", function() {
-  var jqxhr = $.getJSON("https://api.forecast.io/forecast/02a4fe56c45dc599d4befb44dd5aede9/52.93,-1.18?callback=?", function (data) {
+  var jqxhr = $.getJSON("https://api.forecast.io/forecast/02a4fe56c45dc599d4befb44dd5aede9/" + coordinate + "?callback=?", function (data) {
     var time = $('.js-time :selected').val();
     PrintHourlyForecast(ExtractForecastAroundHour(data, time));
   });
