@@ -29,11 +29,8 @@
     padding-top: 40px;
     padding-bottom: 20px;
     -webkit-animation: slide-down 1s;
-    /* Safari 4+ */
     -moz-animation: slide-down 1s;
-    /* Fx 5+ */
     -o-animation: slide-down 1s;
-    /* Opera 12+ */
     animation: slide-down 1s;
 }
 
@@ -118,10 +115,6 @@
     position: relative;
     height: 100%;
   }
-/*  .cover nav {
-    position: absolute;
-    bottom: 40px;
-  }*/
   .cover header {
     margin-top: 100px;
   }
@@ -149,7 +142,6 @@
   }
   .time__at {
     font-size: 25px;
-    /* padding-left: 100px; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -161,15 +153,11 @@
   }
 
   .time__actual {
-font-size: 35px;
-width: 70px;
-/* display: -webkit-box; */
-display: -moz-box;
-display: -ms-flexbox;
-/* display: -webkit-flex; */
-/* display: flex; */
-/* margin-left: 161px; */
-padding-top: 20px;
-margin-bottom: 20px;
+    font-size: 35px;
+    width: 70px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    padding-top: 20px;
+    margin-bottom: 20px;
   }
 }

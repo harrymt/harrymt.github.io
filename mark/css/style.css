@@ -1,7 +1,6 @@
 /*
  * Created for Mark in 121systems.com :)
  */
-/* == $slide-in-effects == */
 @-webkit-keyframes slide-down {
   0% {
     opacity: 0;
@@ -69,15 +68,25 @@
 html {
   font-family: sans-serif; }
 
-html, .time__actual {
+html,
+.time__actual {
   background-color: #10b8ec; }
 
-html, body {
+html,
+body {
   height: 100%;
-  color: white;
+  color: #fff;
   text-align: center; }
 
-h2, h3, h4, h5, h6, p, a, ul, li {
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
   margin: 0;
   padding: 0; }
 
@@ -105,22 +114,22 @@ h1 {
   padding-right: 25px; }
 
 #ihourAMPM {
-  color: white;
-  background: #55D4FC;
-  border: white 2px solid;
+  color: #fff;
+  background: #55d4fc;
+  border: #fff 2px solid;
   font-size: 100%; }
 
 .cover nav a {
+  color: #fff;
   font-style: italic;
-  text-decoration: none;
-  color: white;
-  margin-left: -5px; }
+  margin-left: -5px;
+  text-decoration: none; }
 
 #back-button {
-  padding-top: 20px;
   bottom: -10px;
-  width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 50%; }
 
 /* on button click remove this class*/
 .hideme {
@@ -163,7 +172,7 @@ ul {
 
 /* line */
 .divider {
-  border-top: 2px solid white;
+  border-top: 2px solid #fff;
   width: 120px;
   display: inline-block;
   padding: 11px;
@@ -173,21 +182,21 @@ ul {
   margin-left: auto;
   margin-right: auto; }
 
-#weather-behind, #weather-current, #weather-ahead {
+#weather-behind,
+#weather-current,
+#weather-ahead {
   text-align: left; }
 
-/* == $footer == */
 /* harrymt.com */
 footer {
-  color: #148CBB;
-  text-align: right;
   bottom: 15px;
-  right: 10px;
+  color: #148cbb;
   font-size: 12px;
-  padding: 10px; }
-
-footer a {
-  color: white; }
+  padding: 10px;
+  right: 10px;
+  text-align: right; }
+  footer a {
+    color: #fff; }
 
 @media (min-width: 900px) {
   h1 {
@@ -211,11 +220,8 @@ footer a {
   padding-top: 40px;
   padding-bottom: 20px;
   -webkit-animation: slide-down 1s;
-  /* Safari 4+ */
   -moz-animation: slide-down 1s;
-  /* Fx 5+ */
   -o-animation: slide-down 1s;
-  /* Opera 12+ */
   animation: slide-down 1s; }
 
 .cover .am-logo {
@@ -285,10 +291,6 @@ footer a {
     position: relative;
     height: 100%; }
 
-  /*  .cover nav {
-      position: absolute;
-      bottom: 40px;
-    }*/
   .cover header {
     margin-top: 100px; } }
 @media (max-width: 300px) {
@@ -306,7 +308,6 @@ footer a {
 
   .time__at {
     font-size: 25px;
-    /* padding-left: 100px; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -319,11 +320,7 @@ footer a {
   .time__actual {
     font-size: 35px;
     width: 70px;
-    /* display: -webkit-box; */
     display: -moz-box;
     display: -ms-flexbox;
-    /* display: -webkit-flex; */
-    /* display: flex; */
-    /* margin-left: 161px; */
     padding-top: 20px;
     margin-bottom: 20px; } }
