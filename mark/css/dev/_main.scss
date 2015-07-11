@@ -9,8 +9,8 @@
 /* == $slide-in-effects == */
 @-webkit-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-moz-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-o-keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@keyframes slide-down{0%{opacity:0;top:-16px}100%{opacity:1;top:0}}@-webkit-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@-moz-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@-o-keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}@keyframes slide-up{0%{opacity:0;bottom:-40px}100%{opacity:1;bottom:0}}
 
-/* == $base == */
-html, .time__actual { background-color: #10b8ec; }
+html { font-family: sans-serif; }
+html, .time__actual { background-color: #10b8ec;}
 html, body { height: 100%; color: white; text-align: center;}
 h2, h3, h4, h5, h6, p, a, ul, li { margin: 0;  padding: 0; }
 
@@ -46,6 +46,7 @@ h1 {
     color: white;
     background: #55D4FC;
     border: white 2px solid;
+    font-size: 100%;
 }
 
 .cover nav a {
