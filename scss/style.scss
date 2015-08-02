@@ -81,10 +81,20 @@ body {
 
 //******************************************************
 
-.fa-twitter,  .networks #network-twitter  { color: #04aceb !important; }
-.fa-linkedin, .networks #network-linkedin { color: #4875b4 !important; }
-.fa-github,  .networks #network-github    { color: #333 !important; }
+.fa-twitter,
+.networks #network-twitter {
+    color: #04aceb !important;
+}
 
+.fa-linkedin,
+.networks #network-linkedin {
+    color: #4875b4 !important;
+}
+
+.fa-github,
+.networks #network-github {
+    color: #333 !important;
+}
 
 //*****************************************************
 
@@ -149,13 +159,15 @@ body {
 }
 
 
-#player-bio a {
-    text-decoration: none;
-    color: #fff;
-}
+#player-bio {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 
-#player-bio a:hover {
-    text-decoration: underline;
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 //*******************************************************
@@ -172,8 +184,19 @@ body {
 // SECTIONS
 //
 
-.section { padding: 75px 5% 55px; text-align: center; overflow: hidden; }
-.section h3 { font-size: 30px; color: #4b514b; margin-bottom: .9em; font-weight: normal; padding: 0 5%; }
+.section {
+    overflow: hidden;
+    padding: 75px 5% 55px;
+    text-align: center;
+
+    h3 {
+        color: #4b514b;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: .9em;
+        padding: 0 5%;
+    }
+}
 
 //*****************************************************
 
@@ -181,15 +204,35 @@ body {
 // WORK
 //
 
-#work { padding-bottom: 75px; }
-#work .pieces { list-style: none; display: none; }
-#work .pieces:first-child { display: block; }
-#work .pieces li { width: 300px; height: 225px; display: inline-block; margin: 15px 22px; }
-#work .pieces li a { color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative; }
-#work .pieces li .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
-#work .pieces li .likes:hover { background-color: rgba(42, 42, 42, 0.75); opacity: 1; }
-#work .pieces li .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; line-height: 27px; }
-#work .pieces li .likes i { margin: 0 0 0 20px; }
+#work {
+    padding-bottom: 75px;
+
+    .pieces:first-child {
+        display: block;
+    }
+
+    .pieces {
+        display: none;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            height: 225px;
+            margin: 15px 22px;
+            width: 300px;
+
+            a {
+                color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative;
+            }
+
+            .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
+            .likes:hover { background-color: rgba(42, 42, 42, 0.75); opacity: 1; }
+            .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; line-height: 27px; }
+            .likes i { margin: 0 0 0 20px; }
+
+        }
+    }
+}
 
 
 //*****************************************************
