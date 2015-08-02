@@ -29,24 +29,21 @@ body {
     bottom: 0;
     z-index: 0;
     opacity: .7;
-
-    background: rgba(0,0,0,.9);
-    background: -webkit-radial-gradient(60% 60%, ellipse closest-corner, rgba(60,60,60,1)    1%, rgba(0,0,0,.3) 100%);
-    background:    -moz-radial-gradient(60% 50%, ellipse closest-corner, rgba(0,0,0,1)       1%, rgba(0,0,0,.3) 100%);
-    background:     -ms-radial-gradient(50% 50%, ellipse closest-corner, rgba(0,0,0,1)       1%, rgba(0,0,0,.3) 100%);
-    background:         radial-gradient(60% 60%, ellipse closest-corner, rgba(150,190,190,1) 1%, rgba(0,0,0,.3) 100%);
-    filter: alpha(opacity = 30);
-
-  -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-      -ms-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
-
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-       -o-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+    background: rgba(0,0,0,0.9);
+    background: -webkit-radial-gradient(60% 60%, ellipse closest-corner, #3c3c3c 1%, rgba(0,0,0,0.3) 100%);
+    background: -moz-radial-gradient(60% 50%, ellipse closest-corner, #000 1%, rgba(0,0,0,0.3) 100%);
+    background: -ms-radial-gradient(50% 50%, ellipse closest-corner, #000 1%, rgba(0,0,0,0.3) 100%);
+    background: radial-gradient(60% 60%, ellipse closest-corner, #96bebe 1%, rgba(0,0,0,0.3) 100%);
+    filter: alpha(opacity=30);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 #intro-pitch h2 {
