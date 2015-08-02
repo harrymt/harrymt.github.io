@@ -61,15 +61,14 @@ body {
     font-weight: normal;
 }
 
-#js-nowplaying {
-    font-family: Avenir, sans-serif;
-    padding-left: 5px;
+.happy-day {
+    color: rgba(255, 255, 255, .36);
+    cursor: normal;
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
 }
 
-#spotify {
-    padding-top: 10px;
-    color: #ddd;
-}
 
 //******************************************************
 
@@ -102,62 +101,60 @@ body {
 // INTRO
 //
 
-#player #intro {
-    background-color: #1a2a2b;
-    background-image:url('../img/bg_back.jpg');
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
+#player {
+    #intro {
+        background-color: #1a2a2b;
+        background-image: url('../img/bg_back.jpg');
+        background-size: cover;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
 
-#player #intro-pitch {
-    position: relative;
-    z-index: 30;
-    line-height: 2.5em;
-    width: 100%;
-}
+    #intro-pitch {
+        display: table;
+        height: 100%;
+        line-height: 2.5em;
+        margin: 0 auto;
+        max-width: 1080px;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 30;
 
-#player #intro-pitch h2 {
-    line-height: 1;
-    padding: 0 10%;
-    line-height: 1.3em;
-}
+        h2 {
+            line-height: 1.3em;
+            padding: 0 10%;
+        }
 
-#player #intro-pitch p {
-    margin-bottom: 1.3em;
-    line-height: 100%;
-    font-size: 20px;
-}
+        p {
+            font-size: 20px;
+            line-height: 100%;
+            margin-bottom: 1.3em;
+        }
 
-#player #intro-pitch .player-avatar {
-    border-radius: 50%;
-    box-shadow: 1px 1px 8px rgba(0,0,0,.5);
-}
+        .player-avatar {
+            border-radius: 50%;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
+        }
+    }
 
-#player #wrapper { height: 100%; }
-#player #intro { height: 100%; }
-#player #intro-inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+    #wrapper { height: 100%; }
 
-#player #intro-pitch {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: table;
-    height: 100%;
-    vertical-align: middle;
-}
+    #intro-inner {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-#player #intro-pitch-inner {
-    display: table-cell;
-    vertical-align: middle;
+    #intro-pitch-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
-
 
 #player-bio {
     a {
@@ -222,14 +219,52 @@ body {
             width: 300px;
 
             a {
-                color: #aaa; text-transform: uppercase; font-size: 12px; width: 300px; height: 225px; background-size: contain; text-decoration: none; border-radius: 5px; display: table; position: relative;
+                background-size: contain;
+                border-radius: 5px;
+                color: #aaa;
+                display: table;
+                font-size: 12px;
+                height: 225px;
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 300px;
             }
 
-            .likes { font-size: 25px; vertical-align: middle; background-color: rgba(234,76,137,0); color: #fff; top: 0; left: 0; bottom: 0; right: 0; border-radius: inherit; display: table-cell; opacity: 0; transition: all .3s ease; color: #fff; }
-            .likes:hover { background-color: rgba(42, 42, 42, 0.75); opacity: 1; }
-            .likes strong { display: block; padding: 0 30px; text-transform: none; font-weight: normal; font-size: 20px; margin-bottom: 15px; line-height: 27px; }
-            .likes i { margin: 0 0 0 20px; }
+            .likes {
+                background-color: rgba(234, 76, 137, 0);
+                border-radius: inherit;
+                bottom: 0;
+                color: #fff;
+                color: #fff;
+                display: table-cell;
+                font-size: 25px;
+                left: 0;
+                opacity: 0;
+                right: 0;
+                top: 0;
+                transition: all .3s ease;
+                vertical-align: middle;
 
+                strong {
+                    display: block;
+                    font-size: 20px;
+                    font-weight: normal;
+                    line-height: 27px;
+                    margin-bottom: 15px;
+                    padding: 0 30px;
+                    text-transform: none;
+                }
+
+                i {
+                    margin: 0 0 0 20px;
+                }
+            }
+
+            .likes:hover {
+                background-color: rgba(42, 42, 42, .75);
+                opacity: 1;
+            }
         }
     }
 }
@@ -241,9 +276,22 @@ body {
 // SKILLS
 //
 
-#tags { list-style: none; margin: 1.4em auto 0; width: 80%; }
-#tags .tag { display: inline-block; background: rgba(0, 0, 0, 0.2); margin: 4px 5px 0px; padding: 6px 10px; font-size: 20px; border-radius: 5px; color: rgba(255, 255, 255, 0.65); line-height: 100%; }
+#tags {
+    list-style: none;
+    margin: 1.4em auto 0;
+    width: 80%;
 
+    .tag {
+        background: rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        color: rgba(255, 255, 255, .65);
+        display: inline-block;
+        font-size: 20px;
+        line-height: 100%;
+        margin: 4px 5px 0;
+        padding: 6px 10px;
+    }
+}
 
 //*****************************************************
 
@@ -264,45 +312,19 @@ body {
 // Footer
 //
 
-#footer { background-color: #fff; padding: 45px 20px 45px; color: #777; }
-#footer a { color: #ea4c89; text-decoration: none; border-bottom: 2px solid #b1b1b1; display: inline-block; height: 20px; }
+#footer {
+    background-color: #fff;
+    color: #777;
+    padding: 45px 20px;
 
-//*****************************************************
-
-//
-// Player Mobile
-//
-
-@media only screen and (max-width: 780px) {
-  html,
-  body,
-  #player #save-form,
-  #player #wrapper,
-  #player #intro,
-  #player #intro-pitch {
-    height: auto;
-  }
-
-  #player #intro-pitch .player-avatar { margin-top: 5em; }
-  #player #intro-pitch { display: block; }
-  #player #intro-pitch-inner { display: block; }
-  #player #intro-pitch p { margin-bottom: .8em; margin-top: .5em; font-size: 20px; }
-  #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
-
-  #intro-pitch h2 { margin-top: 1em; font-size: 19px; }
-
-  #tags .tag { font-size: 12px; }
-
-  .section h3 { font-size: 25px; margin-bottom: .4em; }
-  #work { padding: 45px 5% 40px !important; }
-
-  #work .pieces li { height: 175px; width: 233px; }
-  #work .pieces li a { height: 175px; width: 233px; }
-
-  #footer p { line-height: 1.6em; }
-
+    a {
+        border-bottom: 2px solid #b1b1b1;
+        color: #ea4c89;
+        display: inline-block;
+        height: 20px;
+        text-decoration: none;
+    }
 }
-
 
 #js-nowplaying {
     font-family: Avenir, sans-serif;
@@ -312,12 +334,41 @@ body {
 #spotify {
     color: #999;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
-.happy-day {
-    color: rgba(255, 255, 255, .36);
-    display: block;
-    padding-top: 20px;
-    text-decoration: none;
-    cursor: normal;
+//*****************************************************
+
+//
+// Player Mobile
+//
+
+@media only screen and (max-width: 780px) {
+    html,
+    body,
+    #player #save-form,
+    #player #wrapper,
+    #player #intro,
+    #player #intro-pitch {
+        height: auto;
+    }
+
+    #player #intro-pitch .player-avatar { margin-top: 5em; }
+    #player #intro-pitch { display: block; }
+    #player #intro-pitch-inner { display: block; }
+    #player #intro-pitch p { margin-bottom: .8em; margin-top: .5em; font-size: 20px; }
+    #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
+
+    #intro-pitch h2 { margin-top: 1em; font-size: 19px; }
+
+    #tags .tag { font-size: 12px; }
+
+    .section h3 { font-size: 25px; margin-bottom: .4em; }
+    #work { padding: 45px 5% 40px !important; }
+
+    #work .pieces li { height: 175px; width: 233px; }
+    #work .pieces li a { height: 175px; width: 233px; }
+
+    #footer p { line-height: 1.6em; }
+
 }
