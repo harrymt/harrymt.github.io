@@ -21,7 +21,7 @@ body {
 // INTRO
 //
 
-#player-gradient {
+.intro-gradient {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,7 +92,7 @@ body {
 // INTRO
 //
 
-#intro {
+.intro {
     background-color: #1a2a2b;
     background-image: url('../img/bg_back.jpg');
     background-size: cover;
@@ -130,7 +130,7 @@ body {
     }
 }
 
-#intro-inner {
+.intro-inner {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -263,12 +263,12 @@ body {
 // SKILLS
 //
 
-#tags {
+.tags {
     list-style: none;
     margin: 1.4em auto 0;
     width: 80%;
 
-    .tag {
+    li {
         background: rgba(0, 0, 0, .2);
         border-radius: 5px;
         color: rgba(255, 255, 255, .65);
@@ -358,7 +358,7 @@ body {
     html,
     body,
     #save-form,
-    #intro,
+    .intro,
     #intro-pitch {
         height: auto;
     }
@@ -381,7 +381,7 @@ body {
         margin-top: .5em;
     }
 
-    #intro-inner {
+    .intro-inner {
         bottom: auto;
         left: auto;
         padding: 40px 0;
@@ -395,7 +395,7 @@ body {
         margin-top: 1em;
     }
 
-    #tags .tag {
+    .tags li {
         font-size: 12px;
     }
 
