@@ -414,7 +414,16 @@ body {
         }
     }
 
-    .footer p {
-        line-height: 1.6em;
+    .footer {
+        padding-top: 10px;
+
+        p {
+            line-height: 1.6em;
+            font-size: 15px;
+        }
+    }
+
+    .js-spotify {
+        display: none;
     }
 }

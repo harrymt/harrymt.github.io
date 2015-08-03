@@ -2,20 +2,39 @@
 //
 // Spotify now playing
 //
-$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=harrymf&api_key=7b853a347df8cfe29314dcd7b73444cb&format=json', function(data) {
 
-    if (data.recenttracks !== undefined) {
-        var nowplaying = data.recenttracks.track[0];
-        var artistAndSong = nowplaying.name + " - " + nowplaying.artist["#text"];
-        var url = data.recenttracks.track[0].url;
-        $('.js-nowplaying').text(artistAndSong);
-        $('.js-spotify').find('.js-nowplaying-url').attr("href", url);
-		    $('.js-spotify').css("display", "block");
-    } else {
-        $('.js-spotify').hide();
+function IsMobile() {
+ return ( navigator.userAgent.match(/Android/i) ||
+     navigator.userAgent.match(/webOS/i) ||
+     navigator.userAgent.match(/iPhone/i) ||
+     navigator.userAgent.match(/iPad/i) ||
+     navigator.userAgent.match(/iPod/i) ||
+     navigator.userAgent.match(/BlackBerry/i) ||
+     navigator.userAgent.match(/Windows Phone/i)
+ );
+}
+
+$(function() {
+    if(!IsMobile()) {
+        DisplaySpotify();
     }
 });
 
+function DisplaySpotify() {
+    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=harrymf&api_key=7b853a347df8cfe29314dcd7b73444cb&format=json', function(data) {
+
+        if (data.recenttracks !== undefined) {
+            var nowplaying = data.recenttracks.track[0];
+            var artistAndSong = nowplaying.name + " - " + nowplaying.artist["#text"];
+            var url = data.recenttracks.track[0].url;
+            $('.js-nowplaying').text(artistAndSong);
+            $('.js-spotify').find('.js-nowplaying-url').attr("href", url);
+    		    $('.js-spotify').css("display", "block");
+        } else {
+            $('.js-spotify').hide();
+        }
+    });
+}
 
 //
 // Happy {Day of week}
