@@ -46,14 +46,14 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-#intro-pitch h2 {
+.intro-pitch h2 {
     color: #fff;
     font-size: 55px;
     font-weight: normal;
     line-height: 120%;
 }
 
-#intro-pitch p {
+.intro-pitch p {
     color: rgba(255, 255, 255, .7);
     display: block;
     font-size: 25px;
@@ -102,7 +102,7 @@ body {
     width: 100%;
 }
 
-#intro-pitch {
+.intro-pitch {
     display: table;
     height: 100%;
     line-height: 2.5em;
@@ -138,7 +138,7 @@ body {
     top: 0;
 }
 
-#intro-pitch-inner {
+.intro-pitch-inner {
     display: table-cell;
     vertical-align: middle;
 }
@@ -359,11 +359,11 @@ body {
     body,
     #save-form,
     .intro,
-    #intro-pitch {
+    .intro-pitch {
         height: auto;
     }
 
-    #intro-pitch {
+    .intro-pitch {
         display: block;
 
         .player-avatar {
@@ -371,11 +371,11 @@ body {
         }
     }
 
-    #intro-pitch-inner {
+    .intro-pitch-inner {
         display: block;
     }
 
-    #intro-pitch p {
+    .intro-pitch p {
         font-size: 20px;
         margin-bottom: .8em;
         margin-top: .5em;
@@ -390,12 +390,12 @@ body {
         top: auto;
     }
 
-    #intro-pitch h2 {
+    .intro-pitch h2 {
         font-size: 19px;
         margin-top: 1em;
     }
 
-    .tags li {
+    .tags ul {
         font-size: 12px;
     }
 

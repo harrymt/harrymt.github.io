@@ -5,6 +5,17 @@ module.exports = function (grunt) {
   });
 
   grunt.initConfig({
+    htmlmin: {                                     // Task
+      dist: {                                      // Target
+        options: {                                 // Target options
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {                                   // Dictionary of files
+          'index.html': 'html/development.html'     // 'destination': 'source'
+        }
+      }
+    },
 
     sass: {
       dist: {
@@ -47,13 +58,19 @@ module.exports = function (grunt) {
         }
       },
 
+      html: {
+        files: ['html/*.html'],
+        tasks: ['htmlmin']
+      },
+
       javascript: {
         files: ['js/dev/*.js'],
         tasks: ['concat', 'uglify']
       }
-    },
+    }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
   grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
   grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
   grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
