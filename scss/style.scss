@@ -1,5 +1,4 @@
 
-
 @import 'reset';
 
 
@@ -72,14 +71,6 @@ body {
 
 //******************************************************
 
-//
-// WRAPPER
-//
-
-#wrapper { min-width: 320px; }
-
-//******************************************************
-
 .fa-twitter,
 .networks #network-twitter {
     color: #04aceb !important;
@@ -139,8 +130,6 @@ body {
             box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
         }
     }
-
-    #wrapper { height: 100%; }
 
     #intro-inner {
         bottom: 0;
@@ -299,12 +288,35 @@ body {
 // Networks bottom
 //
 
-#networks { padding: 60px 0 0; background: #fff; }
-#networks h3 { color: #777; font-size: 20px; text-transform: uppercase; margin-bottom: 1.2em; font-weight: 600; }
-#networks li { display: inline-block; margin: 0 25px 10px; }
-#networks li a { display: block; }
-#networks li a i { font-size: 40px; -webkit-transition: all .2s ease; }
-#networks li i:hover { -webkit-transform: scale(1.15); }
+#networks {
+    background: #fff;
+    padding: 60px 0 0;
+
+    h3 {
+        color: #777;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 1.2em;
+        font-weight: 600;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 25px 10px;
+
+        a {
+            display: block;
+
+            i {
+                font-size: 40px;
+                -webkit-transition: all .2s ease;
+            }
+        }
+        i:hover {
+            -webkit-transform: scale(1.15);
+        }
+    }
+}
 
 //*****************************************************
 
@@ -344,31 +356,73 @@ body {
 //
 
 @media only screen and (max-width: 780px) {
+
     html,
     body,
     #player #save-form,
-    #player #wrapper,
     #player #intro,
     #player #intro-pitch {
         height: auto;
     }
 
-    #player #intro-pitch .player-avatar { margin-top: 5em; }
-    #player #intro-pitch { display: block; }
-    #player #intro-pitch-inner { display: block; }
-    #player #intro-pitch p { margin-bottom: .8em; margin-top: .5em; font-size: 20px; }
-    #player #intro-inner { padding: 40px 0; position: relative; top: auto; right: auto; bottom: auto; left: auto; }
+    #player #intro-pitch {
+        display: block;
 
-    #intro-pitch h2 { margin-top: 1em; font-size: 19px; }
+        .player-avatar {
+            margin-top: 5em;
+        }
+    }
 
-    #tags .tag { font-size: 12px; }
+    #player {
+        #intro-pitch-inner {
+            display: block;
+        }
 
-    .section h3 { font-size: 25px; margin-bottom: .4em; }
-    #work { padding: 45px 5% 40px !important; }
+        #intro-pitch p {
+            font-size: 20px;
+            margin-bottom: .8em;
+            margin-top: .5em;
+        }
 
-    #work .pieces li { height: 175px; width: 233px; }
-    #work .pieces li a { height: 175px; width: 233px; }
+        #intro-inner {
+            bottom: auto;
+            left: auto;
+            padding: 40px 0;
+            position: relative;
+            right: auto;
+            top: auto;
+        }
+    }
 
-    #footer p { line-height: 1.6em; }
+    #intro-pitch h2 {
+        font-size: 19px;
+        margin-top: 1em;
+    }
 
+    #tags .tag {
+        font-size: 12px;
+    }
+
+    .section h3 {
+        font-size: 25px;
+        margin-bottom: .4em;
+    }
+
+    #work {
+        padding: 45px 5% 40px !important;
+
+        .pieces li {
+            height: 175px;
+            width: 233px;
+
+            a {
+                height: 175px;
+                width: 233px;
+            }
+        }
+    }
+
+    #footer p {
+        line-height: 1.6em;
+    }
 }
