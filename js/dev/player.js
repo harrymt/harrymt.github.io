@@ -26,6 +26,6 @@ $('#today-date').text(day);
 
 
 //
-// Copyright todays date
+// Set copyright to always be this year
 //
 $('#js-date-now').text(new Date().getFullYear());
