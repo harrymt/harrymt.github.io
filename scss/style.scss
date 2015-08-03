@@ -92,57 +92,55 @@ body {
 // INTRO
 //
 
-#player {
-    #intro {
-        background-color: #1a2a2b;
-        background-image: url('../img/bg_back.jpg');
-        background-size: cover;
-        height: 100%;
-        position: relative;
-        text-align: center;
-        width: 100%;
+#intro {
+    background-color: #1a2a2b;
+    background-image: url('../img/bg_back.jpg');
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#intro-pitch {
+    display: table;
+    height: 100%;
+    line-height: 2.5em;
+    margin: 0 auto;
+    max-width: 1080px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 30;
+
+    h2 {
+        line-height: 1.3em;
+        padding: 0 10%;
     }
 
-    #intro-pitch {
-        display: table;
-        height: 100%;
-        line-height: 2.5em;
-        margin: 0 auto;
-        max-width: 1080px;
-        position: relative;
-        vertical-align: middle;
-        width: 100%;
-        z-index: 30;
-
-        h2 {
-            line-height: 1.3em;
-            padding: 0 10%;
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 100%;
-            margin-bottom: 1.3em;
-        }
-
-        .player-avatar {
-            border-radius: 50%;
-            box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
-        }
+    p {
+        font-size: 20px;
+        line-height: 100%;
+        margin-bottom: 1.3em;
     }
 
-    #intro-inner {
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
+    .player-avatar {
+        border-radius: 50%;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
     }
+}
 
-    #intro-pitch-inner {
-        display: table-cell;
-        vertical-align: middle;
-    }
+#intro-inner {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#intro-pitch-inner {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #player-bio {
@@ -359,13 +357,13 @@ body {
 
     html,
     body,
-    #player #save-form,
-    #player #intro,
-    #player #intro-pitch {
+    #save-form,
+    #intro,
+    #intro-pitch {
         height: auto;
     }
 
-    #player #intro-pitch {
+    #intro-pitch {
         display: block;
 
         .player-avatar {
@@ -373,25 +371,23 @@ body {
         }
     }
 
-    #player {
-        #intro-pitch-inner {
-            display: block;
-        }
+    #intro-pitch-inner {
+        display: block;
+    }
 
-        #intro-pitch p {
-            font-size: 20px;
-            margin-bottom: .8em;
-            margin-top: .5em;
-        }
+    #intro-pitch p {
+        font-size: 20px;
+        margin-bottom: .8em;
+        margin-top: .5em;
+    }
 
-        #intro-inner {
-            bottom: auto;
-            left: auto;
-            padding: 40px 0;
-            position: relative;
-            right: auto;
-            top: auto;
-        }
+    #intro-inner {
+        bottom: auto;
+        left: auto;
+        padding: 40px 0;
+        position: relative;
+        right: auto;
+        top: auto;
     }
 
     #intro-pitch h2 {
