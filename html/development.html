@@ -34,7 +34,7 @@
 
       <div class="intro-pitch">
         <div class="intro-pitch-inner">
-          <img class="player-avatar" width="80" height="80" src="img/bg_player.jpg" alt="Harry Mumford-Turner">
+          <img class="avatar" width="80" height="80" src="img/bg_player.jpg" alt="Harry Mumford-Turner">
           <p>Harry Mumford&#45;Turner</p>
           <h2 id="player-bio"><a href="http://www.nottingham.ac.uk/" target="_blank">UoN</a> CS Student</h2>
 
@@ -50,11 +50,21 @@
     </div>
   </div> <!-- ./intro -->
 
-  <div id="more">
+  <div class="more">
     <div class="section" id="work">
       <h3>My most popular work</h3>
         <div> <!-- needed div -->
           <ul class="pieces">
+          <li>
+              <a href="http://somersetcosmic.org/" target="_blank" style="background-image:url(img/project/cosmic.png)">
+                <span class="likes">
+                <strong>COSMiC Website</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+
             <li>
               <a href="http://loocator.hackathon.tmhwrd.com/" target="_blank" style="background-image:url(img/project/loocator.png)">
                 <span class="likes">
@@ -64,7 +74,33 @@
                 </span>
               </a>
             </li>
-
+           <li>
+              <a href="http://imgur.com/a/b5Jxu#ekJR6ZK" target="_blank" style="background-image:url(img/project/hacksoc.png)">
+                <span class="likes">
+                <strong>HackNotts logo design</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-github-square"></i>
+                </span>
+              </a>
+            </li>
+            <li>  <!-- http://inspirewit.com/ -->
+              <a href="http://imgur.com/a/b5Jxu#HfUEw1Y" target="_blank" style="background-image:url(img/project/wit.png)">
+                <span class="likes">
+                <strong>Women In Tech inspirewit.com</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.harrymt.com/mark" target="_blank" style="background-image:url(img/project/markWet.png)">
+                <span class="likes">
+                <strong>Does it rain when Mark leaves</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
             <li>
               <a href="https://github.com/harrymt/RoutingPlus" target="_blank" style="background-image:url(img/project/routingplus.png)">
               <span class="likes">
@@ -76,7 +112,7 @@
             </li>
 
             <li>
-              <a href="http://www.harrymt.com" target="_blank" style="background-image:url(img/project/personal.png)">
+              <a href="https://github.com/harrymt/harrymt.github.io" target="_blank" style="background-image:url(img/project/personal.png)">
               <span class="likes">
               <strong>Personal Identity</strong>
               <i class="fa fa-github-square"></i>
@@ -84,7 +120,15 @@
               </span>
               </a>
             </li>
-
+            <li>
+              <a href="http://mussoc.org.uk/" target="_blank" style="background-image:url(img/project/mussoc.png)">
+                <span class="likes">
+                <strong>Mussoc Website</strong>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-chain"></i>
+                </span>
+              </a>
+            </li>
             <li>
               <a href="https://github.com/harrymt/Site2013" target="_blank" style="background-image:url(img/project/oldpersonal.png)">
                 <span class="likes"><strong>Old Identity</strong>
@@ -93,51 +137,10 @@
                 </span>
               </a>
             </li>
-
-	          <li>  <!-- http://inspirewit.com/ -->
-              <a href="http://imgur.com/a/b5Jxu#HfUEw1Y" target="_blank" style="background-image:url(img/project/wit.png)">
-                <span class="likes">
-                <strong>Women In Tech inspirewit.com</strong>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-chain"></i>
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="http://www.harrymt.com/mark" target="_blank" style="background-image:url(img/project/markWet.png)">
-                <span class="likes">
-                <strong>Does it rain when Mark leaves</strong>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-chain"></i>
-                </span>
-              </a>
-            </li>
-
             <li>
               <a href="https://github.com/harrymt" target="_blank" style="background-image:url(img/project/github.png)">
                 <span class="likes">
                 <strong>Github</strong>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-github-square"></i>
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="http://somersetcosmic.org/" target="_blank" style="background-image:url(img/project/cosmic.png)">
-                <span class="likes">
-                <strong>COSMiC Website</strong>
-                <i class="fa fa-heart"></i>
-                <i class="fa fa-chain"></i>
-                </span>
-              </a>
-            </li>
-
-           <li>
-              <a href="http://imgur.com/a/b5Jxu#ekJR6ZK" target="_blank" style="background-image:url(img/project/hacksoc.png)">
-                <span class="likes">
-                <strong>HackNottingham logo design</strong>
                 <i class="fa fa-heart"></i>
                 <i class="fa fa-github-square"></i>
                 </span>
@@ -158,13 +161,13 @@
       </ul>
     </div><!-- /.section -->
 
-    <div class="section" id="footer">
-      <div style="display:none" id="spotify">
-        <a target="_blank" style="color:inherit;border:none;" id="js-nowplaying-url" href="#">
-          <i class="fa fa-spotify"><span id="js-nowplaying"> not listening to anything</span></i>
+    <div class="section footer">
+      <div style="display:none" class="js-spotify">
+        <a target="_blank" class="spotify js-nowplaying-url" href="#">
+          <i class="fa fa-spotify"><span class="js-nowplaying"> not listening to anything</span></i>
         </a>
       </div>
-      <p>&copy; <span id="js-date-now">2015</span> Harry Mumford&#45;Turner&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Made in the <a target="_blank" href="https://vine.co/v/OzQaIO0IOiu">University of Nottingham</a>
+      <p>&copy; <span id="js-date-now">2015</span> Harry Mumford&#45;Turner&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Made at the <a target="_blank" href="https://vine.co/v/OzQaIO0IOiu">University of Nottingham</a>
       </p>
     </div>
   </div><!-- ./more -->

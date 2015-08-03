@@ -71,19 +71,13 @@ body {
 
 //******************************************************
 
-.fa-twitter,
-.networks #network-twitter {
-    color: #04aceb !important;
-}
-
-.fa-linkedin,
-.networks #network-linkedin {
-    color: #4875b4 !important;
-}
-
 .fa-github,
 .networks #network-github {
     color: #333 !important;
+}
+
+.fa-spotify span {
+    padding-left: 5px;
 }
 
 //*****************************************************
@@ -124,7 +118,7 @@ body {
         margin-bottom: 1.3em;
     }
 
-    .player-avatar {
+    .avatar {
         border-radius: 50%;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
     }
@@ -157,10 +151,10 @@ body {
 //*******************************************************
 
 //
-// MORE TRIGGER
+// PROJECTS & FOOTER
 //
 
-#more { background-color: #f4f6f6; }
+.more { background-color: #f4f6f6; }
 
 //******************************************************
 
@@ -322,7 +316,7 @@ body {
 // Footer
 //
 
-#footer {
+.footer {
     background-color: #fff;
     color: #777;
     padding: 45px 20px;
@@ -334,23 +328,25 @@ body {
         height: 20px;
         text-decoration: none;
     }
-}
 
-#js-nowplaying {
-    font-family: Avenir, sans-serif;
-    padding-left: 5px;
-}
+    p {
+        padding-top: 20px;
+    }
 
-#spotify {
-    color: #999;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    .spotify {
+        border: 0;
+        color: #999;
+
+        span {
+            font-family: Avenir, sans-serif;
+        }
+    }
 }
 
 //*****************************************************
 
 //
-// Player Mobile
+// Mobile
 //
 
 @media only screen and (max-width: 780px) {
@@ -366,7 +362,7 @@ body {
     .intro-pitch {
         display: block;
 
-        .player-avatar {
+        .avatar {
             margin-top: 5em;
         }
     }
@@ -418,7 +414,7 @@ body {
         }
     }
 
-    #footer p {
+    .footer p {
         line-height: 1.6em;
     }
 }
