@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/dev/jquery.min.js', 'js/dev/googleA.js', 'js/dev/player.js'],
+        src: ['js/dev/jquery.min.js', 'js/dev/hotjar-tracking.js', 'js/dev/googleA.js', 'js/dev/player.js'],
         dest: 'js/main.min.js'
       }
     },
@@ -77,6 +77,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
   grunt.loadNpmTasks('grunt-serve'); // Local server
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'sass']);
 
 };
