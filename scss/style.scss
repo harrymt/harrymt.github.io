@@ -1,6 +1,6 @@
 
 @import 'reset';
-
+@import 'hint';
 
 //
 // GLOBALS
@@ -29,11 +29,11 @@ body {
     bottom: 0;
     z-index: 0;
     opacity: .7;
-    background: rgba(0,0,0,0.9);
-    background: -webkit-radial-gradient(60% 60%, ellipse closest-corner, #3c3c3c 1%, rgba(0,0,0,0.3) 100%);
-    background: -moz-radial-gradient(60% 50%, ellipse closest-corner, #000 1%, rgba(0,0,0,0.3) 100%);
-    background: -ms-radial-gradient(50% 50%, ellipse closest-corner, #000 1%, rgba(0,0,0,0.3) 100%);
-    background: radial-gradient(60% 60%, ellipse closest-corner, #96bebe 1%, rgba(0,0,0,0.3) 100%);
+    background: rgba(0, 0, 0, .9);
+    background: -webkit-radial-gradient(60% 60%, ellipse closest-corner, #3c3c3c 1%, rgba(0, 0, 0, .3) 100%);
+    background: -moz-radial-gradient(60% 50%, ellipse closest-corner, #000 1%, rgba(0, 0, 0, .3) 100%);
+    background: -ms-radial-gradient(50% 50%, ellipse closest-corner, #000 1%, rgba(0, 0, 0, .3) 100%);
+    background: radial-gradient(60% 60%, ellipse closest-corner, #96bebe 1%, rgba(0, 0, 0, .3) 100%);
     filter: alpha(opacity=30);
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -46,20 +46,6 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-.intro-pitch h2 {
-    color: #fff;
-    font-size: 55px;
-    font-weight: normal;
-    line-height: 120%;
-}
-
-.intro-pitch p {
-    color: rgba(255, 255, 255, .7);
-    display: block;
-    font-size: 25px;
-    font-weight: normal;
-}
-
 .happy-day {
     color: rgba(255, 255, 255, .36);
     cursor: normal;
@@ -67,24 +53,6 @@ body {
     padding-top: 20px;
     text-decoration: none;
 }
-
-
-//******************************************************
-
-.fa-github,
-.networks #network-github {
-    color: #333 !important;
-}
-
-.fa-spotify span {
-    padding-left: 5px;
-}
-
-//*****************************************************
-
-//
-// INTRO
-//
 
 .intro {
     background-color: #1a2a2b;
@@ -108,12 +76,18 @@ body {
     z-index: 30;
 
     h2 {
+        color: #fff;
+        font-size: 55px;
+        font-weight: normal;
         line-height: 1.3em;
         padding: 0 10%;
     }
 
     p {
+        color: rgba(255, 255, 255, .7);
+        display: block;
         font-size: 20px;
+        font-weight: normal;
         line-height: 100%;
         margin-bottom: 1.3em;
     }
@@ -130,6 +104,10 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+
+    span {
+        position: relative;
+    }
 }
 
 .intro-pitch-inner {
@@ -147,14 +125,6 @@ body {
         text-decoration: underline;
     }
 }
-
-//*******************************************************
-
-//
-// PROJECTS & FOOTER
-//
-
-.more { background-color: #f4f6f6; }
 
 //******************************************************
 
@@ -271,7 +241,23 @@ body {
         line-height: 100%;
         margin: 4px 5px 0;
         padding: 6px 10px;
+        position: relative;
+
+        a {
+            color: rgba(255, 255, 255, .65);
+            text-decoration: none;
+        }
     }
+
+    li:hover {
+        background: rgba(0, 0, 0, .5);
+        cursor: pointer;
+    }
+}
+
+
+[data-hint]:after {
+    font-size: .9rem;
 }
 
 //*****************************************************
@@ -287,9 +273,9 @@ body {
     h3 {
         color: #777;
         font-size: 20px;
-        text-transform: uppercase;
-        margin-bottom: 1.2em;
         font-weight: 600;
+        margin-bottom: 1.2em;
+        text-transform: uppercase;
     }
 
     li {
@@ -304,11 +290,24 @@ body {
                 -webkit-transition: all .2s ease;
             }
         }
+
         i:hover {
             -webkit-transform: scale(1.15);
         }
     }
 }
+
+
+.fa-github,
+.networks #network-github {
+    color: #333 !important;
+}
+
+.fa-spotify span {
+    padding-left: 5px;
+}
+
+
 
 //*****************************************************
 
@@ -342,6 +341,10 @@ body {
         }
     }
 }
+
+
+.more { background-color: #f4f6f6; }
+
 
 //*****************************************************
 
