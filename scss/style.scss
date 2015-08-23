@@ -409,11 +409,34 @@ body {
 
         .pieces li {
             height: 175px;
+            margin-top: 75px;
             width: 233px;
 
             a {
                 height: 175px;
                 width: 233px;
+            }
+
+            .likes:hover {
+                background-color: rgba(255, 255, 255, 0); // Stop hover overlay
+            }
+
+            .likes {
+                color: #555;
+                font-size: 25px;
+                opacity: 1;
+                position: relative;
+                top: -100px;
+                vertical-align: middle;
+
+                strong {
+                    margin-bottom: 30px;
+                    padding: 0;
+                }
+
+                i {
+                    display: none;
+                }
             }
         }
     }
