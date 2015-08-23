@@ -2,6 +2,9 @@
 @import 'reset';
 @import 'hint';
 
+// Display 6 projects in mobile view
+$projects-to-show-in-mobile: 6;
+
 //
 // GLOBALS
 //
@@ -406,6 +409,11 @@ body {
 
     #work {
         padding: 45px 5% 40px !important;
+
+        /* Show (x Pieces) + 1 */
+        .pieces li:nth-child(1n+#{$projects-to-show-in-mobile + 1}) {
+            display: none;
+        }
 
         .pieces li {
             height: 175px;
