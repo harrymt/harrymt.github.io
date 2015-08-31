@@ -129,6 +129,53 @@ body {
     }
 }
 
+#textureAnimation {
+    background-image: url('../img/text-background.png');
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); // Fallbacks
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-repeat: repeat;
+    -webkit-text-fill-color: rgba(255, 255, 255, .2);
+    // background-clip */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    // animation-name
+    -webkit-animation-name: texture-animation;
+    -moz-animation-name: texture-animation;
+    -ms-animation-name: texture-animation;
+    -o-animation-name: texture-animation;
+    animation-name: texture-animation;
+    // animation-duration
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+    -ms-animation-duration: 30s;
+    -o-animation-duration: 30s;
+    animation-duration: 30s;
+    // animation-iteration-count
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    // animation-timing-function
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes texture-animation {
+    0% {
+        background-position: left bottom;
+    }
+
+    100% {
+        background-position: 1200px top;
+    }
+}
+
 //******************************************************
 
 //
@@ -189,7 +236,6 @@ body {
                 background-color: rgba(234, 76, 137, 0);
                 border-radius: inherit;
                 bottom: 0;
-                color: #fff;
                 color: #fff;
                 display: table-cell;
                 font-size: 25px;
