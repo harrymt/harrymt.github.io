@@ -1,4 +1,5 @@
 module.exports = function (grunt) {
+  'use strict';
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json')
@@ -12,7 +13,7 @@ module.exports = function (grunt) {
           collapseWhitespace: true
         },
         files: {                                   // Dictionary of files
-          'index.html': 'html/development.html'     // 'destination': 'source'
+          'index.html': 'index.html'               // 'destination': 'source'
         }
       }
     },
@@ -49,25 +50,34 @@ module.exports = function (grunt) {
       }
     },
 
+    processhtml: {
+      dist: {
+        files: {
+          'index.html': ['development.html']
+        }
+      }
+    },
+
     watch: {
       css: {
         files: ['scss/*.scss'],
-        tasks: ['sass'],
+        tasks: ['default'],
         options: {
           spawn: false
         }
       },
 
       html: {
-        files: ['html/*.html'],
-        tasks: ['htmlmin']
+        files: ['development.html'],
+        tasks: ['default']
       },
 
       javascript: {
         files: ['js/dev/*.js'],
-        tasks: ['concat', 'uglify']
+        tasks: ['default']
       }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
@@ -75,8 +85,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
   grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
   grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
+  grunt.loadNpmTasks('grunt-processhtml'); // Inline JS & CSS
   grunt.loadNpmTasks('grunt-serve'); // Local server
 
-  grunt.registerTask('default', ['htmlmin', 'concat', 'uglify', 'sass']);
-
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin']);
 };
