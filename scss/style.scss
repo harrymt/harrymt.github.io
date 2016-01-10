@@ -35,7 +35,7 @@ body {
     opacity: .7;
     background: rgba(0, 0, 0, .9);
 
-    @include background(radial-gradient(60% 50%, ellipse closest-corner, #96bebe 1%, rgba(0, 0, 0, .3) 100%));
+    @include background(radial-gradient(60% 50%, ellipse closest-corner, #646464 1%, rgba(0, 0, 0, .3) 100%));
 
     filter: alpha(opacity=30);
 
