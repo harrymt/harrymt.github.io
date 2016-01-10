@@ -34,20 +34,13 @@ body {
     z-index: 0;
     opacity: .7;
     background: rgba(0, 0, 0, .9);
-    background: -webkit-radial-gradient(60% 60%, ellipse closest-corner, #3c3c3c 1%, rgba(0, 0, 0, .3) 100%);
-    background: -moz-radial-gradient(60% 50%, ellipse closest-corner, #000 1%, rgba(0, 0, 0, .3) 100%);
-    background: -ms-radial-gradient(50% 50%, ellipse closest-corner, #000 1%, rgba(0, 0, 0, .3) 100%);
-    background: radial-gradient(60% 60%, ellipse closest-corner, #96bebe 1%, rgba(0, 0, 0, .3) 100%);
+
+    @include background(radial-gradient(60% 50%, ellipse closest-corner, #96bebe 1%, rgba(0, 0, 0, .3) 100%));
+
     filter: alpha(opacity=30);
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+
+    @include transition(all .3s $ease-out-quad);
+    @include transform(translate3d(0,0,0));
 }
 
 .happy-day {
@@ -132,39 +125,22 @@ body {
 
 #textureAnimation {
     background-image: url('../img/text-background.png');
-    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); // Fallbacks
-    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+
+    @include background-image(linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)));
+
     background-repeat: repeat;
-    -webkit-text-fill-color: rgba(255, 255, 255, .2);
-    // background-clip */
+
+    color: rgba(255, 255, 255, .2);
+
+    // No support by bourbon :(
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    // animation-name
-    -webkit-animation-name: texture-animation;
-    -moz-animation-name: texture-animation;
-    -ms-animation-name: texture-animation;
-    -o-animation-name: texture-animation;
-    animation-name: texture-animation;
-    // animation-duration
-    -webkit-animation-duration: 30s;
-    -moz-animation-duration: 30s;
-    -ms-animation-duration: 30s;
-    -o-animation-duration: 30s;
-    animation-duration: 30s;
-    // animation-iteration-count
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    // animation-timing-function
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
+
+    @include animation-name(texture-animation);
+    @include animation-duration(30s);
+    @include animation-iteration-count(infinite);
+    @include animation-timing-function(linear);
 }
 
 @-webkit-keyframes texture-animation {
@@ -338,12 +314,12 @@ body {
 
             i {
                 font-size: 40px;
-                -webkit-transition: all .2s ease;
+                @include transition(all .2s ease);
             }
         }
 
         i:hover {
-            -webkit-transform: scale(1.15);
+            @include transform(scale(1.15));
         }
     }
 }

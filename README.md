@@ -7,3 +7,4 @@ Uses
 - [Bourbon](http://bourbon.io/)
 - [SASS](http://sass-lang.com/)
 - [GruntJS](http://gruntjs.com/)
+- [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
