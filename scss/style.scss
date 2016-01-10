@@ -36,9 +36,7 @@ body {
     background: rgba(0, 0, 0, .9);
 
     @include background(radial-gradient(60% 50%, ellipse closest-corner, #646464 1%, rgba(0, 0, 0, .3) 100%));
-
-    filter: alpha(opacity=30);
-
+    @include filter(alpha(opacity=30));
     @include transition(all .3s $ease-out-quad);
     @include transform(translate3d(0,0,0));
 }
@@ -52,9 +50,8 @@ body {
 }
 
 .intro {
-    background-color: #1a2a2b;
-    background-image: url('../img/bg_back.jpg');
-    background-size: cover;
+    @include background(#1a2a2b, url('../img/bg_back.jpg'), repeat, cover);
+
     height: 100%;
     position: relative;
     text-align: center;
@@ -256,7 +253,7 @@ body {
     width: 80%;
 
     li {
-        background: rgba(0, 0, 0, .2);
+        background-color: rgba(0, 0, 0, .2);
         border-radius: 5px;
         color: rgba(255, 255, 255, .65);
         display: inline-block;
@@ -274,7 +271,7 @@ body {
     }
 
     li:hover {
-        background: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .5);
         cursor: pointer;
     }
 }
@@ -291,7 +288,7 @@ body {
 //
 
 #networks {
-    background: #fff;
+    background-color: #fff;
     padding: 60px 0 0;
 
     h3 {
