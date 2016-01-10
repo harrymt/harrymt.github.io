@@ -124,13 +124,11 @@ body {
 }
 
 #textureAnimation {
-    background-image: url('../img/text-background.png');
-
-    @include background-image(linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)));
+    @include background-image(url('../img/text-background.png'), linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)));
 
     background-repeat: repeat;
 
-    color: rgba(255, 255, 255, .2);
+    // color: rgba(255, 255, 255, .2);
 
     // No support by bourbon :(
     -webkit-background-clip: text;
