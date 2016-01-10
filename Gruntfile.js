@@ -21,8 +21,12 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
-          style: 'compressed'
+          style: 'compressed',
+
+          loadPath: require('node-bourbon').includePaths
+
         },
+
         files: {
           'css/style.css': 'scss/style.scss'
         }
