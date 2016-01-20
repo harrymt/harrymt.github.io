@@ -1,14 +1,29 @@
 
-@import 'reset';
 @import 'hint';
 @import 'bourbon';
 
-// Display 6 projects in mobile view
+// Number of projects to show in mobile view
 $projects-to-show-in-mobile: 6;
 
+
+
+//*****************************************************
+
 //
-// GLOBALS
+// Globals
 //
+
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,strong,i,ol,ul,li,table,tbody,tfoot,thead,tr,th,td
+{
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 
 html,
 body {
@@ -21,8 +36,15 @@ body {
     line-height: 1;
 }
 
+ol, ul {
+    list-style: none;
+}
+
+
+//*****************************************************
+
 //
-// INTRO
+// Intro
 //
 
 .intro-gradient {
@@ -31,14 +53,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
     opacity: .7;
-    background: rgba(0, 0, 0, .9);
-
     @include background(radial-gradient(60% 50%, ellipse closest-corner, #646464 1%, rgba(0, 0, 0, .3) 100%));
-    @include filter(alpha(opacity=30));
-    @include transition(all .3s $ease-out-quad);
-    @include transform(translate3d(0,0,0));
 }
 
 .happy-day {
@@ -50,7 +66,8 @@ body {
 }
 
 .intro {
-    @include background(#1a2a2b, url('../img/bg_back.jpg'), repeat, cover);
+    background: url('../img/bg_back.jpg');
+    background-size: cover;
 
     height: 100%;
     position: relative;
@@ -150,7 +167,7 @@ body {
 //******************************************************
 
 //
-// SECTIONS
+// Sections
 //
 
 .section {
@@ -170,7 +187,7 @@ body {
 //*****************************************************
 
 //
-// WORK
+// Work
 //
 
 #work {
@@ -244,7 +261,7 @@ body {
 //*****************************************************
 
 //
-// SKILLS
+// Skills
 //
 
 .tags {
