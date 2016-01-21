@@ -1,6 +1,6 @@
 {
   "name": "harrymt.com",
-  "version": "0.0.1",
+  "version": "3.0.0",
   "description": "Harry Mumford-Turner personal site",
   "main": "Gruntfile.js",
   "scripts": {

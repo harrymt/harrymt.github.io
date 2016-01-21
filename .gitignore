@@ -1,10 +1,5 @@
 node_modules/
-
-# Codekit
 css/.sass-cache
-mark/css/.sass-cache
 *.codekit
-
 *.scssc
-
 npm-debug.log

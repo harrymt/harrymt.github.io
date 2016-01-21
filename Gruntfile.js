@@ -6,14 +6,14 @@ module.exports = function (grunt) {
   });
 
   grunt.initConfig({
-    htmlmin: {                                     // Task
-      dist: {                                      // Target
-        options: {                                 // Target options
+    htmlmin: {
+      dist: {
+        options: {
           removeComments: true,
           collapseWhitespace: true
         },
-        files: {                                   // Dictionary of files
-          'index.html': 'index.html'               // 'destination': 'source'
+        files: {
+          'index.html': 'index.html'
         }
       }
     },
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/dev/jquery.min.js', 'js/dev/hotjar-tracking.js', 'js/dev/googleA.js', 'js/dev/player.js'],
+        src: ['js/dev/jquery.min.js', 'js/dev/hotjar-tracking.js', 'js/dev/google-analytics.js', 'js/dev/main.js'],
         dest: 'js/main.min.js'
       }
     },
