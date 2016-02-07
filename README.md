@@ -13,7 +13,7 @@ Uses
 
 The following Grunt tasks are used they can be found [here](Gruntfile.js).
 
-```
+```javascript
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
   grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
