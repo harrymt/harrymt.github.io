@@ -24,11 +24,18 @@
 
 </head>
 <body>
+
+  <canvas data-processing-sources="main.pde"></canvas>
+
+  <div class="cover-gradient"></div>
+
+
   <div class="container">
     <div class="cover">
       <div class="cover-inner">
 
         <img class="avatar" width="160" height="160" src="img/bg_player.png" alt="Harry Mumford-Turner">
+
 
         <p>Harry Mumford&#45;Turner</p>
 
@@ -63,12 +70,16 @@
           </li>
         </ul>
       </div>
+
     </div>
   </div> <!-- ./container -->
 
   <!-- build:js inline -->
   <script src="/js/main.min.js"></script>
   <!-- /build -->
+
+  <!-- Processing js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.16/processing.min.js"></script>
 
 </body>
 </html>

@@ -59,6 +59,23 @@ ol, ul {
 }
 
 
+.cover-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: .4;
+
+    background: rgba(0, 0, 0, .9);
+
+    filter: alpha(opacity=30);
+
+    @include transition(all .3s $ease-out-quad);
+    @include transform(translate3d(0,0,0));
+}
+
 .cover-inner {
     display: table-cell;
     vertical-align: middle;
@@ -110,6 +127,17 @@ ol, ul {
             text-decoration: underline;
         }
     }
+}
+
+
+
+//*****************************************************
+
+//
+// Canvas
+//
+canvas {
+    position: absolute;
 }
 
 
