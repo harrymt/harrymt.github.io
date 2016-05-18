@@ -13,7 +13,10 @@ module.exports = function (grunt) {
           collapseWhitespace: true
         },
         files: {
-          'index.html': 'index.html'
+          'index.html': 'index.html',
+          'about.html': 'about.html',
+          'work.html': 'work.html',
+          'stats.html': 'stats.html'
         }
       }
     },
@@ -57,7 +60,10 @@ module.exports = function (grunt) {
     processhtml: {
       dist: {
         files: {
-          'index.html': ['development.html']
+          'index.html': ['dev-index.html'],
+          'about.html': ['dev-about.html'],
+          'work.html':  ['dev-work.html'],
+          'stats.html':  ['dev-stats.html']
         }
       }
     },
@@ -72,7 +78,7 @@ module.exports = function (grunt) {
       },
 
       html: {
-        files: ['development.html'],
+        files: ['dev-index.html', 'dev-about.html', 'dev-work.html', 'dev-stats.html'],
         tasks: ['default']
       },
 
