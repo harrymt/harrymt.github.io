@@ -9,6 +9,9 @@ $color-btn-green: #128E12;
 $color-btn-blue: #516CF1;
 $color-btn-black: #111;
 
+$color-background: #fff; // #f1f1f1;
+$color-text: #333;
+
 
 //*****************************************************
 
@@ -34,8 +37,8 @@ body {
 }
 
 body {
-    background: #f1f1f1;
-    color: #333;
+    background: $color-background;
+    color: $color-text;
 
     font: 500 16px Avenir, sans-serif;
     line-height: 1;
@@ -85,7 +88,7 @@ li, p {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.7em;
     text-align: justify;
 }
 
@@ -176,8 +179,8 @@ main {
         p:first-child:first-letter {
             float: left;
             font-family: Georgia;
-            font-size: 55px;
-            line-height: 48px;
+            font-size: 57px;
+            line-height: 54px;
             padding-right: 8px;
         }
     }
