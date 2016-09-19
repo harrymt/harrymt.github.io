@@ -3,3 +3,4 @@ css/.sass-cache
 *.codekit
 *.scssc
 npm-debug.log
+.DS_Store
