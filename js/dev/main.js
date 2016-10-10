@@ -20,6 +20,18 @@ $('.js-reload-page').on('click', function() {
 
 $(window).load(function() {
   setLoadTimeStats();
+
+  var pages = window.location.pathname.split("/");
+  var current_page = pages[pages.length - 1];
+
+  if(current_page == "about.html") {
+    window.setInterval(function() {
+      var now = new Date();
+      setAgeCounter(new Date());
+    }, 1000);
+  }
+
+
 });
 
 /**
@@ -44,4 +56,15 @@ function IsMobile() {
      navigator.userAgent.match(/BlackBerry/i) ||
      navigator.userAgent.match(/Windows Phone/i)
  );
+}
+
+var dob = new Date(1993, 11, 16);
+
+function setAgeCounter(now) {
+  var duration = now - dob;
+  var years = duration / 31556900000;
+  var majorMinor = years.toFixed(7).toString().split('.');
+
+  $('.js-age-major').text(majorMinor[0]);
+  $('.js-age-minor').text(majorMinor[1]);
 }
