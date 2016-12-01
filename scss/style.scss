@@ -93,9 +93,8 @@ p {
 }
 
 hr {
+    margin-bottom: 50px;
     margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 5px; margin-right: 5px;
 }
 
 .text-inline-minor {
@@ -204,6 +203,14 @@ main {
             padding-bottom: 5px;
             text-align: left;
         }
+
+        max-width: 18em;
+        text-align: center;
+        margin: auto;
+    }
+
+    .section-work-big {
+        max-width: 25em;
     }
 
     h1 {}
@@ -211,6 +218,11 @@ main {
     .heading-large {}
 
     h2 {}
+
+    h3 {
+        color: #555;
+        font-size: 1.2em;
+    }
 
     p {}
 }
@@ -223,12 +235,12 @@ main {
 }
 
 .footnote {
-
+    padding-top: 10px;
 }
 
 img.fullwidth {
     clear: both;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
@@ -244,7 +256,7 @@ img.fullwidth {
 
 footer {
     p {
-
+        text-align: center;
     }
 }
 
