@@ -14,9 +14,7 @@ module.exports = function (grunt) {
         },
         files: {
           'index.html': 'index.html',
-          'about.html': 'about.html',
-          'work.html': 'work.html',
-          'stats.html': 'stats.html'
+          'about.html': 'about.html'
         }
       }
     },
@@ -61,9 +59,7 @@ module.exports = function (grunt) {
       dist: {
         files: {
           'index.html': ['dev-index.html'],
-          'about.html': ['dev-about.html'],
-          'work.html':  ['dev-work.html'],
-          'stats.html':  ['dev-stats.html']
+          'about.html': ['dev-about.html']
         }
       }
     },
@@ -78,7 +74,7 @@ module.exports = function (grunt) {
       },
 
       html: {
-        files: ['dev-index.html', 'dev-about.html', 'dev-work.html', 'dev-stats.html'],
+        files: ['dev-index.html', 'dev-about.html'],
         tasks: ['default']
       },
 

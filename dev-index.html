@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Harry Mumford&#45;Turner</title>
+  <title>harrymt</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -25,18 +25,20 @@
 </head>
 <body>
 
-  <header style="visibility: hidden;">
+  <header>
     <nav>
       <ul>
        <li><a href="#" class="button button-big button-black">Home</a></li>
        <li><a href="about.html" class="button button-big button-clear">About</a></li>
-       <li><a href="work.html" class="button button-big button-clear">Work</a></li>
-       <!-- <li><a href="stats.html" class="button button-big button-clear">Stats</a></li> -->
       </ul>
     </nav>
   </header>
 
   <main>
+
+    <section class="section-main">
+      <img class="profile" src="https://secure.gravatar.com/avatar/98d8e52ef549b0b12d0bb84e17581ff1?s=300" />
+    </section>
 
     <section class="section-top">
       <h1>Harry Mumford-Turner</h1>
@@ -47,47 +49,84 @@
       </div>
     </section>
 
-    <section class="section-main">
-      <p>I love making things, especially when they improve my life. <a class="star-link js-footnote" href="#footnote">*</a> At Nottingham University I made some websites for the <a href="//hacksocnotts.co.uk">Hack Society</a>, consulted for a Nottingham charity, worked at a small logistics company and completely redesigned the website for the best student <a href="//urn1350.net" target="_blank">Radio Station</a> in the country. I also did a whole lot more, but you can read about that <a href="about.html">here</a>.</p>
-      <p class="footnote">
-        <span id="footnote" class="star-link">*</span> I spent a week setting up automated sleep tracking with my calendar. You can read about it <a href="//www.harrymt.com/blog/2016/05/18/sleep-tracking.html">here</a>.
+
+
+    <section class="section-top">
+        <h1>Projects</h1>
+    </section>
+
+    <section class="section-work section-work-big">
+      <h2>University Radio Nottingham</h2>
+      <p>
+        <ul class="bullet-list">
+          <li>Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.</li>
+          <li>Migrated existing website from Drupal to <a href="//wordpress.org/">Wordpress</a>, creating plugins to integrate podcasts and the radio show schedule.</li>
+          <li>Optimised the website by reducing the average load time by 10 seconds.</li>
+          <li>Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.</li>
+          <li>The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.</li>
+        </ul>
       </p>
+
+      <img class="fullwidth" src="img/work/urn.png">
+
+      <div class="button-container">
+        <a href="//www.urn1350.net" class="button button-clear button-huge">view site</a>
+      </div>
       <hr>
     </section>
 
-    <section class="section-work">
-      <h3>URN</h3>
-      <a href="//www.urn1350.net" ><img class="fullwidth" src="img/work/urn.png"></a>
+    <section class="section-work section-work-big">
+      <h2>HackSoc: Swag, Women In Tech and HackNotts</h2>
+      <p>
+        <ul class="bullet-list">
+          <li>Created all event and society branding, designing <a href="//imgur.com/a/b5Jxu">logos, leaflets</a> and event ‘swag’.</li>
+          <li>Redesigned the <a href="//hacksocnotts.co.uk">society website</a> (<a href="//github.com/HackSocNotts/HackSocNotts.github.io">source code</a>)using GitHub pages with <a href="//jekyllrb.com/">Jekyll</a>.</li>
+          <li>Developed website landing pages for each event including our <a href="//harrymt.com/wit">Women In Tech</a> yearly conference (<a href="//github.com/HackSocNotts/wit">source code</a>) and <a href="//www.hacknotts.com">HackNotts</a>, our Nottingham Hackathon (<a href="//github.com/HackSocNotts/hacknotts.com">source code</a>).</li>
+        </ul>
+      </p>
+
+      <img class="fullwidth" src="img/work/hacknotts.png">
+
+      <div class="button-container">
+        <a href="//www.hacknotts.com" class="button button-clear button-huge">view site</a>
+      </div>
       <hr>
-      <h3>HackNotts</h3>
-      <a href="//www.hacknotts.com"><img class="fullwidth" src="img/work/hacknotts.png"></a>
+    </section>
+
+    <section class="section-work section-work-big">
+      <h2>This website</h2>
+      <p>
+        <ul class="bullet-list">
+          <li>My personal website was created by hand.</li>
+          <li>The CSS is preprocessed using <a href="//sass-lang.com/">SASS</a>, CSS with super powers.</li>
+          <li><a href="//bourbon.io/">Bourbon</a> a SCSS library is used to target all the latest browsers and the icons are from <a href="//fortawesome.github.io/Font-Awesome">FontAwesome.</a></li>
+          <li>Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.</li>
+        </ul>
+      </p>
+      <div class="button-container">
+        <a href="//www.github.com/harrymt/harrymt.github.io" class="button button-clear button-huge">view code</a>
+      </div>
       <hr>
-      <h3>Women In Technology</h3>
-      <a href="//www.harrymt.com/wit" ><img class="fullwidth" src="img/work/wit-website.png"></a>
+    </section>
+
+    <section class="section-work section-work-big">
+      <h2>Productivity Mapping</h2>
+      <p>
+        <ul class="bullet-list">
+          <li>For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.</li>
+          <li>App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.</li>
+          <li>I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.</li>
+        </ul>
+      </p>
+      <div class="button-container">
+        <a href="//github.com/harrymt/ProductivityMapping" class="button button-clear button-huge">view code</a>
+      </div>
       <hr>
-      <h3>Women In Technology Logo</h3>
-      <a href="//imgur.com/a/b5Jxu#HfUEw1Y" ><img class="fullwidth" src="img/work/wit-logo.png"></a>
-      <hr>
-      <h3>HackSoc</h3>
-      <a href="//hacksocnotts.co.uk/" ><img class="fullwidth" src="img/work/hacksocnotts.png"></a>
-      <hr>
-      <h3>HackNotts Logo</h3>
-      <a href="//imgur.com/a/b5Jxu" ><img class="fullwidth" src="img/work/hacknotts-logo.png"></a>
-      <hr>
-      <h3>harrymt.com</h3>
-      <a href="//www.github.com/harrymt/harrymt.github.io"><img class="fullwidth" src="img/work/personal.png"></a>
-      <hr>
-      <h3>Is Mark Wet?</h3>
-      <a href="//www.harrymt.com/mark"><img class="fullwidth" src="img/work/markWet.png"></a>
-      <hr>
-      <h3>Productivity Mapping</h3>
-      <a href="//github.com/harrymt/ProductivityMapping"><img class="fullwidth" src="img/work/routingplus.png"></a>
     </section>
 
   </main>
 
   <footer>
-    <hr>
     <p>See this site progress through the years.</p>
     <div class="button-container">
       <a href="//harrymt.com/Site2016" class="button button-big button-clear">2016</a>
