@@ -1,11 +1,15 @@
 module.exports = function (grunt) {
   'use strict';
 
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json')
-  });
+  // Show running time of tasks
+  require('time-grunt')(grunt);
+
+  // Load grunt tasks just in time for speed
+  require('jit-grunt')(grunt);
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     htmlmin: {
       dist: {
         options: {
@@ -86,12 +90,12 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
-  grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
-  grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
-  grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
-  grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
-  grunt.loadNpmTasks('grunt-processhtml'); // Inline JS & CSS
+  // grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
+  // grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
+  // grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
+  // grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
+  // grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
+  // grunt.loadNpmTasks('grunt-processhtml'); // Inline JS & CSS
   grunt.loadNpmTasks('grunt-serve'); // Local server
 
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin']);
