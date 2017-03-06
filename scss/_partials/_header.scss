@@ -1,0 +1,36 @@
+
+//
+// Header
+//
+
+header {
+  padding-bottom: 50px;
+
+  nav {
+    ul {
+      background: $color-background-alt;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      width: 100%;
+
+      li a {
+        color: $color-text;
+        display: block;
+        padding: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        text-decoration: none;
+
+        &:hover {
+          background: darken($color-background-alt, 2%);
+          color: $color-text;
+        }
+
+        &.selected {
+          background: darken($color-background, 5%);
+        }
+      }
+    }
+  }
+}

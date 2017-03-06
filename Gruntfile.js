@@ -27,7 +27,6 @@ module.exports = function (grunt) {
       dist: {
         options: {
           style: 'compressed',
-
           loadPath: require('node-bourbon').includePaths
 
         },
@@ -70,8 +69,8 @@ module.exports = function (grunt) {
 
     watch: {
       css: {
-        files: ['scss/*.scss'],
-        tasks: ['default'],
+        files: ['scss/*.scss', 'scss/*/*.scss'],
+        tasks: ['sass'],
         options: {
           spawn: false
         }
@@ -90,12 +89,6 @@ module.exports = function (grunt) {
 
   });
 
-  // grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
-  // grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
-  // grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
-  // grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
-  // grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
-  // grunt.loadNpmTasks('grunt-processhtml'); // Inline JS & CSS
   grunt.loadNpmTasks('grunt-serve'); // Local server
 
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin']);
