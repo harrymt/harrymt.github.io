@@ -85,11 +85,21 @@ module.exports = function (grunt) {
         files: ['js/dev/*.js'],
         tasks: ['default']
       }
-    }
+    },
 
+    imagemin: {
+      files: [
+        {
+          expand: true,  // Enable dynamic expansion.
+          cwd: 'img/work/',      // Src matches are relative to this path.
+          src: ['*.png'], // Actual pattern(s) to match.
+          dest: 'img/work/',   // Destination path prefix.
+          ext: '.png'   // Dest filepaths will have this extension.
+        }
+      ]
+    }
   });
 
   grunt.loadNpmTasks('grunt-serve'); // Local server
-
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin', 'imagemin']);
 };
