@@ -1,6 +1,12 @@
 # harrymt.com
 Code for my personal site www.harrymt.com.
 
+### Setup & Build
+
+- Install [GruntJS](https://github.com/gruntjs/grunt)
+- Simply type `grunt` to build the site
+- Then type `grunt serve` and view the site at [http://localhost:9000](http://localhost:9000)
+
 
 Uses
 
