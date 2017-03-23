@@ -1,10 +1,12 @@
-
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
   <meta charset="UTF-8">
 
-  <title>About &#45; harrymt</title>
+  <title>harrymt</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -24,38 +26,24 @@
 
 </head>
 <body>
-
   <header>
     <nav>
       <ul>
-       <li><a href="/">Home</a></li>
-       <li><a href="about.html" class="selected">About</a></li>
+        {% assign ps = site.pages | reverse%}
+        {% for node in ps %}
+          {% if page.url == node.url %}
+            <li><a href="{{node.url}}" class="selected">{{node.title}}</a></li>
+          {% else %}
+            <li><a href="{{node.url}}">{{node.title}}</a></li>
+          {% endif %}
+        {% endfor %}
+
        <li><a href="//harrymt.com/blog">Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="section-top">
-
-  </section>
-
-  <main>
-    <h1>About</h1>
-
-    <section class="section-main">
-      <h2>Harry Mumford-Turner</h2>
-      <p>I am studying an MSc in Advanced Computer Science, Creative Technology, I previously went to the University of Nottingham, where I helped run HackSoc, the Computer Science <a href="//hacksocnotts.co.uk/" target="_blank">Hacking society</a></p>
-
-      <p>I love to <a href="//www.harrymt.com/blog/2016/05/18/sleep-tracking.html">track my sleep</a> and design websites for student <a href="//urn1350.net" target="_blank">radio station</a>. For my BSc dissertation I created an <a href="//github.com/harrymt/ProductivityMapping/" target="_blank">Android app</a> to reduce the distractions smartphone notifications present. I like to to look at other peoples CVs, so it is only fair you get to see mine. Here is mine that lists all the other things I have done, such as consulting for a Nottingham charity, working with Enactus and Quality Assurance testing for Barclaycard.</p>
-
-      <p>Check me out on <a href="//github.com/harrymt">GitHub</a> and <a href="//stackoverflow.com/users/2235593/harry-mumford-turner">StackOverflow</a>, where I build projects and help people.</p>
-
-      <div class="button-container">
-        <a href="//bit.ly/cv-harrymt" class="button button-clear button-huge">download</a>
-      </div>
-    </section>
-
-  </main>
+  {{ content }}
 
   <footer>
     <p>See this site progress through the years.</p>
@@ -70,7 +58,6 @@
       <p>Find me on <a href="//stackoverflow.com/users/2235593/harry-mumford-turner">StackOverflow</span></a>
     </div>
   </footer>
-
 
   <!-- build:js inline -->
   <script src="/js/main.min.js"></script>

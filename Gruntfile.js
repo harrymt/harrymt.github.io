@@ -10,18 +10,18 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    htmlmin: {
-      dist: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: {
-          'index.html': 'index.html',
-          'about.html': 'about.html'
-        }
-      }
-    },
+    // htmlmin: {
+    //   dist: {
+    //     options: {
+    //       removeComments: true,
+    //       collapseWhitespace: true
+    //     },
+    //     files: {
+    //       'index.html': 'index.html',
+    //       'about.html': 'about.html'
+    //     }
+    //   }
+    // },
 
     sass: {
       dist: {
@@ -58,14 +58,14 @@ module.exports = function (grunt) {
       }
     },
 
-    processhtml: {
-      dist: {
-        files: {
-          'index.html': ['dev-index.html'],
-          'about.html': ['dev-about.html']
-        }
-      }
-    },
+    // processhtml: {
+    //   dist: {
+    //     files: {
+    //       'index.html': ['dev-index.html'],
+    //       'about.html': ['dev-about.html']
+    //     }
+    //   }
+    // },
 
     watch: {
       css: {
@@ -76,10 +76,10 @@ module.exports = function (grunt) {
         }
       },
 
-      html: {
-        files: ['dev-index.html', 'dev-about.html'],
-        tasks: ['default']
-      },
+      // html: {
+      //   files: ['dev-index.html', 'dev-about.html'],
+      //   tasks: ['default']
+      // },
 
       javascript: {
         files: ['js/dev/*.js'],
@@ -101,5 +101,5 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-serve'); // Local server
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml', 'htmlmin', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
 };
