@@ -1,0 +1,27 @@
+
+<h1>Projects</h1>
+
+{% for p in site.data.projects %}
+ <section class="section-work section-work-big">
+
+    <h2>{{ p.title }}</h2>
+    <p>
+      <ul class="bullet-list">
+        {% for pel in p.list %}
+          <li>{{ pel }}</li>
+        {% endfor %}
+      </ul>
+    </p>
+
+    {% if p.photo %}
+      <a href="{{ p.url }}">
+        <img class="fullwidth" src="img/work/{{ p.photo }}">
+      </a>
+    {% endif %}
+
+    <div class="button-container">
+      <a href="{{ p.url }}" class="button button-clear button-huge">view site</a>
+    </div>
+
+  </section>
+{% endfor %}

@@ -2,50 +2,6 @@
 layout: base
 title: Home
 url: /
-
-projects:
-  - title: Instapute, Cloud Instagram Collages
-    photo: instapute.png
-    url: //github.com/harrymt/instapute_public
-    list:
-      - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
-      - Written in Python, using the <a href="http://flask.pocoo.org">Flask</a> micro framework with <a href="https://webapp2.readthedocs.io/en/latest/">WebApp2</a> for easy routing
-      - Hosted on the Google App Engine, using several GAE APIS. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
-      - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
-  - title: University Radio Nottingham
-    photo: urn.png
-    url: //www.urn1350.net
-    list:
-      - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
-      - Migrated existing website from Drupal to <a href="//wordpress.org/">Wordpress</a>, creating plugins to integrate podcasts and the radio show schedule.
-      - Optimised the website by reducing the average load time by 10 seconds.
-      - Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.
-      - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
-
-  - title: Hack Notts
-    photo: hacknotts.png
-    url: //www.hacknotts.com
-    list:
-      - Swag, Women In Tech and HackNotts
-      - Created all event and society branding, designing <a href="//imgur.com/a/b5Jxu">logos, leaflets</a> and event ‘swag’.
-      - Redesigned the <a href="//hacksocnotts.co.uk">society website</a> (<a href="//github.com/HackSocNotts/HackSocNotts.github.io">source code</a>) using GitHub pages with <a href="//jekyllrb.com/">Jekyll</a>.
-      - Developed website landing pages for each event including our <a href="//harrymt.com/wit">Women In Tech</a> yearly conference (<a href="//github.com/HackSocNotts/wit">source code</a>) and <a href="//www.hacknotts.com">HackNotts</a>, our Nottingham Hackathon (<a href="//github.com/HackSocNotts/hacknotts.com">source code</a>).
-      - Used <a href="//gruntjs.com">GruntJS</a> (a task runner to handle minifying, and compiling <a href="//sass-lang.com">Sass</a>).
-  - title: This website
-    photo:
-    url: //www.github.com/harrymt/harrymt.github.io
-    list:
-      - My personal website was created by hand.
-      - The CSS is preprocessed using <a href="//sass-lang.com/">SASS</a>, CSS with super powers.
-      - <a href="//bourbon.io/">Bourbon</a> a SCSS library is used to target all the latest browsers and the icons are from <a href="//fortawesome.github.io/Font-Awesome">FontAwesome.</a>
-      - Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.
-  - title: Productivity Mapping
-    photo:
-    url: //github.com/harrymt/ProductivityMapping
-    list:
-      - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
-      - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
-      - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
 ---
 
   <section class="section-main">
@@ -60,29 +16,6 @@ projects:
 
 <main>
 
-  <h1>Projects</h1>
-
-  {% for p in page.projects %}
-   <section class="section-work section-work-big">
-
-      <h2>{{ p.title }}</h2>
-      <p>
-        <ul class="bullet-list">
-          {% for pel in p.list %}
-            <li>{{ pel }}</li>
-          {% endfor %}
-        </ul>
-      </p>
-
-      {% if p.photo %}
-        <img class="fullwidth" src="img/work/{{ p.photo }}">
-      {% endif %}
-
-      <div class="button-container">
-        <a href="{{ p.url }}" class="button button-clear button-huge">view site</a>
-      </div>
-
-    </section>
-  {% endfor %}
+{% include projects.html %}
 
 </main>
