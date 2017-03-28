@@ -9,20 +9,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
-    // htmlmin: {
-    //   dist: {
-    //     options: {
-    //       removeComments: true,
-    //       collapseWhitespace: true
-    //     },
-    //     files: {
-    //       'index.html': 'index.html',
-    //       'about.html': 'about.html'
-    //     }
-    //   }
-    // },
-
+    
     sass: {
       dist: {
         options: {
@@ -58,15 +45,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // processhtml: {
-    //   dist: {
-    //     files: {
-    //       'index.html': ['dev-index.html'],
-    //       'about.html': ['dev-about.html']
-    //     }
-    //   }
-    // },
-
     watch: {
       css: {
         files: ['scss/*.scss', 'scss/*/*.scss'],
@@ -75,12 +53,7 @@ module.exports = function (grunt) {
           spawn: false
         }
       },
-
-      // html: {
-      //   files: ['dev-index.html', 'dev-about.html'],
-      //   tasks: ['default']
-      // },
-
+      
       javascript: {
         files: ['js/dev/*.js'],
         tasks: ['default']
