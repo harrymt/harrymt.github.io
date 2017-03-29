@@ -2,13 +2,21 @@
 # List of projects I have created.
 #
 
+# - title:
+#   photo:
+#   url:
+#   list:
+#     -
+#     -
+
+
 - title: Instapute, Cloud Instagram Collages
   photo: instapute.png
   url: //github.com/harrymt/instapute_public
   list:
     - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
     - Written in Python, using the <a href="http://flask.pocoo.org">Flask</a> micro framework with <a href="https://webapp2.readthedocs.io/en/latest/">WebApp2</a> for easy routing
-    - Hosted on the Google App Engine, using several GAE APIS. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
+    - Hosted on the Google App Engine, using several GAE APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
     - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
 
 - title: University Radio Nottingham
@@ -25,11 +33,61 @@
   photo: hacknotts.png
   url: //www.hacknotts.com
   list:
-    - Swag, Women In Tech and HackNotts
-    - Created all event and society branding, designing <a href="//imgur.com/a/b5Jxu">logos, leaflets</a> and event ‘swag’.
+    - Designed <a href="//imgur.com/a/b5Jxu">swag</a> for the Nottingham hackathon HackNotts.
     - Redesigned the <a href="//hacksocnotts.co.uk">society website</a> (<a href="//github.com/HackSocNotts/HackSocNotts.github.io">source code</a>) using GitHub pages with <a href="//jekyllrb.com/">Jekyll</a>.
     - Developed website landing pages for each event including our <a href="//harrymt.com/wit">Women In Tech</a> yearly conference (<a href="//github.com/HackSocNotts/wit">source code</a>) and <a href="//www.hacknotts.com">HackNotts</a>, our Nottingham Hackathon (<a href="//github.com/HackSocNotts/hacknotts.com">source code</a>).
     - Used <a href="//gruntjs.com">GruntJS</a> (a task runner to handle minifying, and compiling <a href="//sass-lang.com">Sass</a>).
+
+
+- title: Project Marking Problem
+  photo:
+  url: //github.com/harrymt/project_marking_problem
+  list:
+    - A solution for the Project Marking Problem, when multiple students want multiple markers to demonstrate their project.
+    - Solves a Producer Consumer problem in C, using <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread</a>.
+    - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on Github</a>.
+
+- title: Blog
+  photo:
+  url: http://www.harrymt.com/blog
+  list:
+    - Tips and tricks I have found or collected from Computer Science and life.
+    - Uses <a href="http://jekyllrb.com/">Jekyll</a> with <a href="http://liquidmarkup.org/">Liquid Markup</a>.
+    - The code is open source, <a href="//github.com/harrymt/blog">available on Github</a>.
+
+- title: Grunt Boilerplate
+  photo:
+  url: https://github.com/harrymt/grunt-boilerplate
+  list:
+    - Initial setup for a simple front-end side project.
+    - Uses lots of different <a href="//gruntjs.com/">Grunt</a> plugins to simply starting a GitHub pages grunt project.
+    - Source code available on <a href="https://github.com/harrymt/grunt-boilerplate">GitHub</a>.
+
+- title: Dartboard Detector
+  photo: dartboard.png
+  url: https://github.com/harrymt/dartboard_detector
+  list:
+    - A modified Viola-Jones object detector to match dartboards, rather than faces.
+    - Created using C++ with <a href="http://opencv.org/">OpenCV</a>.
+    - Program was first trained of a series of negative images. After training the program can detect dartboards in images.
+    - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
+
+- title: Productivity Mapping
+  photo: personal.png
+  url: //github.com/harrymt/ProductivityMapping
+  list:
+    - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
+    - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
+    - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
+
+- title: Routing+
+  photo: routingplus.png
+  url: //github.com/harrymt/RoutingPlus
+  list:
+    - Built for my BSc 2nd year group project.
+    - Routing+ will intelligently take you down the best route possible avoiding right turns and traffic lights. One less thing for you to remember.
+    - Written in Java, compiled with <a href="https://maven.apache.org/">Maven</a>.
+    - Source code available on <a href="https://github.com/harrymt/RoutingPlus/tree/master/graphhopper-master">GitHub</a>.
 
 - title: This website
   photo:
@@ -40,10 +98,11 @@
     - <a href="//bourbon.io/">Bourbon</a> a SCSS library is used to target all the latest browsers and the icons are from <a href="//fortawesome.github.io/Font-Awesome">FontAwesome.</a>
     - Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.
 
-- title: Productivity Mapping
-  photo:
-  url: //github.com/harrymt/ProductivityMapping
+- title: Women In Tech
+  photo: wit-website.png
+  url: //2016.inspirewit.com
   list:
-    - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
-    - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
-    - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
+    - A University of Nottingham HackSoc conference to inspire women in technology.
+    - Built using php, html and less.
+    - Used the CSS pre-processor <a href="http://lesscss.org/">less</a> to extend our CSS adding mixins.
+    - Built <a href="//2015.inspirewit.com"></a> and <a href="//2016.inspirewit.com">2016</a>
