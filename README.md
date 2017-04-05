@@ -1,13 +1,16 @@
 # Personal website
 Code for my personal site www.harrymt.com.
 
-### Setup & Build
+### Setup & Run
 
 - Install [NodeJS](https://nodejs.org)
 - Then type in `npm install` to install [GruntJS](https://github.com/gruntjs/grunt) and all dependancies
 - Simply type `grunt` to build the site
 - Then type `grunt serve` and view the site at [http://localhost:9000](http://localhost:9000)
 
+### Build
+
+- Type `grunt build` to build the site
 
 ### Uses
 
