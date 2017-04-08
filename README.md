@@ -19,10 +19,11 @@ Code for my personal site www.harrymt.com.
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 - [GruntJS](http://gruntjs.com/)
 
-## Gruntfile.js
+## Grunt Tasks
 
 The following Grunt tasks are used they can be found [here](Gruntfile.js).
 
+**gruntfile.js**
 ```javascript
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
