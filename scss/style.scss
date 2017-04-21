@@ -18,6 +18,13 @@
 }
 
 .section-main {
+  p {
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    width: 400px;
+  }
+
   p:first-child::first-letter {
     float: left;
     font-family: Georgia;
@@ -26,7 +33,6 @@
     padding-right: 8px;
   }
 }
-
 
 main {
   align-content: flex-end;
