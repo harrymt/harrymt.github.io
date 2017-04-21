@@ -4,26 +4,46 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
-  <meta charset="UTF-8">
-
-  <title>harrymt</title>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
 
   <!-- Description -->
-  <meta name="description" content="Harry Mumford-Turner personal portfolio of work.">
-  <meta name="keywords" content="Harry,Mumford,Turner,Mumford-Turner,Harrymt,portfolio,cv,website">
-  <meta name="author" content="Harry Mumford-Turner">
+  <meta name="description" content="{{ site.data.about.description | description }}">
+  <meta name="keywords" content="{{ site.data.about.keywords }}">
+  <meta name="author" content="{{ site.data.about.name }}">
+
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" itemprop="url" />
+
+  <!-- Open Graph -->
+  <meta name="og:site_name" itemprop="author" content="{{ site.data.about.name }}"/>
+  <meta name="og:type" content="article" />
+  <meta name="og:locale" content="en_GB" />
+
+  <!-- Twitter -->
+  <meta name="twitter:creator" content="@mumf_"/>
+  <meta name="twitter:site" content="@mumf_"/>
+  <meta name="twitter:title" property="og:title" content="{{ page.title }}"/>
+  <meta name="twitter:description" property="og:description" content="{{ page | description }}"/>
+  <meta name="twitter:url" property="og:url" content="{{ site.url }}{{ page.url }}"/>
 
   <!-- Mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" href="/favicon.ico"/>
+
+  <!-- TODO: AMP page, see more here https://www.ampproject.org/docs/get_started/create/basic_markup -->
+  <!-- <link rel="amphtml" href="{{ site.url }}{{ page.url | replace_first:'.html','.amp.html' }}" /> -->
+
+  <!-- Google site verification -->
+  <meta name="google-site-verification" content="_wrwldEmF5fWxa5lFyHB3kKEl0a1tG83cOddrhiTNdc" />
+
+  <title>harrymt</title>
 
   <!-- build:css inline -->
   <link rel="stylesheet" href="/css/style.css">
   <!-- /build -->
-
 </head>
 <body>
   <header>
