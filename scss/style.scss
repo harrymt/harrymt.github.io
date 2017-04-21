@@ -44,8 +44,8 @@ main {
 
   section {
     background-color: $color-background-alt;
-    border-radius: 6px;
-    box-shadow: 0 3px 6px darken($color-background-alt, 5%);
+    border-radius: 0;
+    box-shadow: 0 2px 20px 5px darken($color-background-alt, 8%);
     flex-grow: 1;
     margin: 50px;
     max-width: 350px;
