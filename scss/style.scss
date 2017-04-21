@@ -17,21 +17,19 @@
   width: auto;
 }
 
-.section-main {
-  p {
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-    width: 400px;
-  }
+.box {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  width: 400px;
+}
 
-  p:first-child::first-letter {
-    float: left;
-    font-family: Georgia;
-    font-size: 57px;
-    line-height: 54px;
-    padding-right: 8px;
-  }
+p:first-child::first-letter {
+  float: left;
+  font-family: Georgia;
+  font-size: 57px;
+  line-height: 54px;
+  padding-right: 8px;
 }
 
 main {
