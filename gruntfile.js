@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
+
     sass: {
       dist: {
         options: {
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
           spawn: false
         }
       },
-      
+
       javascript: {
         files: ['js/dev/*.js'],
         tasks: ['default']
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
       files: [
         {
           expand: true,  // Enable dynamic expansion.
-          cwd: 'img/work/',      // Src matches are relative to this path.
+          cwd: 'img/work/', // Src matches are relative to this path.
           src: ['*.png'], // Actual pattern(s) to match.
           dest: 'img/work/',   // Destination path prefix.
           ext: '.png'   // Dest filepaths will have this extension.
@@ -73,6 +73,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-serve'); // Local server
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
 };
