@@ -24,14 +24,6 @@
   width: 400px;
 }
 
-p:first-child::first-letter {
-  float: left;
-  font-family: Georgia;
-  font-size: 57px;
-  line-height: 54px;
-  padding-right: 8px;
-}
-
 main {
   align-content: flex-end;
   align-items: baseline;
