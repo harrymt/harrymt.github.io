@@ -5,3 +5,5 @@ css/.sass-cache
 npm-debug.log
 .DS_Store
 _site
+
+Gemfile\.lock

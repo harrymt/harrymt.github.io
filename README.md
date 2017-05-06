@@ -10,6 +10,7 @@ Code for my personal site www.harrymt.com.
 
 ### Build
 
+- `bundle install` to install ruby gems
 - Type `grunt watch` to watch for changes
 - Then `jekyll s` to view locally
 
