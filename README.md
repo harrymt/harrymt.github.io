@@ -6,6 +6,8 @@ Code for my personal site www.harrymt.com.
 - Install [NodeJS](https://nodejs.org)
 - Then type in `npm install` to install [GruntJS](https://github.com/gruntjs/grunt) and all dependencies
 - Simply type `grunt` to build the site
+  - Run `node_modules/grunt-cli/bin/grunt` to run grunt, or
+  - Install grunt globally, with `sudo npm install -g grunt-cli`
 - Then type `jekyll serve` and view the site at [http://localhost:4000](http://localhost:4000)
 
 ### Build
