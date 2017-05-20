@@ -11,7 +11,7 @@
 
 
 - title: Instapute, Cloud Instagram Collages
-  photo: instapute.webp
+  photo: instapute.png
   url: //github.com/harrymt/instapute_public
   list:
     - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
@@ -20,7 +20,7 @@
     - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
 
 - title: University Radio Nottingham
-  photo: urn.webp
+  photo: urn.png
   url: //www.urn1350.net
   list:
     - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
@@ -30,7 +30,7 @@
     - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
 
 - title: Hack Notts
-  photo: hacknotts.webp
+  photo: hacknotts.png
   url: //www.hacknotts.com
   list:
     - Designed <a href="//imgur.com/a/b5Jxu">swag</a> for the Nottingham hackathon HackNotts.
@@ -64,7 +64,7 @@
     - Source code available on <a href="https://github.com/harrymt/grunt-boilerplate">GitHub</a>.
 
 - title: Dartboard Detector
-  photo: dartboard.webp
+  photo: dartboard.png
   url: https://github.com/harrymt/dartboard_detector
   list:
     - A modified Viola-Jones object detector to match dartboards, rather than faces.
@@ -73,7 +73,7 @@
     - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
 
 - title: Productivity Mapping
-  photo: personal.webp
+  photo: personal.png
   url: //github.com/harrymt/ProductivityMapping
   list:
     - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
@@ -81,7 +81,7 @@
     - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
 
 - title: Routing+
-  photo: routingplus.webp
+  photo: routingplus.png
   url: //github.com/harrymt/RoutingPlus
   list:
     - Built for my BSc 2nd year group project.
@@ -99,7 +99,7 @@
     - Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.
 
 - title: Women In Tech
-  photo: wit-website.webp
+  photo: wit-website.png
   url: //2016.inspirewit.com
   list:
     - A University of Nottingham HackSoc conference to inspire women in technology.
