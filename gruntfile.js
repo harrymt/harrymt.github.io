@@ -10,6 +10,14 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    processhtml: {
+      dist: {
+        files: {
+          '_layouts/base.html': ['_layouts/dev-base.html']
+        }
+      }
+    },
+
     sass: {
       dist: {
         options: {
@@ -53,7 +61,6 @@ module.exports = function (grunt) {
           spawn: false
         }
       },
-
       javascript: {
         files: ['js/dev/*.js'],
         tasks: ['default']
@@ -62,5 +69,5 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+  grunt.registerTask('default', ['concat', 'processhtml', 'uglify', 'sass']);
 };
