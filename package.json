@@ -2,7 +2,7 @@
   "name": "harrymt.com",
   "version": "3.0.0",
   "description": "Harry Mumford-Turner personal site",
-  "main": "Gruntfile.js",
+  "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
