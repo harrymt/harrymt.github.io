@@ -22,6 +22,7 @@ Code for my personal site www.harrymt.com.
 - [SASS](http://sass-lang.com/)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 - [GruntJS](http://gruntjs.com/)
+- [HTTPS enabled, via CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)
 
 ## Grunt Tasks
 
