@@ -55,7 +55,7 @@ The following Grunt tasks are used they can be found [here](Gruntfile.js).
 - /100 [Mobile Speed](https://varvy.com/mobile/)
 - /100 [CryptCheck](https://tls.imirhil.fr/https/harrymt.com)
 - /100 [Mozilla Observatory](https://observatory.mozilla.org/analyze.html?host=harrymt.com)
-- /100 [Security Headers](https://securityheaders.io/?q=https%3A%2F%2Fwebtechnologies.herokuapp.com%2F&followRedirects=on)
+- /100 [Security Headers](https://securityheaders.io/?q=https%3A%2F%2Fharrymt.com&followRedirects=on)
 
 ## Validators
 - [Nu HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fharrymt.com)
