@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/dev/jquery.min.js', 'js/dev/hotjar-tracking.js', 'js/dev/google-analytics.js', 'js/dev/main.js'],
+        src: ['js/dev/jquery.min.js', 'js/dev/google-analytics.js', 'js/dev/main.js'],
         dest: 'js/main.min.js'
       }
     },
@@ -58,20 +58,9 @@ module.exports = function (grunt) {
         files: ['js/dev/*.js'],
         tasks: ['default']
       }
-    },
-
-    imagemin: {
-      files: [
-        {
-          expand: true,  // Enable dynamic expansion.
-          cwd: 'img/work/', // Src matches are relative to this path.
-          src: ['*.png'], // Actual pattern(s) to match.
-          dest: 'img/work/',   // Destination path prefix.
-          ext: '.png'   // Dest filepaths will have this extension.
-        }
-      ]
     }
+
   });
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 };
