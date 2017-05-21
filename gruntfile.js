@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/dev/jquery.min.js', 'js/dev/google-analytics.js', 'js/dev/main.js'],
+        src: ['js/dev/google-analytics.js', 'js/dev/main.js'],
         dest: 'js/main.min.js'
       }
     },
