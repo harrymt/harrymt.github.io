@@ -1,8 +1,4 @@
-//
-// main.js
-//
 
-// Register a service worker, for offline viewing and caching
 (function() {
 
   if('serviceWorker' in navigator) {
