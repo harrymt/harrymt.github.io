@@ -108,7 +108,7 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,strong,i,ol,ul,li,table,tbody,tfoot
 
   ga('create', 'UA-46475519-1', 'auto');
   ga('send', 'pageview');
-;
+
 (function() {
 
   if('serviceWorker' in navigator) {
@@ -117,7 +117,6 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,strong,i,ol,ul,li,table,tbody,tfoot
       .then(function(registration) {
             console.log('Service Worker Registered');
     }).catch(function(error) {
-      // registration failed
       console.log('Registration failed with ' + error);
     });
     navigator.serviceWorker.ready.then(function(registration) {

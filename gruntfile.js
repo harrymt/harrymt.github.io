@@ -34,7 +34,7 @@ module.exports = function (grunt) {
 
     concat: {
       options: {
-        separator: ';'
+        separator: ''
       },
       dist: {
         src: ['js/dev/google-analytics.js', 'js/dev/main.js'],
