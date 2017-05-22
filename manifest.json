@@ -22,6 +22,12 @@
         "src": "img/harrymt_256.png",
         "type": "image/png",
         "sizes": "256x256"
+
+      },
+      {
+        "src": "img/harrymt_256.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
     ],
   "start_url": "/?homescreen=1",
