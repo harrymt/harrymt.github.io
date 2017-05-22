@@ -1,5 +1,5 @@
 
-let version = '0.01';
+let version = '0.02';
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
@@ -8,6 +8,7 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `/index.html?timestamp=${timeStamp}`,
+        `/about.html?timestamp=${timeStamp}`,
         `/css/style.css?timestamp=${timeStamp}`,
         `/js/main.min.js?timestamp=${timeStamp}`
       ])
