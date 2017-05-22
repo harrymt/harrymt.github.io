@@ -42,24 +42,17 @@ The following Grunt tasks are used they can be found [here](Gruntfile.js).
 
 ## Score
 
-- na per load [Content served - Browser Calories](https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco)
-- /100 [Mobile SEO](https://varvy.com/)
-- /100 [Yellow Lab Tools](http://yellowlab.tools/result/eq1dqstpdd)
-- /100 desktop, 74/100 mobile [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fharrymt.com%2F)
-- /100 [Lets Validate](https://pro.letsvalidate.com/harrymt.com)
-- /100 [Web Bloat score](http://www.webbloatscore.com?url=https://harrymt.com/)
-- /100 [Coach Panel](https://chrome.google.com/webstore/detail/coach-panel/olecfjmnejnkjipoicfpneceppjeaemo)
-- /100 [PageLocity](http://pagelocity.com/analyzer?url=https%3A%2F%2Fharrymt.com)
-- /100 [Progressive Web App LightHouse](https://developers.google.com/web/tools/lighthouse/)
-- /100 [SSL Security Check](https://www.ssllabs.com/ssltest/analyze.html?d=harrymt.com)
-- /100 [Mobile Speed](https://varvy.com/mobile/)
-- /100 [Mozilla Observatory](https://observatory.mozilla.org/analyze.html?host=harrymt.com)
-- /100 [Security Headers](https://securityheaders.io/?q=https%3A%2F%2Fharrymt.com&followRedirects=on)
+- 99/100 [Mobile Friendly](https://varvy.com/mobile/)
+- 99/100 [Yellow Lab Tools](http://yellowlab.tools/result/eq1dqstpdd)
+- 97/100 [Coach Panel](https://chrome.google.com/webstore/detail/coach-panel/olecfjmnejnkjipoicfpneceppjeaemo)
+- 92/100 [PageLocity](http://pagelocity.com/analyzer?url=https%3A%2F%2Fharrymt.com)
+- 91/100 [Progressive Web App LightHouse](https://developers.google.com/web/tools/lighthouse/)
+- 90/100 [Desktop - Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fharrymt.com%2F)
+- 84/100 [Mobile - Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fharrymt.com%2F)
+- 65/100 [Lets Validate](https://pro.letsvalidate.com/harrymt.com)
 
 ## Validators
-- [Nu HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fharrymt.com)
+- [HTML Validator, Nu W3](https://validator.w3.org/nu/?doc=https%3A%2F%2Fharrymt.com)
 - [GZip Enabled](https://checkgzipcompression.com/?url=https%3A%2F%2Fharrymt.com)
-- [Rich Preview](https://richpreview.com/?url=https://harrymt.com)
-- [SEO Rich Preview](https://richpreview.com/?url=https://harrymt.com/)
-- [Page Speed Optimization](https://varvy.com/pagespeed/)
+- [SEO Test](https://richpreview.com/?url=https://harrymt.com/)
 
