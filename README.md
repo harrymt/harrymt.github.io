@@ -26,7 +26,7 @@ Code for my personal site www.harrymt.com.
 
 ## Grunt Tasks
 
-The following Grunt tasks are used they can be found [here](Gruntfile.js).
+The following [Grunt tasks](gruntfile.js) are used:
 
 **gruntfile.js**
 ```javascript
