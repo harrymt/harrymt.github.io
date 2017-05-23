@@ -1,2 +1,14 @@
 gems:
   - jekyll-sitemap
+
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - manifest.json
+  - js
+  - scss
+  - gruntfile.js
