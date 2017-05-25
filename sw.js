@@ -7,6 +7,7 @@ self.addEventListener('install', e => {
     caches.open('harrymt').then(cache => {
       return cache.addAll([
         `/`,
+        `/blog?timestamp=${timeStamp}`,
         `/index.html?timestamp=${timeStamp}`,
         `/about.html?timestamp=${timeStamp}`,
         `/css/style.css?timestamp=${timeStamp}`,
