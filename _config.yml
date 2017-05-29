@@ -1,6 +1,7 @@
 gems:
   - jekyll-sitemap
 
+# Note, we are only excluding css and js because they are inlined
 exclude:
   - README.md
   - LICENSE
@@ -8,7 +9,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
-  - manifest.json
+  - css
   - js
   - scss
   - gruntfile.js
