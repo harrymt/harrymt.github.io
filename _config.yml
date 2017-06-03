@@ -3,6 +3,7 @@ gems:
 
 # Note, we are only excluding css and js because they are inlined
 exclude:
+  - node_modules
   - README.md
   - LICENSE
   - CNAME
