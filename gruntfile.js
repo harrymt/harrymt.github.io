@@ -56,18 +56,18 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: ['scss/*.scss', 'scss/*/*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass', 'processhtml'],
         options: {
           spawn: false
         }
       },
       javascript: {
         files: ['js/dev/*.js'],
-        tasks: ['default']
+        tasks: ['concat', 'uglify']
       }
     }
 
   });
 
-  grunt.registerTask('default', ['concat', 'processhtml', 'uglify', 'sass']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml']);
 };
