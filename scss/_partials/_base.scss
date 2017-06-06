@@ -1,4 +1,8 @@
 
+//
+// Base
+//
+
 html,
 body,
 div,
@@ -97,8 +101,10 @@ main {
     margin: 50px;
     max-width: 350px;
     padding: 70px;
+    padding-bottom: 0px;
     text-align: center;
     width: 300px;
+    min-height: 650px;
 
     p {
       padding-bottom: 10px;
@@ -131,6 +137,6 @@ main {
 
 .fullwidth {
   clear: both;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
