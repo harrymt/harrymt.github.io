@@ -25,6 +25,8 @@ var offlineFundamentals = [
   '/img/harrymt_144.png',
   '/img/harrymt_128.png',
 
+  '/img/work/code.png',
+  '/img/work/blog.png',
   '/img/work/dartboard.png',
   '/img/work/hacknotts-logo.png',
   '/img/work/hacknotts.png',
@@ -32,8 +34,10 @@ var offlineFundamentals = [
   '/img/work/instapute.png',
   '/img/work/markWet.png',
   '/img/work/personal.png',
+  '/img/work/raster-ray.png',
   '/img/work/routingplus.png',
   '/img/work/urn.png',
+  '/img/work/web-playground.png',
   '/img/work/wit-logo.png',
   '/img/work/wit-website.png'
 ];
