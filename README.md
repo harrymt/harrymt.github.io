@@ -28,6 +28,8 @@ Code for my personal site www.harrymt.com.
 
 The following [Grunt tasks](gruntfile.js) are used:
 
+Note: these arent defined exaxtly in the grunfile because they are lazy loaded for speed.  
+
 **gruntfile.js**
 ```javascript
 
