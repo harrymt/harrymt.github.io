@@ -9,6 +9,14 @@
 #     -
 #     -
 
+- title: Harry's Habits
+  photo: harrys-habits.png
+  url: //harrymt.com/harryshabits
+  list:
+    - A <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot to develop new healthy habits for my MSc Advanced Computer Science Thesis.
+    - Written in NodeJS, hosted on <a href='//heroku.com'>Heroku</a> using PostgreSQL.
+    - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> testing on over 200 people.
+
 - title: Rasterizer & Ray Tracer
   photo: raster-ray.png
   url: //github.com/harrymt/ray_tracer
