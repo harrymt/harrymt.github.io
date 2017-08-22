@@ -15,7 +15,7 @@
   list:
     - A <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot to develop new healthy habits for my MSc Advanced Computer Science Thesis.
     - Written in NodeJS, hosted on <a href='//heroku.com'>Heroku</a> using PostgreSQL.
-    - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> testing on over 200 people.
+    - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> with 58 participants.
 
 - title: Rasterizer & Ray Tracer
   photo: raster-ray.png
