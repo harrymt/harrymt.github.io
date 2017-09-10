@@ -67,7 +67,7 @@ layout: compress
   <header>
     <nav>
       <ul>
-        {% assign ps = site.html_pages | reverse %}
+        {% assign ps = site.html_pages | sort: 'index' %}
         {% for node in ps %}
           {% if page.url == node.url %}
             <li><a href="{{node.url}}" class="selected">{{node.title}}</a></li>
