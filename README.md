@@ -1,4 +1,4 @@
-# Personal website
+## Personal website
 Code for my personal site www.harrymt.com.
 
 ### Set-up & Run
