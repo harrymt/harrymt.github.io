@@ -5,17 +5,35 @@ url: /
 index: 1
 ---
 
-  <section class="section-main">
-    <img class="profile" alt="Profile Picture" src="/img/harrymt_256.png" />
-    <h1>Harry Mumford-Turner</h1>
+<section class="landing-section section-main">
+  <img class="profile" alt="Profile Picture" src="/img/harrymt_256.png" />
+  <h1>Harry Mumford-Turner</h1>
 
-    <div class="heading-large-list">
-      <h2>Software Engineer.</h2>
-      <h2>University of Bristol Student.</h2>
-    </div>
+  <div class="spinner-box" id='js-spinner-box'>
+    <p>I am <span id='js-spinner-statement'>a Software Engineer</span>.</p>
+  </div>
 
-    <p class="box">{{ site.data.about.description }}</p>
-  </section>
+  <p class="box">{{ site.data.about.description }}</p>
+</section>
+
+<script>
+  (function() {
+    var statements = [
+      {% for phrase in site.data.about.phrases %}
+       '{{ phrase }}'{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    var spinner = document.getElementById('js-spinner-box');
+    var text = document.getElementById('js-spinner-statement');
+    spinner.addEventListener('click', function () {
+      if (statements.length !== 0) {
+        text.innerText = statements.pop();
+      } else {
+        spinner.classList.add('spinner-disabled');
+      }
+    });
+  })();
+</script>
 
 <main>
 

@@ -8,13 +8,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .landing-section {
+    padding-bottom: 0;
+  }
+
   main section {
     border-radius: 0;
     height: 100%;
     margin: 0;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 100%;
     padding: 30px;
+  }
+
+  .fullwidth {
+    margin-top: 0;
   }
 
   footer {
@@ -27,6 +36,10 @@
 
   .section-main h1 {
     font-size: 1.5em;
+  }
+
+  .section-work .bullet-list {
+    display: none;
   }
 
   // Set appropriate tap target sizes (48px)

@@ -54,21 +54,6 @@ hr {
   font-size: 50px;
 }
 
-.heading-large-list {
-  h1 { // stats
-    color: $color-secondary;
-    padding-bottom: 10px;
-  }
-
-  h2 {
-    color: $color-secondary;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.3em;
-    padding-top: 6px;
-  }
-}
-
 .icon-link {
   color: lighten($color-text-secondary, 20%);
 

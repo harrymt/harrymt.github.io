@@ -23,15 +23,14 @@ module.exports = function (grunt) {
     // run tasks in parallel
     concurrent: {
         serve: [
-            'sass',
-            'watch',
-            'shell:jekyllServe'
+          'default',
+          'shell:jekyllServe',
+          'watch'
         ],
         options: {
             logConcurrentOutput: true
         }
     },
-
 
     processhtml: {
       dist: {

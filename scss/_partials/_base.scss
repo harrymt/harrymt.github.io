@@ -66,15 +66,13 @@ img {
 // Main
 //
 
-.profile {
-  margin: auto;
-  width: auto;
-}
-
 .box {
+  background-color: white;
+  border-radius: 10px;
   margin: auto;
+  margin-top: 20px;
   max-width: 400px;
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
   width: 80%;
 }
@@ -124,6 +122,9 @@ main {
   }
 }
 
+.section-main {
+  padding-top: 50px;
+}
 
 .star-link {
   font-size: 23px;
