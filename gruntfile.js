@@ -10,6 +10,29 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    // shell commands for use in Grunt tasks
+    shell: {
+        jekyllBuild: {
+            command: 'jekyll build'
+        },
+        jekyllServe: {
+            command: 'jekyll serve'
+        }
+    },
+
+    // run tasks in parallel
+    concurrent: {
+        serve: [
+            'sass',
+            'watch',
+            'shell:jekyllServe'
+        ],
+        options: {
+            logConcurrentOutput: true
+        }
+    },
+
+
     processhtml: {
       dist: {
         files: {
@@ -69,5 +92,10 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml']);
+  // Register the grunt serve task
+  grunt.registerTask('serve', [
+    'concurrent:serve'
+  ]);
+
+  grunt.registerTask('default', ['shell:jekyllBuild', 'concat', 'uglify', 'sass', 'processhtml']);
 };

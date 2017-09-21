@@ -72,11 +72,11 @@ img {
 }
 
 .box {
-  text-align: center;
   margin: auto;
-  padding-top: 20px;
-  width: 80%;
   max-width: 400px;
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
 }
 
 main {
@@ -100,11 +100,11 @@ main {
     flex-grow: 1;
     margin: 50px;
     max-width: 350px;
+    min-height: 650px;
     padding: 70px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     text-align: center;
     width: 300px;
-    min-height: 650px;
 
     p {
       padding-bottom: 10px;
