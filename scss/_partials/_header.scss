@@ -8,6 +8,7 @@ header {
     ul {
       background: $color-background-alt;
       display: flex;
+      flex-wrap: wrap;
       justify-content: flex-start;
       margin: 0;
       width: 100%;

@@ -26,6 +26,13 @@ h2 {
   font-size: 1.8em;
 }
 
+.huge-heading {
+  font-size: 1400%;
+  text-align: left;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
 li,
 p {
   color: $color-text;
