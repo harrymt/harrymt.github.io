@@ -3,6 +3,7 @@
 #
 
 # - title:
+#   category:
 #   photo: (leave blank if optional)
 #   url:
 #   list:
@@ -10,6 +11,7 @@
 #     -
 
 - title: Harry's Habits
+  category: projects
   photo: harrys-habits.png
   url: //harrymt.com/harryshabits
   list:
@@ -18,6 +20,7 @@
     - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> with 58 participants.
 
 - title: Rasterizer & Ray Tracer
+  category: projects
   photo: raster-ray.png
   url: //github.com/harrymt/ray_tracer
   list:
@@ -26,6 +29,7 @@
     - The Ray Tracer performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination and more!
 
 - title: Web Playground
+  category: websites
   photo: web-playground.png
   url: //github.com/harrymt/web_playground
   list:
@@ -36,6 +40,7 @@
 
 
 - title: Instapute, Cloud Instagram Collages
+  category: websites
   photo: instapute.png
   url: //github.com/harrymt/instapute_public
   list:
@@ -45,6 +50,7 @@
     - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
 
 - title: KVS Server
+  category: projects
   photo: code.png
   url: //github.com/harrymt/kvs_server
   list:
@@ -53,6 +59,7 @@
 
 
 - title: University Radio Nottingham
+  category: websites
   photo: urn.png
   url: //www.urn1350.net
   list:
@@ -63,6 +70,7 @@
     - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
 
 - title: Hack Notts
+  category: websites
   photo: hacknotts.png
   url: //www.hacknotts.com
   list:
@@ -73,6 +81,7 @@
 
 
 - title: Project Marking Problem
+  category: projects
   photo: code.png
   url: //github.com/harrymt/project_marking_problem
   list:
@@ -81,6 +90,7 @@
     - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on Github</a>.
 
 - title: Blog
+  category: websites
   photo: blog.png
   url: http://www.harrymt.com/blog
   list:
@@ -89,6 +99,7 @@
     - The code is open source, <a href="//github.com/harrymt/blog">available on Github</a>.
 
 - title: Grunt Boilerplate
+  category: websites
   photo: code.png
   url: https://github.com/harrymt/grunt-boilerplate
   list:
@@ -97,6 +108,7 @@
     - Source code available on <a href="https://github.com/harrymt/grunt-boilerplate">GitHub</a>.
 
 - title: Dartboard Detector
+  category: projects
   photo: dartboard.png
   url: https://github.com/harrymt/dartboard_detector
   list:
@@ -106,6 +118,7 @@
     - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
 
 - title: Productivity Mapping
+  category: projects
   photo: code.png
   url: //github.com/harrymt/ProductivityMapping
   list:
@@ -114,6 +127,7 @@
     - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
 
 - title: Routing+
+  category: projects
   photo: routingplus.png
   url: //github.com/harrymt/RoutingPlus
   list:
@@ -123,6 +137,7 @@
     - Source code available on <a href="https://github.com/harrymt/RoutingPlus/tree/master/graphhopper-master">GitHub</a>.
 
 - title: This website
+  category: websites
   photo: personal.png
   url: //www.github.com/harrymt/harrymt.github.io
   list:
@@ -132,6 +147,7 @@
     - Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.
 
 - title: Women In Tech
+  category: websites
   photo: wit-website.png
   url: //2016.inspirewit.com
   list:

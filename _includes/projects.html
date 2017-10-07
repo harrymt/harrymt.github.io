@@ -1,7 +1,12 @@
 
-<h2 class='huge-heading'>Projects</h2>
 
-{% for p in site.data.projects %}
+{% assign work = site.data.projects | sort: 'category' %}
+{% assign first_category = work | first %}
+
+
+<h2 class='huge-heading'>{{ first_category.category }}</h2>
+
+{% for p in work %}
  <section class="section-work section-work-big">
 
     <h2>{{ p.title }}</h2>
