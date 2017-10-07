@@ -14,12 +14,11 @@
 }
 
 .spinner-disabled {
-   background-color: #c7ea8a !important;
-   color: #000 !important;
+   background-color: #f1f1f1 !important;
 }
 
 .spinner-box {
-    background-color: #c7ea8a;
+    background-color: #f5f5f5;
     color: #000;
     font-weight: bold;
     margin-top: 10px;
@@ -34,12 +33,12 @@
       top: 3px;
       left: 5px;
       position: relative;
-      fill: #5f713e;
+      fill: #b5b5b5;
     }
 }
 
 .spinner-box:hover {
-    background-color: #adce75;
+    background-color: #eee;
     color: #aaa;
     cursor: pointer;
 }
