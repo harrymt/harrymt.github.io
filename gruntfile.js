@@ -95,5 +95,5 @@ module.exports = function (grunt) {
     'concurrent:serve'
   ]);
 
-  grunt.registerTask('default', ['shell:jekyllBuild', 'concat', 'uglify', 'sass', 'processhtml']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'processhtml']);
 };
