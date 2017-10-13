@@ -13,17 +13,16 @@ module.exports = function (grunt) {
     // shell commands for use in Grunt tasks
     shell: {
         jekyllBuild: {
-            command: 'jekyll build'
+            command: 'bundle exec jekyll build'
         },
         jekyllServe: {
-            command: 'jekyll serve'
+            command: 'bundle exec jekyll serve'
         }
     },
 
     // run tasks in parallel
     concurrent: {
         serve: [
-          'default',
           'shell:jekyllServe',
           'watch'
         ],

@@ -5,43 +5,22 @@ url: /
 index: 1
 ---
 
-<section class="landing-section section-main">
-  <img class="profile" alt="Profile Picture" src="/img/harrymt_256.png" />
-  <h1>Harry Mumford-Turner</h1>
+<div class="cover-image">
+  <div class="cover-gradient"></div>
+  <section class="landing-section section-main">
+    <div class="box">
+      <img class="profile" alt="Profile Picture" src="/img/harrymt_256.png" />
+      <h1>Harry Mumford-Turner</h1>
+      <p>Software Developer.</p>
+      <div class="button-container">
+       <a href="/about.html" class="button button-clear button-tiny">CV</a>
+       <a href="//github.com/harrymt" class="button button-clear button-tiny">GitHub</a>
+      </div>
+    </div>
+  </section>
+</div>
 
-  <div class="spinner-box" id='js-spinner-box'>
-    <p>I am <span id='js-spinner-statement'>a Software Engineer</span>.
-      <svg width="18" height="18" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1639 1056q0 5-1 7-64 268-268 434.5t-478 166.5q-146 0-282.5-55t-243.5-157l-129 129q-19 19-45 19t-45-19-19-45v-448q0-26 19-45t45-19h448q26 0 45 19t19 45-19 45l-137 137q71 66 161 102t187 36q134 0 250-65t186-179q11-17 53-117 8-23 30-23h192q13 0 22.5 9.5t9.5 22.5zm25-800v448q0 26-19 45t-45 19h-448q-26 0-45-19t-19-45 19-45l138-138q-148-137-349-137-134 0-250 65t-186 179q-11 17-53 117-8 23-30 23h-199q-13 0-22.5-9.5t-9.5-22.5v-7q65-268 270-434.5t480-166.5q146 0 284 55.5t245 156.5l130-129q19-19 45-19t45 19 19 45z"/></svg>
-  </p>
-  </div>
-
-  <p class='box'>{{ site.data.about.description }}</p>
-  <div class="button-container">
-    <a href="//github.com/harrymt/harryshabits" class="button button-clear button-tiny">MSc</a>
-    <a href="//github.com/harrymt/productivitymapping" class="button button-clear button-tiny">BSc</a>
-  </div>
-</section>
-
-<script>
-  (function() {
-    var statements = [
-      {% for phrase in site.data.about.phrases %}
-       '{{ phrase }}'{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ];
-    var spinner = document.getElementById('js-spinner-box');
-    var text = document.getElementById('js-spinner-statement');
-    spinner.addEventListener('click', function () {
-      if (statements.length !== 0) {
-        text.innerText = statements.pop();
-      } else {
-        spinner.classList.add('spinner-disabled');
-      }
-    });
-  })();
-</script>
-
-<main>
+<main class="projects">
 
 {% include projects.html %}
 

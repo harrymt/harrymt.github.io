@@ -5,15 +5,12 @@ Code for my personal site www.harrymt.com.
 
 - Install [NodeJS](https://nodejs.org)
 - Then type in `npm install` to install [GruntJS](https://github.com/gruntjs/grunt) and all dependencies
-- Type `grunt` to build the site
-  - Run `node node_modules/grunt-cli/bin/grunt` to run grunt, or
-  - Install grunt globally, with `sudo npm install -g grunt-cli`
-- Then type `grunt serve` and view the site at [http://localhost:4000](http://localhost:4000)
+- Then type `bundler exec jekyll build` and view the site at [http://localhost:4000](http://localhost:4000)
 
 ### Build
 
 - `npm install && bundle install` to install node packages and ruby gems
-- Type `grunt serve` to watch for changes
+- Type `bundler exec jekyll serve` to watch for changes
 
 ### Uses
 

@@ -1,14 +1,18 @@
 
 
-{% assign work = site.data.projects | sort: 'category' %}
-{% assign first_category = work | first %}
+<h2>PROJECTS</h2>
 
-
-<h2 class='huge-heading'>{{ first_category.category }}</h2>
-
-{% for p in work %}
+{% for p in site.data.projects %}
  <section class="section-work section-work-big">
 
+  <div class="photo-left">
+   {% if p.photo %}
+      <a href="{{ p.url }}">
+        <img alt="{{ p.title }}" class="fullwidth" src="img/work/{{ p.photo }}">
+      </a>
+    {% endif %}
+  </div>
+  <div class="content-right">
     <h2>{{ p.title }}</h2>
     <ul class="bullet-list">
       {% for pel in p.list %}
@@ -16,15 +20,14 @@
       {% endfor %}
     </ul>
 
-    {% if p.photo %}
-      <a href="{{ p.url }}">
-        <img alt="{{ p.title }}" class="fullwidth" src="img/work/{{ p.photo }}">
-      </a>
-    {% endif %}
-
     <div class="button-container">
-      <a href="{{ p.url }}" class="button button-clear button-huge">view site</a>
+      {% for tag in p.tags %}
+        <a href="{{ tag.url }}" class="button button-clear button-tiny">{{ tag.name }}</a>
+      {% endfor %}
+      <a href="{{ p.url }}" class="button button-clear button-tiny">Code</a>
     </div>
+  </div>
+
 
   </section>
 {% endfor %}

@@ -1,0 +1,26 @@
+
+.projects {
+  section {
+    max-width: 100%;
+    width: 100%;
+
+    img {
+
+    }
+
+    .photo-left {
+      float: left;
+      max-width: 500px;
+      max-height: 300px;
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 30px;
+      width: 45%;
+    }
+
+    .content-right {
+      float: right;
+      width: 50%;
+    }
+  }
+}
