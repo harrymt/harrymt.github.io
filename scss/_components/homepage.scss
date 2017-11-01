@@ -1,4 +1,7 @@
 
+.heatmap-container {
+  padding: 20px;
+}
 
 .cover-image {
   background-image: url("img/background.jpg");
@@ -7,6 +10,12 @@
   position: relative;
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .cover-image {
+    height: 85%;
+  }
 }
 
 .cover-gradient {

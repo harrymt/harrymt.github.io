@@ -11,6 +11,7 @@ Code for my personal site www.harrymt.com.
 
 - `npm install && bundle install` to install node packages and ruby gems
 - Type `bundler exec jekyll serve` to watch for changes
+- Type `grunt watch`
 
 ### Uses
 
