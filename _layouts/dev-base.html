@@ -64,7 +64,6 @@ layout: compress
   <!-- build:css inline -->
   <link rel="stylesheet" href="../css/style.css">
   <!-- /build -->
-
 </head>
 <body>
   <header>
@@ -85,6 +84,11 @@ layout: compress
   </header>
 
   {{ content }}
+
+
+  <section class="message-box">
+    {% include message-form.html %}
+  </section>
 
   <footer>
     <p>See this site progress through the years.</p>
