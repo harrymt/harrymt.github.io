@@ -1,8 +1,7 @@
+# Site settings
 
 gems:
   - jekyll-sitemap
-
-# Note, we are only excluding css and js because they are inlined
 exclude:
   - node_modules
   - README.md
@@ -11,7 +10,64 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
-  - css
-  - js
-  - scss
-  - gruntfile.js
+# What projects to show
+# front-end, back-end, product, all
+job: "full-stack"
+
+last_updated: "13/11/2017"
+
+# Current location
+location: "Bristol"
+company: "GWS Media"
+company_url: "//www.gwsmedia.com"
+
+resume_job:
+  - job: "front-end"
+    title: "Front-End Developer"
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 100+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
+    skills: ""
+  - job: "full-stack"
+    title: "Full-Stack Developer"
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 100+ international client websites using Drupal 7, Magento 2 and Wordpress."
+    skills: "SCSS, LESS, Bootstrap, AngularJS, ReactJS, jQuery, VB.NET, ASP.NET, C++, C, Java, Python, PHP, Wordpress, Drupal 7, Magento 2, MySQL, Travis, Heroku, GAE, AWS"
+  - job: "all"
+    title: "Software Developer"
+    intro: "Experienced Software Engineer with a demonstrated history of working in the higher education industry. Skilled in VB.NET, PHP, WordPress, Web Design, and Java. Strong research professional with a Master’s Degree focused in Advanced Computer Science, Creative Technology from University of Bristol."
+    skills: ""
+
+
+title: "Harry Mumford-Turner"
+description: "Harry Mumford-Turner CV."
+
+resume_avatar:                  "true"
+resume_name:                    "Harry Mumford-Turner"
+resume_contact_email:           "harrymt@me.com"
+
+
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+
+# Printed links to display:
+resume_print_links:
+  - name: GitHub
+    url: "github.com/harrymt"
+  - name: Website
+    url: "harrymt.com"
+
+# Non-Print version icons
+resume_social_links:
+  resume_github_url:  "https://github.com/harrymt"
+  resume_website_url: "https://harrymt.com"
+  resume_linkedin_url: "https://www.linkedin.com/in/harry-mumford-turner-227a1481"
+resume_print_social_links:      true
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,24 @@
+# Jobs
+
+- title: GWS Media
+  secondary: Web Developer
+  year: May, 2017 &mdash; Present
+  summary:
+    Developed Wordpress, Magento 2, Drupal 6, 7 and 8 custom plugins, themes and designs for 50+ international clients. _LESS, JavaScript, PHP._;
+    Lead developer for international client website redesign. Won top two largest maintenance contracts for the company. _Jira, Waterfall._;
+    Synchronised data with warehouse system producing £1m yearly sales. _Magento 2, Shell script._;
+    # Robotics development for a Pepper robot. Designing user interactions, visual screens and preparing demonstrations. Python.;
+
+- title: 121 Systems
+  secondary: .NET Developer
+  year: 2014 &mdash; 2015 (11 months)
+  summary:
+    Redesigned custom CMS resulting in faster updating and better usability for marketing department. _ASP.NET, SASS, HTML._;
+    Built interface between courier service and 100+ client hand-held devices, deployed nationally, processing 2k daily requests. _VB.NET_;
+
+# - title: Barclaycard
+#   secondary: QA Test Analyst
+#   year: 2014 (1 month)
+#   summary:
+#     Quality Assurance testing intern for the Barclaycard Anywhere Service.;
+#     Met go-live milestone performing functional testing with minimal supervision.;

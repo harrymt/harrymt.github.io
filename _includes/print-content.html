@@ -1,0 +1,36 @@
+
+{% assign content = include.content %}
+<section class="content-section">
+  <header class="section-header">
+    <h2>{{ include.name }}</h2>
+  </header>
+{% for c in content %}
+{% assign categories = c.type | split: "," %}
+{% if c.type and site.job != "all" %}
+  {% unless categories contains site.job %}
+    {{ site.data.job }}
+    {% continue %}
+  {% endunless %}
+{% endif %}
+
+<div class="resume-item" itemscope {% if include.prop %}itemprop="{{ include.prop }}"{% endif %} itemtype="http://schema.org/{{ include.schema }}">
+  <div class="col-1-4">
+    <h3 class="resume-item-title" itemprop="name">
+      {% if c.url %}<a href="{{ c.url }}" itemprop="url">{% endif %}
+          {{ c.title }}
+      {% if c.url %}</a>{% endif %}
+    </h3>
+    <h4 class="resume-item-details" itemprop="description">
+      {{ c.secondary }}
+    </h4>
+    <h5>{{ c.year }}</h5>
+  </div>
+
+  {% include print-bullets.html summary = c.summary url = c.url %}
+</div>
+
+
+{% endfor %}
+
+
+</section>

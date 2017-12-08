@@ -1,0 +1,13 @@
+
+{% assign point = include.summary | split: ';' %}
+<ul class="summary-bullets col-3-4">
+  {% for p in point %}<li class="resume-item-copy">{{p | markdownify}}</li>{% endfor %}
+
+  {% if include.url %}
+  <li class="resume-item-copy print-only">
+      <a href="{{ include.url }}">
+        {{ include.url }}
+      </a>
+  </li>
+  {% endif %}
+</ul>

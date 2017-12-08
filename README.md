@@ -1,17 +1,20 @@
 ## Personal website
 Code for my personal site www.harrymt.com.
 
-### Set-up & Run
 
-- Install [NodeJS](https://nodejs.org)
-- Then type in `npm install` to install [GruntJS](https://github.com/gruntjs/grunt) and all dependencies
-- Then type `bundler exec jekyll build` and view the site at [http://localhost:4000](http://localhost:4000)
+[![img](images/screenshot.png)](https://harrymt.com)
 
-### Build
+### Run
 
-- `npm install && bundle install` to install node packages and ruby gems
-- Type `bundler exec jekyll serve` to watch for changes
-- Type `grunt watch`
+1. Clone repo
+2. `bundle install` (`gem install bundler` if not installed)
+3. `bundle exec jekyll serve` (view `localhost:4000`)
+
+### Development
+
+- Configure [`/_config.yml`](_config.yml):
+- Edit [`/index.html`](index.html)
+
 
 ### Uses
 

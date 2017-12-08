@@ -1,0 +1,18 @@
+
+{% for job in site.resume_job %}
+  {% if job.job == site.job %}
+    {% assign skills = job.skills | split: ',' %}
+    {% continue %}
+  {% endif %}
+{% endfor %}
+
+<section class="content-section">
+  <header class="section-header">
+    <h2>Skills</h2>
+  </header>
+{% for skill in skills %}
+  <ul class="skills-bullets col-1-5">
+    <li class="resume-item-copy">{{ skill }}</li>
+  </ul>
+{% endfor %}
+</section>

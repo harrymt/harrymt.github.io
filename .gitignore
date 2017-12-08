@@ -1,9 +1,5 @@
-node_modules/
-css/.sass-cache
-*.codekit
-*.scssc
-npm-debug.log
-.DS_Store
 _site
-
-Gemfile\.lock
+.sass-cache
+.DS_Store
+_vendor
+.git-metadata

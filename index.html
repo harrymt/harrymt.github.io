@@ -1,35 +1,33 @@
 ---
-layout: base
-title: Home
-url: /
-index: 1
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="cover-image">
-  <div class="cover-gradient"></div>
-  <section class="landing-section section-main">
-    <div class="box">
-      <img class="profile" alt="Profile Picture" src="/img/harrymt_256.png" />
-      <h1>Harry Mumford-Turner</h1>
-      <p>Software Developer</p>
+  {% include head.html %}
 
-      <div class="button-container">
-       <a href="//www.harrymt.com/cv" class="button button-clear button-tiny">CV</a>
-       <a href="//github.com/harrymt" class="button button-clear button-tiny">GitHub</a>
+  <body class="theme-default">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+
+      {% include header.html %}
+
+      {% include print-content.html content = site.data.experience name = "Experience" schema = "Organization" prop = "worksFor" %}
+
+      {% include print-content.html content = site.data.education name = "Education" schema = "CollegeOrUniversity" prop = "alumniOf" %}
+
+      {% include print-skills.html %}
+
+      {% include print-content.html content = site.data.projects name = "Projects" schema = "CreativeWork" %}
+
+      <div class="download-button">
+        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download PDF</a>
       </div>
-      <h3><a href="//github.com/harrymt">Open Source</a> Contributions</h3>
-      <div class="heatmap-container">
-        <a href="//github.com/harrymt">
-          <img src="//ghchart.rshah.org/harrymt" alt="harrymt's Github chart" />
-        </a>
-      </div>
 
+      <footer class="page-footer no-print">
+        <p class="footer-line">Made by <a onclick="gtag('event', 'github_footer_link_click', {'value': 1});" href="//www.github.com/harrymt">harrymt</a>.</p>
+
+        <p>Last Updated on {{ site.last_updated }}</p>
+      </footer>
     </div>
-  </section>
-</div>
 
-<main class="projects">
-
-{% include projects.html %}
-
-</main>
+  </body>
+</html>
