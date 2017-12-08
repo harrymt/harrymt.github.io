@@ -1,15 +1,6 @@
 # Site settings
 
-gems:
-  - jekyll-sitemap
-exclude:
-  - node_modules
-  - README.md
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - package.json
+
 # What projects to show
 # front-end, back-end, product, all
 job: "full-stack"
@@ -24,11 +15,11 @@ company_url: "//www.gwsmedia.com"
 resume_job:
   - job: "front-end"
     title: "Front-End Developer"
-    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 100+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 30+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
     skills: ""
   - job: "full-stack"
     title: "Full-Stack Developer"
-    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 100+ international client websites using Drupal 7, Magento 2 and Wordpress."
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 30+ international client websites using Drupal 7, Magento 2 and Wordpress."
     skills: "SCSS, LESS, Bootstrap, AngularJS, ReactJS, jQuery, VB.NET, ASP.NET, C++, C, Java, Python, PHP, Wordpress, Drupal 7, Magento 2, MySQL, Travis, Heroku, GAE, AWS"
   - job: "all"
     title: "Software Developer"
@@ -71,3 +62,15 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - node_modules
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - package.json
