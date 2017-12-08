@@ -38,7 +38,7 @@
 - title: Instagram Colleges
   secondary: Solo Project
   year: 2017
-  type: ""
+  type: "full-stack"
   url: "https://github.com/harrymt/instapute_public"
   summary:
     - Built WebApp to create instagram collages in the cloud. _Google App Engine, Python, Flask._
