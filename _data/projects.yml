@@ -1,168 +1,197 @@
-#
-# List of projects I have created.
-#
+# Projects
 
-# - title:
-#   tags:
-#     - url:
-#       name:
-#     - url:
-#       name:
-#   photo: (leave blank if optional)
-#   url:
-#   list:
-#     -
-#     -
-
-- title: Harry's Habits
-  tags:
-    - url: //github.com/harrymt/harryshabits-thesis
-      name: Thesis
-  photo: harrys-habits.png
-  url: //harrymt.com/harryshabits
-  list:
+- title: Harrys Habits
+  secondary: Solo Project
+  year: 2017
+  url: "https://harrymt.com/harryshabits"
+  type: "front-end,full-stack"
+  summary:
+    Developed Facebook Messenger Chatbot to help people form new healthy habits. _Node.JS, PUG._;
+    Managed full product lifecycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._;
+  detailed:
     - A <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot to develop new healthy habits for my MSc Advanced Computer Science Thesis.
     - Written in NodeJS, hosted on <a href='//heroku.com'>Heroku</a> using PostgreSQL.
     - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> with 58 participants.
-
-- title: Rasterizer & Ray Tracer
-  photo: raster-ray.png
-  url: //github.com/harrymt/ray_tracer
-  list:
-    -  <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> and <a href='//github.com/harrymt/ray_tracer'>Ray Tracer</a> in C++ with GLM and SDL.
-    - Rasterizer performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU and more!
-    - The Ray Tracer performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination and more!
-
-- title: Web Playground
+  photo: harrys-habits.png
   tags:
-    - url: //github.com/harrymt/web_playground
-      name: Website
-  photo: web-playground.png
-  url: //github.com/harrymt/web_playground
-  list:
-    - A playground demonstrating variety of website development best practices and standards
-    - Written in NodeJS, using <a href="//gruntjs.com/">GruntJS</a> to build and perform many additional tasks, such as deploying to a <a href='//heroku.com'>heroku</a> server.
-    - Uses <a href='http://sass-lang.com/'>SASS</a> and <a href='https://pugjs.org'>PUG</a> for templating.
-    - Integrated an SQLite database and server-side rendering from markdown to HTML and PDF.
+    - url: //github.com/harrymt/harryshabits-thesis
+      name: Thesis
 
+- title: StressLess
+  secondary: Team of 5
+  year: 2017
+  type: "product"
+  url: "https://vimeo.com/204250456"
+  summary:
+    Developed physical product from scratch (smart stress ball), submitted to CHI conference. _Python._;
+    Integrating with IFTTT for reactive actions using Arduino controlling flex resistors to measure squeeze pressure.;
 
-- title: Instapute, Cloud Instagram Collages
+- title: Instagram Colleges
+  secondary: Solo Project
+  year: 2017
+  type: "front-end,back-end,full-stack"
+  url: "https://github.com/harrymt/instapute_public"
+  summary:
+    Built WebApp to create instagram collages in the cloud. _Google App Engine, Python, Flask._;
+    Application separated into 3 microservices for scalability.;
   tags:
     - url: /publications/photo-manipulation-in-the-cloud.pdf
       name: Paper
-    - url: //github.com/harrymt/instapute_public
-      name: Website
   photo: instapute.png
-  url: //github.com/harrymt/instapute_public
-  list:
+  detailed:
     - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
     - Written in Python, using the <a href="http://flask.pocoo.org">Flask</a> micro framework with <a href="https://webapp2.readthedocs.io/en/latest/">WebApp2</a> for easy routing
     - Hosted on the Google App Engine, using several GAE APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
     - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
 
-- title: KVS Server
+- title: Productivity Mapping
+  secondary: Solo Project
+  year: 2016
+  type: "front-end,back-end,full-stack"
+  url: "https://github.com/harrymt/ProductivityMapping"
+  summary:
+    Reduced smartphone distractions by building an Android app to limit notifications, increasing user productivity. _Android, Java._;
+    Combined Google APIs with custom analysis API to show improvements. _PHP, MongoDB._;
+  tags:
+    - url: /publications/developing-a-location-based-service-to-reduce-smartphone-notification-distractions.pdf
+      name: Thesis
   photo: code.png
-  url: //github.com/harrymt/kvs_server
-  list:
-    - A C implementation of a Key-Value-Store server, full breif available <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>here</a>.
-    - Used Makefiles to compile program and to write my own C test harness.
+  detailed:
+    - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
+    - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
+    - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
 
 
-- title: University Radio Nottingham
-  tags:
-    - url: //www.urn1350.net
-      name: Website
-  photo: urn.png
-  url: //www.urn1350.net
-  list:
-    - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
-    - Migrated existing website from Drupal to <a href="//wordpress.org/">Wordpress</a>, creating plugins to integrate podcasts and the radio show schedule.
-    - Optimised the website by reducing the average load time by 10 seconds.
-    - Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.
-    - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
-
-- title: Hack Notts
-  tags:
-    - url: //www.hacknotts.com
-      name: Website
+- title: HackNotts
+  secondary: Solo Project
+  year: 2016
+  type: ""
+  url: "https://github.com/HackSocNotts/hacknotts.com"
+  summary:
+    Developed static websites for tech society yearly hackathon, HackNotts. _Jekyll, SCSS, GitHub Pages._;
   photo: hacknotts.png
-  url: //www.hacknotts.com
-  list:
+  detailed:
     - Designed <a href="//imgur.com/a/b5Jxu">swag</a> for the Nottingham hackathon HackNotts.
     - Redesigned the <a href="//hacksocnotts.co.uk">society website</a> (<a href="//github.com/HackSocNotts/HackSocNotts.github.io">source code</a>) using GitHub pages with <a href="//jekyllrb.com/">Jekyll</a>.
     - Developed website landing pages for each event including our <a href="//harrymt.com/wit">Women In Tech</a> yearly conference (<a href="//github.com/HackSocNotts/wit">source code</a>) and <a href="//www.hacknotts.com">HackNotts</a>, our Nottingham Hackathon (<a href="//github.com/HackSocNotts/hacknotts.com">source code</a>).
     - Used <a href="//gruntjs.com">GruntJS</a> (a task runner to handle minifying, and compiling <a href="//sass-lang.com">Sass</a>).
 
 
+- title: Women In Tech
+  secondary: Solo Project
+  year: 2016
+  type: ""
+  url: "https://www.inspirewit.com"
+  summary:
+    Designed and developed brand from scratch for Woemn In Technology conference. _PHP, SCSS, Jekyll_;
+  photo: wit-website.png
+  detailed:
+    - A University of Nottingham HackSoc conference to inspire women in technology.
+    - Built using php, html and less.
+    - Used the CSS pre-processor <a href="http://lesscss.org/">less</a> to extend our CSS adding mixins.
+    - Built <a href="//2015.inspirewit.com">2015</a> and <a href="//2016.inspirewit.com">2016</a>
+
+
+- title: Rasterizer & Ray Tracer
+  second: Team of 2
+  year: 2017
+  type: ""
+  photo: raster-ray.png
+  url: //github.com/harrymt/ray_tracer
+  detailed:
+    -  <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> and <a href='//github.com/harrymt/ray_tracer'>Ray Tracer</a> in C++ with GLM and SDL.
+    - Rasterizer performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU and more!
+    - The Ray Tracer performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination and more!
+
+- title: Web Playground
+  year: 2016
+  tags:
+    - url: //github.com/harrymt/web_playground
+      name: Website
+  photo: web-playground.png
+  url: //github.com/harrymt/web_playground
+  detailed:
+    - A playground demonstrating variety of website development best practices and standards
+    - Written in NodeJS, using <a href="//gruntjs.com/">GruntJS</a> to build and perform many additional tasks, such as deploying to a <a href='//heroku.com'>heroku</a> server.
+    - Uses <a href='http://sass-lang.com/'>SASS</a> and <a href='https://pugjs.org'>PUG</a> for templating.
+    - Integrated an SQLite database and server-side rendering from markdown to HTML and PDF.
+
+- title: KVS Server
+  year: 2016
+  photo: code.png
+  url: //github.com/harrymt/kvs_server
+  detailed:
+    - A C implementation of a Key-Value-Store server, full breif available <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>here</a>.
+    - Used Makefiles to compile program and to write my own C test harness.
+
+
 - title: Project Marking Problem
+  year: 2016
   photo: code.png
   url: //github.com/harrymt/project_marking_problem
-  list:
+  detailed:
     - A solution for the Project Marking Problem, when multiple students want multiple markers to demonstrate their project.
     - Solves a Producer Consumer problem in C, using <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread</a>.
     - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on Github</a>.
 
+- title: Dartboard Detector
+  year: 2016
+  photo: dartboard.png
+  url: https://github.com/harrymt/dartboard_detector
+  detailed:
+    - A modified Viola-Jones object detector to match dartboards, rather than faces.
+    - Created using C++ with <a href="http://opencv.org/">OpenCV</a>.
+    - Program was first trained of a series of negative images. After training the program can detect dartboards in images.
+    - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
+
 - title: Blog
+  year: 2015
   category: websites
   tags:
     - url: http://www.harrymt.com/blog
       name: Website
   photo: blog.png
   url: http://www.harrymt.com/blog
-  list:
+  detailed:
     - Tips and tricks I have found or collected from Computer Science and life.
     - Uses <a href="http://jekyllrb.com/">Jekyll</a> with <a href="http://liquidmarkup.org/">Liquid Markup</a>.
     - The code is open source, <a href="//github.com/harrymt/blog">available on Github</a>.
 
-- title: Dartboard Detector
-  photo: dartboard.png
-  url: https://github.com/harrymt/dartboard_detector
-  list:
-    - A modified Viola-Jones object detector to match dartboards, rather than faces.
-    - Created using C++ with <a href="http://opencv.org/">OpenCV</a>.
-    - Program was first trained of a series of negative images. After training the program can detect dartboards in images.
-    - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
-
-- title: Productivity Mapping
+- title: URN1350.net
+  secondary: Team of 3
+  year: 2015
+  type: "front-end,full-stack"
+  url: "https://github.com/URN/URN-Material"
+  summary:
+    Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _Trello._;
+    Increased yearly hits to 100k and reduced average load time to 4s. _Grunt.js, GitHub webhooks, SCSS._;
   tags:
-    - url: /publications/developing-a-location-based-service-to-reduce-smartphone-notification-distractions.pdf
-      name: Thesis
-  photo: code.png
-  url: //github.com/harrymt/ProductivityMapping
-  list:
-    - For my dissertation I built an Android app (<a href="//github.com/harrymt/ProductivityMapping/">source code</a>) to reduce the distractions of smartphone notifications.
-    - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
-    - I accompanied the app with a web-service API (<a href="//github.com/harrymt/ProductivityMapping-Server/">source code</a>) built using PHP.
+    - url: //www.urn1350.net
+      name: Website
+  photo: urn.png
+  detailed:
+    - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
+    - Migrated existing website from Drupal to <a href="//wordpress.org/">Wordpress</a>, creating plugins to integrate podcasts and the radio show schedule.
+    - Optimised the website by reducing the average load time by 10 seconds.
+    - Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.
+    - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
+
+- title: Loocator
+  secondary: Team of 4
+  year: 2014
+  type: ""
+  url: ""
+  summary:
+    Mobile Toilet Loo-Locator Web App. _PHP, Twig, Symphony._;
+    Winner of Facebook Prize at local Hack Day.;
 
 - title: Routing+
+  year: 2013
   photo: routingplus.png
   url: //github.com/harrymt/RoutingPlus
-  list:
+  detailed:
     - Built for my BSc 2nd year group project.
     - Routing+ will intelligently take you down the best route possible avoiding right turns and traffic lights. One less thing for you to remember.
     - Written in Java, compiled with <a href="https://maven.apache.org/">Maven</a>.
     - Source code available on <a href="https://github.com/harrymt/RoutingPlus/tree/master/graphhopper-master">GitHub</a>.
 
-- title: This website
-  tags:
-    - url: //www.harrymt.com
-      name: Website
-  photo: personal.png
-  url: //www.github.com/harrymt/harrymt.github.io
-  list:
-    - My personal website was created by hand.
-    - The CSS is preprocessed using <a href="//sass-lang.com/">SASS</a>, CSS with super powers.
-    - <a href="//bourbon.io/">Bourbon</a> a SCSS library is used to target all the latest browsers and the icons are from <a href="//fortawesome.github.io/Font-Awesome">FontAwesome.</a>
-    - Uses <a href="//gruntjs.com/">Grunt</a> a Javascript task runner to build everything.
-
-- title: Women In Tech
-  tags:
-    - url: //2016.inspirewit.com
-      name: Website
-  photo: wit-website.png
-  url: //2016.inspirewit.com
-  list:
-    - A University of Nottingham HackSoc conference to inspire women in technology.
-    - Built using php, html and less.
-    - Used the CSS pre-processor <a href="http://lesscss.org/">less</a> to extend our CSS adding mixins.
-    - Built <a href="//2015.inspirewit.com">2015</a> and <a href="//2016.inspirewit.com">2016</a>
