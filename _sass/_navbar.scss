@@ -1,0 +1,38 @@
+
+/* Header */
+header {
+  padding-bottom: 50px;
+  nav {
+    background: #fff;
+    ul {
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 1em;
+
+      li a {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #696969;
+        display: block;
+        padding: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      li a:hover {
+        color: #555;
+        background: #fafafa;
+      }
+
+      li a.selected {
+        background: #eee;
+      }
+    }
+  }
+}
