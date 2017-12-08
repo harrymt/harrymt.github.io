@@ -288,6 +288,59 @@ h5 {
   }
 }
 
+.detailed-projects {
+  margin: 0 0 3rem;
+  width: 130%;
+  left: -15%;
+  position: relative;
+
+  @media(max-width: 1000px) {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.resume-project-photo-placeholder {
+  padding: 0;
+
+  img {
+    background-color: #efefef;
+    border-radius: 5px;
+    padding-left: 60px !important;
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+    padding-right: 60px !important;
+    margin-left: 0px;
+    margin-right: 25px;
+    width: 175px !important;
+  }
+}
+
+.resume-project-photo {
+  height: 100%;
+
+  img {
+    padding-right: 20px;
+    min-width: 20px;
+    height: 100%;
+    width: 200px;
+  }
+
+  @media(max-width: 800px) {
+    display: none;
+  }
+}
+
+
+.project-photo-description {
+  @media(max-width 800px) {
+    width: 70%;
+    margin: 0;
+  }
+}
+
+
+
 // footer styles
 
 .page-footer {

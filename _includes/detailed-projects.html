@@ -1,7 +1,8 @@
+<div class="page-split"></div>
 
 <section class="content-section detailed-projects no-print">
 
-  <div class="page-split"></div>
+
 
   <header class="section-header">
     <h2>Detailed Projects</h2>
@@ -9,7 +10,16 @@
 
   {% for c in site.data.projects %}
 
+
   <div class="resume-item">
+    {% if c.photo %}
+    <div class="col-1-4 resume-project-photo">
+      <img src="img/work/{{c.photo}}">
+    {% else %}
+    <div class="col-1-4 resume-project-photo resume-project-photo-placeholder">
+      <img src="img/work/placeholder.png">
+    {% endif %}
+    </div>
     <div class="col-1-4">
       <h3 class="resume-item-title">
         {% if c.url %}<a href="{{ c.url }}">{% endif %}
@@ -22,7 +32,7 @@
       <h5>{{ c.year }}</h5>
     </div>
 
-    <ul class="summary-bullets col-3-4">
+    <ul class="summary-bullets col-3-4 project-photo-description">
       {% for p in c.summary %}
         <li class="resume-item-copy">{{p | markdownify}}</li>
       {% endfor %}

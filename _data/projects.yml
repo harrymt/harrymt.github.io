@@ -19,9 +19,8 @@
     - Developed Facebook Messenger Chatbot to help people form new healthy habits. _Node.JS, PUG._
     - Managed full product lifecycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._
   detailed:
-    - A <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot to develop new healthy habits for my MSc Advanced Computer Science Thesis.
-    - Written in NodeJS, hosted on <a href='//heroku.com'>Heroku</a> using PostgreSQL.
-    - Ran a <a href='//harrymt.com/harryshabits'>30-day study</a> with 58 participants.
+    - <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot was developed as part of my MSc Advanced Computer Science masters.
+    - Application was hosted on <a href='//heroku.com'>Heroku</a> using a PostgreSQL database.
   photo: harrys-habits.png
   tags:
     - url: //github.com/harrymt/harryshabits-thesis
@@ -50,9 +49,7 @@
   photo: instapute.png
   detailed:
     - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
-    - Written in Python, using the <a href="http://flask.pocoo.org">Flask</a> micro framework with <a href="https://webapp2.readthedocs.io/en/latest/">WebApp2</a> for easy routing
     - Hosted on the Google App Engine, using several GAE APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
-    - The code is open source, <a href="//github.com/harrymt/instapute_public">available on Github</a>.
 
 - title: Productivity Mapping
   secondary: Solo Project
@@ -103,7 +100,7 @@
 
 
 - title: Rasterizer & Ray Tracer
-  second: Team of 2
+  secondary: Team of 2
   year: 2017
   type: ""
   photo: raster-ray.png
@@ -184,16 +181,15 @@
   type: "front-end,full-stack"
   url: "https://github.com/URN/URN-Material"
   summary:
-    Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _PHP, JavaScript, Trello._
-    Increased yearly hits to 100k and reduced average load time to 4s. _Grunt.js, GitHub webhooks, SCSS._
+    - Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _PHP, JavaScript, Trello._
+    - Increased yearly hits to 100k and reduced average load time to 4s. _Grunt.js, GitHub webhooks, SCSS._
   tags:
     - url: //www.urn1350.net
       name: Website
   photo: urn.png
   detailed:
     - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
-    - Migrated existing website from Drupal to <a href="//wordpress.org/">Wordpress</a>, creating plugins to integrate podcasts and the radio show schedule.
-    - Optimised the website by reducing the average load time by 10 seconds.
+    - Created plugins to integrate podcasts and the radio show schedule.
     - Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.
     - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
 
@@ -203,8 +199,8 @@
   type: ""
   url: ""
   summary:
-    Mobile Toilet Loo-Locator Web App. _PHP, Twig, Symphony._
-    Winner of Facebook Prize at local Hack Day.
+    - Mobile Toilet Loo-Locator Web App. _PHP, Twig, Symphony._
+    - Winner of Facebook Prize at local Hack Day.
 
 - title: Routing+
   secondary: Team of 4
