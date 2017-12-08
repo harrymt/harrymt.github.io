@@ -1,0 +1,39 @@
+
+<section class="content-section detailed-projects no-print">
+
+  <div class="page-split"></div>
+
+  <header class="section-header">
+    <h2>Detailed Projects</h2>
+  </header>
+
+  {% for c in site.data.projects %}
+
+  <div class="resume-item">
+    <div class="col-1-4">
+      <h3 class="resume-item-title">
+        {% if c.url %}<a href="{{ c.url }}">{% endif %}
+            {{ c.title }}
+        {% if c.url %}</a>{% endif %}
+      </h3>
+      <h4 class="resume-item-details">
+        {{ c.secondary }}
+      </h4>
+      <h5>{{ c.year }}</h5>
+    </div>
+
+    <ul class="summary-bullets col-3-4">
+      {% for p in c.summary %}
+        <li class="resume-item-copy">{{p | markdownify}}</li>
+      {% endfor %}
+      {% for p in c.detailed %}
+        <li class="resume-item-copy">{{p | markdownify}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  {% endfor %}
+
+
+</section>

@@ -1,4 +1,5 @@
 ---
+layout: compress
 ---
 <!DOCTYPE html>
 <html>
@@ -7,6 +8,8 @@
 
   <body class="theme-default">
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+
+      {% include navbar.html %}
 
       {% include header.html %}
 
@@ -19,32 +22,30 @@
       {% include print-content.html content = site.data.projects name = "Projects" schema = "CreativeWork" %}
 
       <div class="download-button">
-        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download PDF</a>
+        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download CV</a>
       </div>
 
-      <section class="message-box">
+      {% include detailed-projects.html %}
+
+      <div class="download-button">
+        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download CV</a>
+      </div>
+
+      <section class="message-box no-print">
         {% include message-form.html %}
       </section>
 
       <footer class="page-footer no-print">
+        <p>See this site progress through the years.</p>
+        <a href="//harrymt.com/Site2017" class="small-button">2017</a>
+        <a href="//harrymt.com/Site2016" class="small-button">2016</a>
+        <a href="//harrymt.com/Site2015" class="small-button">2015</a>
+        <a href="//harrymt.com/Site2013" class="small-button">2014</a>
+
         <p class="footer-line">Made by <a onclick="gtag('event', 'github_footer_link_click', {'value': 1});" href="//www.github.com/harrymt">harrymt</a>.</p>
 
         <p>Last Updated on {{ site.last_updated }}</p>
-
-        <p>See this site progress through the years.</p>
-        <div class="button-container">
-          <a href="//harrymt.com/Site2017" class="button button-huge button-clear">2017</a>
-          <a href="//harrymt.com/Site2016" class="button button-huge button-clear">2016</a>
-          <a href="//harrymt.com/Site2015" class="button button-huge button-clear">2015</a>
-          <a href="//harrymt.com/Site2013" class="button button-huge button-clear">2014</a>
-        </div>
-
-        <div class="button-container">
-          <p>View code on my <a href="//github.com/harrymt">GitHub</a>
-          <p>Find me on <a href="//stackoverflow.com/users/2235593/harry-mumford-turner">StackOverflow</a>
-        </div>
       </footer>
     </div>
-
   </body>
 </html>

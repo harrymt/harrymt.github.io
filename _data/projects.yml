@@ -1,13 +1,23 @@
 # Projects
 
+- title: Toilet Adviser
+  secondary: Team of 2
+  year: 2018
+  url: "https://harrymt.com/toilet-adviser"
+  type: "" # front-end"
+  summary:
+    - Rating and review system for toilets in Bristol. _JavaScript, React, Firebase._
+  # detailed:
+  #   - ""
+
 - title: Harrys Habits
   secondary: Solo Project
   year: 2017
   url: "https://harrymt.com/harryshabits"
   type: "front-end,full-stack"
   summary:
-    Developed Facebook Messenger Chatbot to help people form new healthy habits. _Node.JS, PUG._;
-    Managed full product lifecycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._;
+    - Developed Facebook Messenger Chatbot to help people form new healthy habits. _Node.JS, PUG._
+    - Managed full product lifecycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._
   detailed:
     - A <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot to develop new healthy habits for my MSc Advanced Computer Science Thesis.
     - Written in NodeJS, hosted on <a href='//heroku.com'>Heroku</a> using PostgreSQL.
@@ -23,17 +33,17 @@
   type: "product"
   url: "https://vimeo.com/204250456"
   summary:
-    Developed physical product from scratch (smart stress ball), submitted to CHI conference. _Python._;
-    Integrating with IFTTT for reactive actions using Arduino controlling flex resistors to measure squeeze pressure.;
+    - Developed physical product from scratch (smart stress ball), submitted to CHI conference. _Python._
+    - Integrating with IFTTT for reactive actions using Arduino controlling flex resistors to measure squeeze pressure.
 
 - title: Instagram Colleges
   secondary: Solo Project
   year: 2017
-  type: "front-end,back-end,full-stack"
+  type: ""
   url: "https://github.com/harrymt/instapute_public"
   summary:
-    Built WebApp to create instagram collages in the cloud. _Google App Engine, Python, Flask._;
-    Application separated into 3 microservices for scalability.;
+    - Built WebApp to create instagram collages in the cloud. _Google App Engine, Python, Flask._
+    - Application separated into 3 microservices for scalability.
   tags:
     - url: /publications/photo-manipulation-in-the-cloud.pdf
       name: Paper
@@ -50,8 +60,8 @@
   type: "front-end,back-end,full-stack"
   url: "https://github.com/harrymt/ProductivityMapping"
   summary:
-    Reduced smartphone distractions by building an Android app to limit notifications, increasing user productivity. _Android, Java._;
-    Combined Google APIs with custom analysis API to show improvements. _PHP, MongoDB._;
+    - Reduced smartphone distractions by building an Android app to limit notifications, increasing user productivity. _Android, Java._
+    - Combined Google APIs with custom analysis API to show improvements. _PHP, MongoDB._
   tags:
     - url: /publications/developing-a-location-based-service-to-reduce-smartphone-notification-distractions.pdf
       name: Thesis
@@ -68,7 +78,7 @@
   type: ""
   url: "https://github.com/HackSocNotts/hacknotts.com"
   summary:
-    Developed static websites for tech society yearly hackathon, HackNotts. _Jekyll, SCSS, GitHub Pages._;
+    - Developed static websites for tech society yearly hackathon, HackNotts. _Jekyll, SCSS, GitHub Pages._
   photo: hacknotts.png
   detailed:
     - Designed <a href="//imgur.com/a/b5Jxu">swag</a> for the Nottingham hackathon HackNotts.
@@ -83,7 +93,7 @@
   type: ""
   url: "https://www.inspirewit.com"
   summary:
-    Designed and developed brand from scratch for Woemn In Technology conference. _PHP, SCSS, Jekyll_;
+    - Designed and developed brand from scratch for Woemn In Technology conference. _PHP, SCSS, Jekyll_
   photo: wit-website.png
   detailed:
     - A University of Nottingham HackSoc conference to inspire women in technology.
@@ -104,7 +114,9 @@
     - The Ray Tracer performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination and more!
 
 - title: Web Playground
+  secondary: Solo Project
   year: 2016
+  type: ""
   tags:
     - url: //github.com/harrymt/web_playground
       name: Website
@@ -117,7 +129,9 @@
     - Integrated an SQLite database and server-side rendering from markdown to HTML and PDF.
 
 - title: KVS Server
+  secondary: Solo Project
   year: 2016
+  type: ""
   photo: code.png
   url: //github.com/harrymt/kvs_server
   detailed:
@@ -126,7 +140,9 @@
 
 
 - title: Project Marking Problem
+  secondary: Solo Project
   year: 2016
+  type: ""
   photo: code.png
   url: //github.com/harrymt/project_marking_problem
   detailed:
@@ -135,7 +151,9 @@
     - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on Github</a>.
 
 - title: Dartboard Detector
+  secondary: Team of 2
   year: 2016
+  type: ""
   photo: dartboard.png
   url: https://github.com/harrymt/dartboard_detector
   detailed:
@@ -145,7 +163,9 @@
     - Source code available on <a href="https://github.com/harrymt/dartboard_detector">GitHub</a>.
 
 - title: Blog
+  secondary: Solo Project
   year: 2015
+  type: ""
   category: websites
   tags:
     - url: http://www.harrymt.com/blog
@@ -160,11 +180,12 @@
 - title: URN1350.net
   secondary: Team of 3
   year: 2015
+  type: ""
   type: "front-end,full-stack"
   url: "https://github.com/URN/URN-Material"
   summary:
-    Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _Trello._;
-    Increased yearly hits to 100k and reduced average load time to 4s. _Grunt.js, GitHub webhooks, SCSS._;
+    Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _PHP, JavaScript, Trello._
+    Increased yearly hits to 100k and reduced average load time to 4s. _Grunt.js, GitHub webhooks, SCSS._
   tags:
     - url: //www.urn1350.net
       name: Website
@@ -182,11 +203,13 @@
   type: ""
   url: ""
   summary:
-    Mobile Toilet Loo-Locator Web App. _PHP, Twig, Symphony._;
-    Winner of Facebook Prize at local Hack Day.;
+    Mobile Toilet Loo-Locator Web App. _PHP, Twig, Symphony._
+    Winner of Facebook Prize at local Hack Day.
 
 - title: Routing+
+  secondary: Team of 4
   year: 2013
+  type: ""
   photo: routingplus.png
   url: //github.com/harrymt/RoutingPlus
   detailed:

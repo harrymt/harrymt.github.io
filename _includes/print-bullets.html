@@ -1,5 +1,5 @@
 
-{% assign point = include.summary | split: ';' %}
+{% assign point = include.summary %}
 <ul class="summary-bullets col-3-4">
   {% for p in point %}<li class="resume-item-copy">{{p | markdownify}}</li>{% endfor %}
 

@@ -116,8 +116,35 @@ h5 {
   }
 }
 
+.small-button {
+  display: inline-block;
+  @include border-radius(3px);
+  background-color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px auto;
+  width: 40%;
+  font-size: 1.375rem;
+  @include sans_light;
+  color: #333;
+  line-height: 55px;
+  @include transition(all .2s ease);
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  &.not-looking { width: 400px; }
+
+  @media (max-width: 500px) {
+    margin: .5rem auto;
+    width: 100%;
+  }
+}
+
 .download-button {
-    display: block;
+  display: block;
 }
 
 .contact-button {
@@ -148,6 +175,29 @@ h5 {
 
 // resume content styles
 
+.page-split {
+  width: 140%;
+  display: block;
+  border: 1px solid #555;
+  margin: 20% auto;
+  position: relative;
+  left: -20%;
+
+
+  @media(max-width: 1000px) {
+    left: 0;
+    width: 100%;
+  }
+
+  @media(max-width: 750px) {
+    width: 75%;
+  }
+
+  @media(max-width: 500px) {
+    width: 50%;
+  }
+}
+
 .content-section {
   margin: 0 0 3rem;
 
@@ -166,6 +216,10 @@ h5 {
 
    @media (max-width: 400px) {
       font-size: 1.2rem;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 1rem;
     }
 
     a {
@@ -188,6 +242,10 @@ h5 {
 
   .resume-item-copy p {
     margin: 0;
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
   }
 
   .resume-item-title,
@@ -231,6 +289,7 @@ h5 {
 
   .footer-line {
     margin: 0;
+    margin-top: 10px;
     font-size: .875rem;
     color: #999;
 
