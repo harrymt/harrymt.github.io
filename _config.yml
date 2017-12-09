@@ -15,11 +15,11 @@ company_url: "//www.gwsmedia.com"
 resume_job:
   - job: "front-end"
     title: "Front-End Developer"
-    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 30+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 25+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
     skills: ""
   - job: "full-stack"
     title: "Full-Stack Developer"
-    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 30+ international client websites using Drupal 7, Magento 2 and Wordpress."
+    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 25+ international client websites using Drupal 7, Magento 2 and Wordpress."
     skills: "SCSS, LESS, Bootstrap, AngularJS, ReactJS, jQuery, VB.NET, ASP.NET, C++, C, Java, Python, PHP, Wordpress, Drupal 7, Magento 2, MySQL, Travis, Heroku, GAE, AWS"
   - job: "all"
     title: "Software Developer"
@@ -54,7 +54,7 @@ resume_print_links:
 resume_social_links:
   resume_github_url:  "https://github.com/harrymt"
   resume_website_url: "https://harrymt.com"
-  resume_linkedin_url: "https://www.linkedin.com/in/harry-mumford-turner-227a1481"
+  resume_linkedin_url: "https://www.linkedin.com/in/harrymt"
 resume_print_social_links:      true
 
 # Build settings
