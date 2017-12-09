@@ -14,24 +14,39 @@ header {
       list-style: none;
       line-height: 1em;
 
-      li a {
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #696969;
-        display: block;
-        padding: 1em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        text-decoration: none;
-        font-size: 16px;
-      }
+      li {
+        @media (max-width: 600px) {
+          /* Set appropriate tap target sizes (48px) */
+          font-size: 18px;
+        }
 
-      li a:hover {
-        color: #555;
-        background: #fafafa;
-      }
+        a {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: #696969;
+          display: block;
+          padding: 1em;
+          padding-left: 1.5em;
+          padding-right: 1.5em;
+          text-decoration: none;
+          font-size: 16px;
 
-      li a.selected {
-        background: #eee;
+          @media (max-width: 600px) {
+            font-size: 1.0em;
+            padding-bottom: 1.5em;
+            padding-left: 1.7em;
+            padding-right: 1.7em;
+            padding-top: 1.5em;
+          }
+        }
+
+        a:hover {
+          color: #555;
+          background: #fafafa;
+        }
+
+        a.selected {
+          background: #eee;
+        }
       }
     }
   }
