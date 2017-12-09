@@ -89,6 +89,10 @@ h5 {
 .heatmap-container {
   padding: 20px;
 
+  @media(max-width: 500px) {
+    padding: 0;
+  }
+
   img {
     margin: auto;
     width: 100%;
