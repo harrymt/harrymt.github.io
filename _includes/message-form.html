@@ -11,9 +11,11 @@
     }
     setTimeout(function() {
       var frame = document.querySelector('iframe');
-      frame.addEventListener("load", function() {
-        frame.setAttribute('scrolling', "no");
-      });
-    }, 1000);
+      if(frame != null) {
+        frame.addEventListener("load", function() {
+          frame.setAttribute('scrolling', "no");
+        });
+      }
+    }, 2000);
   })();
 </script>
