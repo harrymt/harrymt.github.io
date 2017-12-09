@@ -321,9 +321,10 @@ h5 {
 
   img {
     padding-right: 20px;
-    min-width: 20px;
     height: 100%;
     width: 200px;
+    min-width: 20px;
+    min-height: 100px;
   }
 
   @media(max-width: 800px) {
