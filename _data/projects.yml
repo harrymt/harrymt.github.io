@@ -17,10 +17,10 @@
   type: "front-end,full-stack"
   summary:
     - Developed Facebook Messenger Chatbot to help people form new healthy habits. _Node.JS, PUG._
-    - Managed full product lifecycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._
+    - Managed full product life-cycle running a 30-day study with 58 people. _PaaS Heroku, PostgreSQL._
   detailed:
-    - <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot was developed as part of my MSc Advanced Computer Science masters.
-    - Application was hosted on <a href='//heroku.com'>Heroku</a> using a PostgreSQL database.
+    - <a href='//developers.facebook.com/docs/messenger-platform/'>Facebook Messenger</a> bot developed during my MSc Advanced Computer Science.
+    - Hosted on <a href='//heroku.com'>Heroku</a> using a PostgreSQL database.
   photo: harrys-habits.png
   tags:
     - url: //github.com/harrymt/harryshabits-thesis
@@ -41,7 +41,7 @@
   type: "full-stack"
   url: "https://github.com/harrymt/instapute_public"
   summary:
-    - Built WebApp to create instagram collages in the cloud. _Google App Engine, Python, Flask._
+    - Built WebApp to create Instagram collages in the cloud. _Google App Engine, Python, Flask._
     - Application separated into 3 microservices for scalability.
   tags:
     - url: /publications/photo-manipulation-in-the-cloud.pdf
@@ -49,7 +49,7 @@
   photo: instapute.png
   detailed:
     - Program is separated into 3 microservices for a scalable solution for Instagram collage creation.
-    - Hosted on the Google App Engine, using several GAE APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a> (previously named modules), to separate the
+    - Hosted on the Google App Engine, using these APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a>, to separate the application.
 
 - title: Productivity Mapping
   secondary: Solo Project
@@ -119,7 +119,7 @@
   url: //github.com/harrymt/web_playground
   detailed:
     - A playground demonstrating variety of website development best practices and standards
-    - Written in NodeJS, using <a href="//gruntjs.com/">GruntJS</a> to build and perform many additional tasks, such as deploying to a <a href='//heroku.com'>heroku</a> server.
+    - Written in NodeJS, using <a href="//gruntjs.com/">GruntJS</a> to build and perform tasks, such as deploying to a <a href='//heroku.com'>heroku</a> server.
     - Uses <a href='http://sass-lang.com/'>SASS</a> and <a href='https://pugjs.org'>PUG</a> for templating.
     - Integrated an SQLite database and server-side rendering from markdown to HTML and PDF.
 
@@ -144,7 +144,7 @@
   detailed:
     - A solution for the Project Marking Problem, when multiple students want multiple markers to demonstrate their project.
     - Solves a Producer Consumer problem in C, using <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread</a>.
-    - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on Github</a>.
+    - The code is open source, <a href="//github.com/harrymt/project_marking_problem">available on GitHub</a>.
 
 - title: Dartboard Detector
   secondary: Team of 2
@@ -171,7 +171,7 @@
   detailed:
     - Tips and tricks I have found or collected from Computer Science and life.
     - Uses <a href="http://jekyllrb.com/">Jekyll</a> with <a href="http://liquidmarkup.org/">Liquid Markup</a>.
-    - The code is open source, <a href="//github.com/harrymt/blog">available on Github</a>.
+    - The code is open source, <a href="//github.com/harrymt/blog">available on GitHub</a>.
 
 - title: URN1350.net
   secondary: Team of 3
@@ -190,7 +190,7 @@
     - Responsible for day-to-day maintenance of URN equipment and website with over 200k hits a year.
     - Created plugins to integrate podcasts and the radio show schedule.
     - Improved the work flow, using GitHub web-hooks, <a href="//gruntjs.com/">GruntJS</a> and <a href="//sass-lang.com/">SCSS</a>.
-    - The code is open source, <a href="//github.com/URN/URN-Material">available on Github</a>.
+    - The code is open source, <a href="//github.com/URN/URN-Material">available on GitHub</a>.
 
 - title: Loocator
   secondary: Team of 4
