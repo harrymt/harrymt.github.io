@@ -90,13 +90,11 @@
   type: ""
   url: "https://www.inspirewit.com"
   summary:
-    - Designed and developed brand from scratch for Woemn In Technology conference. _PHP, SCSS, Jekyll_
+    - Designed and developed brand from scratch for Women In Technology conference. _PHP, HTML, SCSS, Jekyll_
   photo: wit-website.png
   detailed:
     - A University of Nottingham HackSoc conference to inspire women in technology.
-    - Built using php, html and less.
-    - Used the CSS pre-processor <a href="http://lesscss.org/">less</a> to extend our CSS adding mixins.
-    - Built <a href="//2015.inspirewit.com">2015</a> and <a href="//2016.inspirewit.com">2016</a>
+    - <a href="//2015.inspirewit.com" alt="Women in technology 2015 version">2015 version</a> and <a href="//2016.inspirewit.com" alt="Women in technology 2016 version">2016 version</a>
 
 
 - title: Rasterizer & Ray Tracer
@@ -132,7 +130,8 @@
   photo: code.png
   url: //github.com/harrymt/kvs_server
   detailed:
-    - A C implementation of a Key-Value-Store server, full breif available <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>here</a>.
+    - A C implementation of a Key-Value-Store server.
+    - <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>Download the full breif</a>.
     - Used Makefiles to compile program and to write my own C test harness.
 
 

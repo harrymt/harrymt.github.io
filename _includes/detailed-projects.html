@@ -14,10 +14,10 @@
   <div class="resume-item">
     {% if c.photo %}
     <div class="col-1-4 resume-project-photo">
-      <img src="img/work/{{c.photo}}">
+      <img src="img/work/{{c.photo}}" alt="{{c.title}}">
     {% else %}
     <div class="col-1-4 resume-project-photo resume-project-photo-placeholder">
-      <img src="img/work/placeholder.png">
+      <img src="img/work/placeholder.png" role="presentation">
     {% endif %}
     </div>
     <div class="col-1-4">
