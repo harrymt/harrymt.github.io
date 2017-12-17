@@ -12,14 +12,18 @@
 
 
   <div class="resume-item">
-    {% if c.photo %}
-    <div class="col-1-4 resume-project-photo">
-      <img src="img/work/{{c.photo}}" alt="{{c.title}}">
-    {% else %}
-    <div class="col-1-4 resume-project-photo resume-project-photo-placeholder">
-      <img src="img/work/placeholder.png" role="presentation">
-    {% endif %}
-    </div>
+      {% if c.photo %}
+      <div class="col-1-4 resume-project-photo">
+        {% if c.url %}<a href="{{ c.url }}">{% endif %}
+          <img src="img/work/{{c.photo}}" alt="{{c.title}}">
+        {% if c.url %}</a>{% endif %}
+      {% else %}
+      <div class="col-1-4 resume-project-photo resume-project-photo-placeholder">
+        {% if c.url %}<a href="{{ c.url }}">{% endif %}
+          <img src="img/work/placeholder.png" role="presentation">
+        {% if c.url %}</a>{% endif %}
+      {% endif %}
+      </div>
     <div class="col-1-4">
       <h3 class="resume-item-title">
         {% if c.url %}<a href="{{ c.url }}">{% endif %}
