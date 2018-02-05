@@ -1,0 +1,33 @@
+
+{% assign content = site.data.education %}
+<section class="content-section">
+  <header class="section-header">
+    <h2>Education</h2>
+  </header>
+
+  {% for c in content %}
+    <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+      <div class="col-1-4">
+        <h3 class="resume-item-title" itemprop="name">
+          {% if c.url %}<a href="{{ c.url }}" itemprop="url">{% endif %}
+              {{ c.title }}
+          {% if c.url %}</a>{% endif %}
+        </h3>
+        <h4 class="resume-item-details" itemprop="description">
+          {{ c.secondary }}
+        </h4>
+        <h5>{{ c.year }}</h5>
+      </div>
+
+      <ul class="summary-bullets col-3-4">
+        {% for p in c.summary %}
+          <li class="resume-item-copy">{{p | markdownify}}</li>
+        {% endfor %}
+        <li class="resume-item-copy resume-item-copy-header no-print">Relevant Modules</li>
+        {% for p in c.relevant_modules %}
+          <li class="resume-item-copy no-print">{{p | markdownify}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</section>

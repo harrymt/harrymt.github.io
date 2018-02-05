@@ -278,6 +278,15 @@ h5 {
   }
 }
 
+li.resume-item-copy.resume-item-copy-header {
+    font-weight: bold;
+    list-style-type: none;
+    margin-top: 8px;
+    display: block;
+    left: -21px;
+    position: relative;
+}
+
 .skills-bullets {
   display: inline-block;
 }
@@ -430,7 +439,7 @@ h5 {
   }
 
   .content-section {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 
     .resume-item {
       margin-bottom: 0;
@@ -441,6 +450,7 @@ h5 {
 
     .resume-item:last-child {
       border-bottom: 0 !important;
+      padding-bottom: 0;
     }
 
     .resume-item-title {
