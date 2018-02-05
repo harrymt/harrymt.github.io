@@ -391,7 +391,7 @@ li.resume-item-copy.resume-item-copy-header {
   .no-print { display: none !important }
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 .2rem;
+  .page-header { padding: 1rem 0 0;
     .header-name {
       @include sans_bold;
       font-size: 2rem;
@@ -431,6 +431,7 @@ li.resume-item-copy.resume-item-copy-header {
     border: 0;
     border-bottom: 1px solid #ddd;
     margin-bottom: 5px;
+    padding-top: 0;
 
     h2 {
       font-size: 1.1rem;
