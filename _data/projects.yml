@@ -76,7 +76,7 @@
   photo: hacknotts.png
   detailed:
     - <a href="//imgur.com/a/b5Jxu" alt="Swag photos">Swag photos</a>
-    - Redesigned the <a href="//hacksocnotts.co.uk">society website</a> with a task runner to handle minifying and compiling CSS. _SASS, GruntJS_
+    - Redesigned the <a href="//hacksocnotts.co.uk">society website</a> with a task runner to handle minifying and compiling CSS. _SASS, GruntJS._
 
 - title: Women In Tech
   secondary: Solo Project
@@ -84,7 +84,7 @@
   type: ""
   url: "https://www.inspirewit.com"
   summary:
-    - Designed and developed brand from scratch for Women In Technology conference. _PHP, HTML, SCSS, Jekyll, Adobe Illustrator_
+    - Designed and developed brand from scratch for Women In Technology conference. _PHP, HTML, SCSS, Jekyll, Adobe Illustrator._
   photo: wit-website.png
   detailed:
     - University of Nottingham HackSoc conference to inspire women in technology, see the <a href="//2015.inspirewit.com" alt="Women in technology 2015 version">2015 version</a> and <a href="//2016.inspirewit.com" alt="Women in technology 2016 version">2016 version</a>.
@@ -96,7 +96,7 @@
   photo: raster-ray.png
   url: //github.com/harrymt/ray_tracer
   detailed:
-    - <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU. _C++, GLM, SDL_
+    - <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU. _C++, GLM, SDL._
     - <a href='//github.com/harrymt/ray_tracer'>Ray Tracer</a> performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination.
 
 - title: Web Playground
@@ -109,9 +109,9 @@
   photo: web-playground.png
   url: //github.com/harrymt/web_playground
   detailed:
-    - Demonstrates website development best practices and standards. _CSS3, HTML5, ES6, Accessibility_.
-    - Tasks for deployment, minification and merging of files. _NodeJS, GruntJS, heroku, <a href='http://sass-lang.com/'>SASS</a>, <a href='https://pugjs.org'>PUGJS</a>_.
-    - Integrated database interaction with server-side rendering from markdown to HTML and PDF. _SQL, JavaScript, SQLite_.
+    - Demonstrates website development best practices and standards. _CSS3, HTML5, ES6, Accessibility._
+    - Tasks for deployment, minification and merging of files. _NodeJS, GruntJS, heroku, <a href='http://sass-lang.com/'>SASS</a>, <a href='https://pugjs.org'>PUGJS</a>._
+    - Integrated database interaction with server-side rendering from markdown to HTML and PDF. _SQL, JavaScript, SQLite._
 
 - title: KVS Server
   secondary: Solo Project
@@ -120,7 +120,7 @@
   photo: code.png
   url: //github.com/harrymt/kvs_server
   summary:
-    - Key-Value-Store server. _C, pthread_
+    - Key-Value-Store server. _C, pthread._
   detailed:
     - Created own test harness and ensured thread safety. _Makefile_
     - Download the <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>detailed overview</a>.
@@ -132,7 +132,7 @@
   photo: code.png
   url: //github.com/harrymt/project_marking_problem
   summary:
-    - Solution to a producer-consumer problem. _C, pthread_
+    - Solution to a producer-consumer problem. _C, pthread._
   detailed:
     - Uses advance threading techniques with the <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread library</a>.
 
@@ -143,7 +143,7 @@
   photo: dartboard.png
   url: https://github.com/harrymt/dartboard_detector
   summary:
-    - Modified the Viola-Jones face detector algorithm to match dartboards. _C++, OpenCV_.
+    - Modified the Viola-Jones face detector algorithm to match dartboards. _C++, OpenCV._
 
 - title: Blog
   secondary: Solo Project
@@ -156,7 +156,7 @@
   photo: blog.png
   url: http://www.harrymt.com/blog
   summary:
-    - Written 10 posts about solving algorithm and other computer science questions. _Liquid Markup, SCSS, CSS, Jekyll, HTML_
+    - Written 10 posts about solving algorithm and other computer science questions. _Liquid Markup, SCSS, CSS, Jekyll, HTML._
 
 - title: URN1350.net
   secondary: Team of 3
@@ -174,7 +174,7 @@
   detailed:
     - Created plugins to integrate podcasts and the radio show schedule. _JavaScript_.
     - Improved developer experience with 1 click to deploy (<a href="//github.com/URN/URN-Material">source code on GitHub</a>). _ GitHub webhooks, <a href="//gruntjs.com/">GruntJS</a>, <a href="//sass-lang.com/">SCSS</a>.
-    - Maintained hardware and other software used by 100 radio presenters. _IT support_
+    - Maintained hardware and other software used by 100 radio presenters. _IT support._
 
 - title: Loocator
   secondary: Team of 4
