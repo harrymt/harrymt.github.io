@@ -5,12 +5,12 @@
 # front-end, back-end, product, all
 job: "full-stack"
 
-last_updated: "13/11/2017"
+last_updated: "30/01/2018"
 
 # Current location
 location: "Bristol"
-company: "GWS Media"
-company_url: "//www.gwsmedia.com"
+company: "Scott Logic"
+company_url: "//www.scottlogic.com"
 
 resume_job:
   - job: "front-end"
@@ -19,7 +19,7 @@ resume_job:
     skills: ""
   - job: "full-stack"
     title: "Full-Stack Developer"
-    intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 25+ international client websites using Drupal 7, Magento 2 and Wordpress."
+    intro: "Qualified Full-Stack developer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular 2, React, Less/SASS. Developed 25+ international client websites using Drupal 7, Magento 2 and Wordpress."
     skills: "SCSS, LESS, Bootstrap, AngularJS, ReactJS, jQuery, VB.NET, ASP.NET, C++, C, Java, Python, PHP, Wordpress, Drupal 7, Magento 2, MySQL, Travis, Heroku, GAE, AWS"
   - job: "all"
     title: "Software Developer"

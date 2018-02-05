@@ -1,8 +1,15 @@
 # Jobs
 
+- title: Scott Logic
+  secondary: Graduate Software Developer
+  year: Feb, 2018 &mdash; present
+  type: "full-stack, front-end"
+  summary:
+    Developing bespoke applications for financial clients. _Agile, Scrum._
+
 - title: GWS Media
   secondary: Web Developer
-  year: May, 2017 &mdash; Present
+  year: 2017 &mdash; 2018 (9 months)
   type: "full-stack, front-end"
   summary:
     - Developed Wordpress, Magento 2, Drupal 6, 7 and 8 custom plugins, themes and designs for 20+ international clients. _LESS, JavaScript, PHP._
