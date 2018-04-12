@@ -5,7 +5,9 @@
   year: Feb, 2018 &mdash; present
   type: "full-stack, front-end"
   summary:
-    Developing bespoke applications for financial clients. _Agile, Scrum._
+    - Developing bespoke applications for financial clients. _Agile, Scrum._
+    - Solo internal project. _React, Redux, node.js, JavaScript, Socket.io, Webpack, Babel, Mocha, Selenium e2e tests and unit tests_.
+    - Team of 6 to compare different big data technologies. _Docker, AWS, Apache Kafka, Amazon Kinesis, React, Java Spring_.
 
 - title: GWS Media
   secondary: Web Developer
