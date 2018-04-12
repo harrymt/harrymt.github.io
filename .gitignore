@@ -3,3 +3,5 @@ _site
 .DS_Store
 _vendor
 .git-metadata
+node_modules
+package-lock.json
