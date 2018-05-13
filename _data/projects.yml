@@ -165,8 +165,8 @@
   type: "front-end,full-stack"
   url: "https://github.com/URN/URN-Material"
   summary:
-    - Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _PHP, JavaScript, Trello._
-    - Increased yearly hits to 100k and reduced average load time by 40% to 4s. _GruntJS, GitHub webhooks, SCSS._
+    - Project lead for redesign of best student radio station in the UK, migrated from Drupal to Wordpress. _PHP, JavaScript, GitHub, Drupal, Wordpress, SCSS._
+    - Increased yearly hits to 100k and reduced average load time by 40% to 4s.
   tags:
     - url: //www.urn1350.net
       name: Website
