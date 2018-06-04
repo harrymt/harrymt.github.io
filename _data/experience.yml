@@ -5,8 +5,10 @@
   year: Feb, 2018 &mdash; present
   type: "full-stack, front-end"
   summary:
+    - Scrum team of 7 integrating into several C# services, writing new features for validating and enriching data for financial client. C#/.NET, T-SQL, GitHub, Jira, Scrum.
     - Team of 6 to compare different big data technologies. Dockerized a Spring (boot) application, deploying to AWS and integrating with Apache Kafka and AWS Kinesis. _Docker, AWS, Amazon Kinesis, Apache Kafka, Java 8, Spring Boot, Hibernate, Lombok._
     - Developed 2 SPA using latest technologies, build tools and high quality standards. _React, Redux, Node.js, JavaScript, Socket.io, Webpack, Babel, Mocha, Selenium e2e tests and unit tests._
+    - Presented technical talks and articles on latest technologies, such as web performance and Node.js.
 
 - title: GWS Media
   secondary: Web Developer
