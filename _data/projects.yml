@@ -52,7 +52,7 @@
 - title: Productivity Mapping
   secondary: Solo Project
   year: 2016
-  type: "front-end,back-end,full-stack"
+  type: "front-end,back-end"
   url: "https://github.com/harrymt/ProductivityMapping"
   summary:
     - Increased productivity by building an Android app to limit notifications. _Android, Java._
