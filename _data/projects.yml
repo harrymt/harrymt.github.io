@@ -16,7 +16,7 @@
   url: "https://harrymt.com/harryshabits"
   type: "front-end,full-stack"
   summary:
-    - Developed Facebook Messenger Chatbot to help people form new healthy habits. _NodeJS, PUG._
+    - Developed Facebook Chatbot to help form new healthy habits. _JavaScript, NodeJS._
     - Ran 30-day study with 58 people. _PaaS Heroku, PostgreSQL._
   detailed:
     - Developed during my MSc Advanced Computer Science degree.
