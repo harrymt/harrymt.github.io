@@ -1,5 +1,15 @@
 # Projects
 
+- title: Pluralsight Author
+  secondary: Solo Project
+  year: 2019
+  url: "https://app.pluralsight.com/library/courses/microsoft-azure-non-functional-requirements-gathering"
+  type: "front-end,full-stack" # front-end"
+  summary:
+    - Working in partnership with Microsoft and Pluralsight I created, recorded and published online training material for Microsoft Azure.
+  detailed:
+    - Designed slides, wrote scripts and presented a 1 hour course.  
+    
 - title: Toilet Adviser
   secondary: Team of 2
   year: 2018
