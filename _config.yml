@@ -18,7 +18,7 @@ resume_job:
     intro: "Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working primarily with front-end technologies, including Angular, React, Less/SASS. Developed 25+ international client websites using Drupal, Magento 2 and Wordpress. MSc, Bsc."
     skills: ""
   - job: "full-stack"
-    title: "Full-Stack Developer"
+    title: "Software Developer"
     intro: "Qualified Full-Stack developer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working with front-end technologies, including React/Redux and LESS/SASS. Back-end technology, such as Node.js, C# and Java Spring. Finally, I have developed 25+ international client websites using PHP with Drupal 7, Magento 2 and Wordpress."
     skills: "C#, JavaScript, React, SCSS/LESS, VB.NET, ASP.NET, Java, Spring Boot, PHP, Wordpress, Drupal 8, Magento 2, Heroku, GCP, AWS"
   - job: "all"
