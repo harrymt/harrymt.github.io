@@ -5,16 +5,16 @@
   year: Aug, 2018 &mdash; present
   type: "full-stack, front-end"
   summary:
-    - Wrote adapters to send and recieve files for 2 external financial regulatory services (scrum team of 6). C#, Docker.
-    - Developing React app for financial client operations team (scrum team of 7). CSS-In-JS, Material UI, Redux, React, EFCore, C# .Net Core.
-    - Integrating with several C# services, writing new features for validating and enriching data for financial client (scrum team of 8). C#/.NET, CQL, GitHub, Jira.
+    - Wrote adapters to send and recieve files for 2 external financial regulatory services (scrum team of 6). _C#, Docker_.
+    - Developing React app for financial client operations team (scrum team of 7). _CSS-In-JS, Material UI, Redux, React, EFCore, C# .Net Core_.
+    - Integrating with several C# services, writing new features for validating and enriching data for financial client (scrum team of 8). C#/.NET, CQL, GitHub, Jira_.
     
 - title: Scott Logic
   secondary: Graduate Software Developer
   year: 2018 (6 months)
   type: "full-stack, front-end"
   summary:
-    - Scrum team of 6 to compare different big data technologies. Dockerized a Spring (boot) application, deploying to AWS and integrating with Apache Kafka and AWS Kinesis. _Docker, AWS, Amazon Kinesis, Apache Kafka, Java 8, Spring Boot, Hibernate, Lombok._
+    - Designed tool for comparing different big data technologies. Dockerized a Spring (boot) application, deploying to AWS and integrating with Apache Kafka and AWS Kinesis (scrum team of 6). _Docker, AWS, Amazon Kinesis, Apache Kafka, Java 8, Spring Boot, Hibernate, Lombok._
     - Developed 2 SPA using latest technologies, build tools and high quality standards. _React, Redux, Node.js, JavaScript, Socket.io, Webpack, Babel, Mocha, Selenium e2e tests and unit tests._
     - Presented technical talks and articles on latest technologies, such as web performance and Node.js.
 
