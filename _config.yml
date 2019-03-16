@@ -19,7 +19,7 @@ resume_job:
     skills: ""
   - job: "full-stack"
     title: "Software Developer"
-    intro: "Qualified Full-Stack developer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working with front-end technologies, including React/Redux and LESS/SASS. Back-end technology, such as Node.js, C# and Java Spring. Finally, I have developed 25+ international client websites using PHP with Drupal 7, Magento 2 and Wordpress."
+    intro: "Qualified software developer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working with front-end technologies, including React/Redux and LESS/SASS. Back-end technology, such as Node.js, C# and Java Spring. Finally, I have developed 25+ international client websites using PHP with Drupal 7, Magento 2 and Wordpress."
     skills: "C#, JavaScript, React, SCSS/LESS, VB.NET, ASP.NET, Java, Spring Boot, PHP, Wordpress, Drupal 8, Magento 2, Heroku, GCP, AWS"
   - job: "all"
     title: "Software Developer"
