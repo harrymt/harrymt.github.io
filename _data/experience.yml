@@ -5,7 +5,7 @@
   year: Aug, 2018 &mdash; present
   type: "full-stack, front-end"
   summary:
-    - Wrote adapters to send and recieve files for 2 external financial regulatory services (scrum team of 6). _C#, Docker_.
+    - Wrote adapters to send and receive files for 2 external financial regulatory services (scrum team of 6). _C#, Docker_.
     - Developing React app for financial client operations team (scrum team of 7). _CSS-In-JS, Material UI, Redux, React, EFCore, C# .Net Core_.
     - Integrating with several C# services, writing new features for validating and enriching data for financial client (scrum team of 8). C#/.NET, CQL, GitHub, Jira_.
     
