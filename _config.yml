@@ -5,12 +5,12 @@
 # front-end, back-end, product, all
 job: "full-stack"
 
-last_updated: "30/01/2018"
+last_updated: "13/12/2019"
 
 # Current location
-location: "Bristol"
-company: "Scott Logic"
-company_url: "//www.scottlogic.com"
+location: "London"
+company: "OakNorth"
+company_url: "//www.oaknorth.co.uk"
 
 resume_job:
   - job: "front-end"
