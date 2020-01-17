@@ -16,19 +16,12 @@ layout: compress
 
       {% include print-content.html content = site.data.experience name = "Experience" schema = "Organization" prop = "worksFor" %}
 
-      {% include print-education.html %}
-
-      {% include print-skills.html %}
 
       <div class="new-page"></div>
-
-      {% include print-content.html content = site.data.projects name = "Projects" schema = "CreativeWork" %}
 
       <div class="download-button">
         <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download CV</a>
       </div>
-
-      {% include detailed-experience.html %}
 
       {% include detailed-projects.html %}
 

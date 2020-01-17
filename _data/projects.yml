@@ -10,15 +10,15 @@
   detailed:
     - Designed slides, wrote scripts and presented a 1 hour course.  
     
-- title: Toilet Adviser
-  secondary: Team of 2
-  year: 2018
-  url: "https://harrymt.com/toilet-adviser"
-  type: "" # front-end"
-  summary:
-    - Rating and review system for toilets in Bristol. _JavaScript, React, Firebase._
-  detailed:
-    - In progress...
+# - title: Toilet Adviser
+#   secondary: Team of 2
+#   year: 2018
+#   url: "https://harrymt.com/toilet-adviser"
+#   type: "" # front-end"
+#   summary:
+#     - Rating and review system for toilets in Bristol. _JavaScript, React, Firebase._
+#   detailed:
+#     - In progress...
 
 - title: Harry's Habits
   secondary: Solo Project
@@ -35,14 +35,14 @@
     - url: //github.com/harrymt/harryshabits-thesis
       name: Thesis
 
-- title: StressLess
-  secondary: Team of 5
-  year: 2017
-  type: "product"
-  url: "https://vimeo.com/204250456"
-  summary:
-    - Developed smart stress ball from scratch, submitted to biggest HCI conference (CHI17). _Python._
-    - Reactive actions trigger IFTTT via flex resistors to measure squeeze pressure. _Arduino._
+# - title: StressLess
+#   secondary: Team of 5
+#   year: 2017
+#   type: "product"
+#   url: "https://vimeo.com/204250456"
+#   summary:
+#     - Developed smart stress ball from scratch, submitted to biggest HCI conference (CHI17). _Python._
+#     - Reactive actions trigger IFTTT via flex resistors to measure squeeze pressure. _Arduino._
 
 - title: Instagram Collages
   secondary: Solo Project
@@ -59,21 +59,21 @@
   detailed:
     - Uses Google App Engine APIs. <a href="https://cloud.google.com/appengine/docs/python/appidentity/">App Identity</a>, <a href="https://cloud.google.com/appengine/docs/python/taskqueue/push/">Push Task Queues</a> and <a href="https://cloud.google.com/appengine/docs/python/microservices-on-app-engine">Services</a>.
 
-- title: Productivity Mapping
-  secondary: Solo Project
-  year: 2016
-  type: "front-end,back-end"
-  url: "https://github.com/harrymt/ProductivityMapping"
-  summary:
-    - Increased productivity by building an Android app to limit notifications. _Android, Java._
-    - Combined Google APIs with custom analysis API to show improvements. _PHP, MongoDB._
-  tags:
-    - url: /publications/developing-a-location-based-service-to-reduce-smartphone-notification-distractions.pdf
-      name: Thesis
-  photo: code.png
-  detailed:
-    - Developed during my BSc Computer Science degree.
-    - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
+# - title: Productivity Mapping
+#   secondary: Solo Project
+#   year: 2016
+#   type: "front-end,back-end"
+#   url: "https://github.com/harrymt/ProductivityMapping"
+#   summary:
+#     - Increased productivity by building an Android app to limit notifications. _Android, Java._
+#     - Combined Google APIs with custom analysis API to show improvements. _PHP, MongoDB._
+#   tags:
+#     - url: /publications/developing-a-location-based-service-to-reduce-smartphone-notification-distractions.pdf
+#       name: Thesis
+#   photo: code.png
+#   detailed:
+#     - Developed during my BSc Computer Science degree.
+#     - App uses Google's <a href="//developers.google.com/maps/documentation/android-api/start">Location and Mapping</a> Libraries to block impersonal notifications.
 
 
 - title: HackNotts
@@ -99,74 +99,74 @@
   detailed:
     - University of Nottingham HackSoc conference to inspire women in technology, see the <a href="//2015.inspirewit.com" alt="Women in technology 2015 version">2015 version</a> and <a href="//2016.inspirewit.com" alt="Women in technology 2016 version">2016 version</a>.
 
-- title: Rasterizer & Ray Tracer
-  secondary: Team of 2
-  year: 2017
-  type: ""
-  photo: raster-ray.png
-  url: //github.com/harrymt/ray_tracer
-  detailed:
-    - <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU. _C++, GLM, SDL._
-    - <a href='//github.com/harrymt/ray_tracer'>Ray Tracer</a> performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination.
+# - title: Rasterizer & Ray Tracer
+#   secondary: Team of 2
+#   year: 2017
+#   type: ""
+#   photo: raster-ray.png
+#   url: //github.com/harrymt/ray_tracer
+#   detailed:
+#     - <a href='//github.com/harrymt/rasterizer'>Rasterizer</a> performs soft shadows, Anti-Aliasing FXAA, directional light, parallelisation on the GPU. _C++, GLM, SDL._
+#     - <a href='//github.com/harrymt/ray_tracer'>Ray Tracer</a> performs Anti-Aliasing with SSAA, soft shadows, Photon Mapping, General Model Loading, Global Illumination.
 
-- title: Web Playground
-  secondary: Solo Project
-  year: 2016
-  type: ""
-  tags:
-    - url: //github.com/harrymt/web_playground
-      name: Website
-  photo: web-playground.png
-  url: //github.com/harrymt/web_playground
-  detailed:
-    - Demonstrates website development best practices and standards. _CSS3, HTML5, ES6, Accessibility._
-    - Tasks for deployment, minification and merging of files. _NodeJS, GruntJS, heroku, <a href='http://sass-lang.com/'>SASS</a>, <a href='https://pugjs.org'>PUGJS</a>._
-    - Integrated database interaction with server-side rendering from markdown to HTML and PDF. _SQL, JavaScript, SQLite._
+# - title: Web Playground
+#   secondary: Solo Project
+#   year: 2016
+#   type: ""
+#   tags:
+#     - url: //github.com/harrymt/web_playground
+#       name: Website
+#   photo: web-playground.png
+#   url: //github.com/harrymt/web_playground
+#   detailed:
+#     - Demonstrates website development best practices and standards. _CSS3, HTML5, ES6, Accessibility._
+#     - Tasks for deployment, minification and merging of files. _NodeJS, GruntJS, heroku, <a href='http://sass-lang.com/'>SASS</a>, <a href='https://pugjs.org'>PUGJS</a>._
+#     - Integrated database interaction with server-side rendering from markdown to HTML and PDF. _SQL, JavaScript, SQLite._
 
-- title: KVS Server
-  secondary: Solo Project
-  year: 2016
-  type: ""
-  photo: code.png
-  url: //github.com/harrymt/kvs_server
-  summary:
-    - Key-Value-Store server. _C, pthread._
-  detailed:
-    - Created own test harness and ensured thread safety. _Makefile_
-    - Download the <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>detailed overview</a>.
+# - title: KVS Server
+#   secondary: Solo Project
+#   year: 2016
+#   type: ""
+#   photo: code.png
+#   url: //github.com/harrymt/kvs_server
+#   summary:
+#     - Key-Value-Store server. _C, pthread._
+#   detailed:
+#     - Created own test harness and ensured thread safety. _Makefile_
+#     - Download the <a href='//github.com/harrymt/kvs_server/blob/master/overview.pdf'>detailed overview</a>.
 
-- title: Project Marking Problem
-  secondary: Solo Project
-  year: 2016
-  type: ""
-  photo: code.png
-  url: //github.com/harrymt/project_marking_problem
-  summary:
-    - Solution to a producer-consumer problem. _C, pthread._
-  detailed:
-    - Uses advance threading techniques with the <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread library</a>.
+# - title: Project Marking Problem
+#   secondary: Solo Project
+#   year: 2016
+#   type: ""
+#   photo: code.png
+#   url: //github.com/harrymt/project_marking_problem
+#   summary:
+#     - Solution to a producer-consumer problem. _C, pthread._
+#   detailed:
+#     - Uses advance threading techniques with the <a href="http://man7.org/linux/man-pages/man7/pthreads.7.html">pthread library</a>.
 
-- title: Dartboard Detector
-  secondary: Team of 2
-  year: 2016
-  type: ""
-  photo: dartboard.png
-  url: https://github.com/harrymt/dartboard_detector
-  summary:
-    - Modified the Viola-Jones face detector algorithm to match dartboards. _C++, OpenCV._
+# - title: Dartboard Detector
+#   secondary: Team of 2
+#   year: 2016
+#   type: ""
+#   photo: dartboard.png
+#   url: https://github.com/harrymt/dartboard_detector
+#   summary:
+#     - Modified the Viola-Jones face detector algorithm to match dartboards. _C++, OpenCV._
 
-- title: Blog
-  secondary: Solo Project
-  year: 2015
-  type: ""
-  category: websites
-  tags:
-    - url: http://www.harrymt.com/blog
-      name: Website
-  photo: blog.png
-  url: http://www.harrymt.com/blog
-  summary:
-    - Written 10 posts about solving algorithm and other computer science questions. _Liquid Markup, SCSS, CSS, Jekyll, HTML._
+# - title: Blog
+#   secondary: Solo Project
+#   year: 2015
+#   type: ""
+#   category: websites
+#   tags:
+#     - url: http://www.harrymt.com/blog
+#       name: Website
+#   photo: blog.png
+#   url: http://www.harrymt.com/blog
+#   summary:
+#     - Written 10 posts about solving algorithm and other computer science questions. _Liquid Markup, SCSS, CSS, Jekyll, HTML._
 
 - title: URN1350.net
   secondary: Team of 3
@@ -186,24 +186,24 @@
     - Improved developer experience with 1 click to deploy (<a href="//github.com/URN/URN-Material">source code on GitHub</a>). _ GitHub webhooks, <a href="//gruntjs.com/">GruntJS</a>, <a href="//sass-lang.com/">SCSS</a>.
     - Maintained hardware and other software used by 100 radio presenters. _IT support._
 
-- title: Loocator
-  secondary: Team of 4
-  year: 2014
-  type: ""
-  url: ""
-  summary:
-    - Mobile Toilet Loo-Locator Webapp. _Bootstrap, PHP, Twig, Symphony._
-    - Winner of Facebook Prize at local Hack Day.
+# - title: Loocator
+#   secondary: Team of 4
+#   year: 2014
+#   type: ""
+#   url: ""
+#   summary:
+#     - Mobile Toilet Loo-Locator Webapp. _Bootstrap, PHP, Twig, Symphony._
+#     - Winner of Facebook Prize at local Hack Day.
 
-- title: Routing+
-  secondary: Team of 4
-  year: 2013
-  type: ""
-  photo: routingplus.png
-  url: //github.com/harrymt/RoutingPlus
-  summary:
-    - Routing+ intelligently finds best route possible avoiding right turns and traffic lights. _Java, Maven_.
-  detailed:
-    - Source code available on <a href="https://github.com/harrymt/RoutingPlus/tree/master/graphhopper-master">GitHub</a>.
-    - Developed during my BSc Computer Science degree.
+# - title: Routing+
+#   secondary: Team of 4
+#   year: 2013
+#   type: ""
+#   photo: routingplus.png
+#   url: //github.com/harrymt/RoutingPlus
+#   summary:
+#     - Routing+ intelligently finds best route possible avoiding right turns and traffic lights. _Java, Maven_.
+#   detailed:
+#     - Source code available on <a href="https://github.com/harrymt/RoutingPlus/tree/master/graphhopper-master">GitHub</a>.
+#     - Developed during my BSc Computer Science degree.
 
