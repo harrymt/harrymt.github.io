@@ -18,7 +18,7 @@ resume_job:
     skills: ""
   - job: "full-stack"
     title: "Frontend Engineer"
-    intro: "Qualified software engineer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working with front-end technologies: React, Typescript, GraphQL, SASS. Back-end technologies: NodeJS and C#."
+    intro: "Qualified software engineer. MSc in Advanced Computer Science, BSc in Computer Science. Contributed over 1.1 Million <abbr title='Source Lines of programming code'>SLOC</abbr> to the <a href='//github.com/harrymt'>open source</a> community. Working with: React, Typescript, GraphQL, SASS, Node.js and C#."
     skills: "Typescript, React, GraphQL (Apollo), C#, SCSS/LESS"
   - job: "all"
     title: "Software Developer"
