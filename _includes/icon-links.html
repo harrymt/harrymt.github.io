@@ -9,13 +9,4 @@
   {% if site.resume_social_links.resume_linkedin_url %}
   <li class="icon-link-item"><a onclick="gtag('event', 'resume_link_clicked_linkedin_url', {'value': 1});" href="{{ site.resume_social_links.resume_linkedin_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
   {% endif %}
-
-
-  <!-- Website link -->
-  {% if site.resume_social_links.resume_website_url %}
-  <li class="icon-link-item"><a onclick="gtag('event', 'resume_link_clicked_website_url', {'value': 1});" href="{{ site.resume_social_links.resume_website_url }}" class="icon-link" itemprop="url">{% include icons/icon-website.html %}</a></li>
-  {% endif %}
-
-  <li class="icon-link-item"><a onclick="gtag('event', 'resume_link_clicked_print', {'value': 1});" alt="print" href="javascript:window.print()" class="icon-link" itemprop="url">{% include icons/icon-pdf.html %}</a></li>
-
 </ul>

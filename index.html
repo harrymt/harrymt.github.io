@@ -14,27 +14,13 @@ layout: compress
 
       {% include header.html %}
 
-      {% include print-content.html content = site.data.experience name = "Experience" schema = "Organization" prop = "worksFor" %}
-
-
-      <div class="new-page"></div>
-
-      <div class="download-button">
-        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download CV</a>
-      </div>
-
-      {% include detailed-projects.html %}
-
-      <div class="download-button no-print">
-        <a class="contact-button no-print" href="Harry.Mumford-Turner.CV.pdf" onclick="gtag('event', 'cv_download_click', {'value': 1});">Download CV</a>
-      </div>
-
       <section class="message-box no-print">
         {% include message-form.html %}
       </section>
 
       <footer class="page-footer no-print">
         <p>See this site progress through the years.</p>
+        <a alt="Visit 2019 site" href="//harrymt.com/site-2019" class="small-button">2019</a>
         <a alt="Visit 2017 site" href="//harrymt.com/Site2017" class="small-button">2017</a>
         <a alt="Visit 2016 site" href="//harrymt.com/Site2016" class="small-button">2016</a>
         <a alt="Visit 2015 site" href="//harrymt.com/Site2015" class="small-button">2015</a>

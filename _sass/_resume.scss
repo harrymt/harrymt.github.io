@@ -12,7 +12,6 @@ h5 {
   margin: 0;
 }
 
-
 // util
 
 .section-header {
@@ -23,7 +22,7 @@ h5 {
     @include sans;
     font-weight: 900;
     font-size: 1.75rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -0.05rem;
     margin: 0;
   }
 }
@@ -33,12 +32,20 @@ h5 {
 .page-header {
   padding: 1.5rem 0;
 
+  .heading-intro {
+    text-align: center;
+    line-height: 1.4em;
+    padding-bottom: 1em;
+    font-size: 20px;
+  }
+
   .avatar {
     @include border-radius(100%);
     width: 250px;
     max-width: 100%;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 2em;
     display: block;
   }
 
@@ -47,7 +54,7 @@ h5 {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
-    letter-spacing: -.15rem;
+    letter-spacing: -0.15rem;
     line-height: 1;
     margin: 1rem 0 2rem;
   }
@@ -60,19 +67,34 @@ h5 {
     color: inherit;
   }
 
+  .header-summary-intro {
+    span {
+      border-bottom: 6px solid #4f81c7;
+      padding-bottom: 1px;
+    }
+  }
+
   .title-bar {
-    @include section_border;
-    padding: .4rem 0;
+    padding: 0.4rem 0;
     @include clearfix;
 
     .header-title {
       @include sans;
-      font-weight: 300;
-      font-size: 1.75rem;
+      font-size: 1.55rem;
       line-height: 2rem;
-      letter-spacing: -.05rem;
+      letter-spacing: -0.05rem;
       text-align: center;
-      margin: 0 0 .5rem;
+      margin: 0 0 0.5rem;
+
+      a {
+        border-bottom: 6px solid #55b021;
+        text-decoration: none;
+        color: initial;
+
+        &:hover {
+          color: #555;
+        }
+      }
 
       @include media_larger_than_mobile {
         float: left;
@@ -82,14 +104,16 @@ h5 {
   }
 
   .executive-summary {
-    @include media_larger_than_mobile { font-size: 1.125rem; }
+    @include media_larger_than_mobile {
+      font-size: 1.125rem;
+    }
   }
 }
 
 .heatmap-container {
   padding: 20px;
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     padding: 0;
   }
 
@@ -107,7 +131,7 @@ h5 {
   top: 4px;
   text-align: center;
   border-top: 2px solid #c7c7c7;
-  padding-top: .4rem;
+  padding-top: 0.4rem;
 
   @include media_larger_than_mobile {
     float: right;
@@ -120,11 +144,12 @@ h5 {
     margin-left: 5px;
   }
 
-  .icon-link { display: inline-block;
+  .icon-link {
+    display: inline-block;
 
     &:hover .icon path {
       fill: #333;
-      @include transition(all .2s ease);
+      @include transition(all 0.2s ease);
     }
   }
 }
@@ -141,17 +166,19 @@ h5 {
   @include sans_light;
   color: #333;
   line-height: 55px;
-  @include transition(all .2s ease);
+  @include transition(all 0.2s ease);
 
   &:hover {
     background-color: #333;
     color: #fff;
   }
 
-  &.not-looking { width: 400px; }
+  &.not-looking {
+    width: 400px;
+  }
 
   @media (max-width: 500px) {
-    margin: .5rem auto;
+    margin: 0.5rem auto;
     width: 100%;
   }
 }
@@ -172,14 +199,16 @@ h5 {
   @include sans_light;
   color: #333;
   line-height: 55px;
-  @include transition(all .2s ease);
+  @include transition(all 0.2s ease);
 
   &:hover {
     background-color: #333;
     color: #fff;
   }
 
-  &.not-looking { width: 400px; }
+  &.not-looking {
+    width: 400px;
+  }
 
   @media (max-width: 500px) {
     width: 100%;
@@ -196,17 +225,16 @@ h5 {
   position: relative;
   left: -20%;
 
-
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     left: 0;
     width: 100%;
   }
 
-  @media(max-width: 750px) {
+  @media (max-width: 750px) {
     width: 75%;
   }
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     width: 50%;
   }
 }
@@ -221,13 +249,13 @@ h5 {
 
   .resume-item-title {
     @include sans_bold;
-    margin: 0 0 .75rem;
+    margin: 0 0 0.75rem;
     font-size: 1.5rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -0.05rem;
     line-height: 1.1em;
     margin-bottom: 5px;
 
-   @media (max-width: 400px) {
+    @media (max-width: 400px) {
       font-size: 1.2rem;
     }
 
@@ -257,7 +285,7 @@ h5 {
     margin: 0;
 
     @media (max-width: 375px) {
-        font-size: 14px;
+      font-size: 14px;
     }
   }
 
@@ -279,12 +307,12 @@ h5 {
 }
 
 li.resume-item-copy.resume-item-copy-header {
-    font-weight: bold;
-    list-style-type: none;
-    margin-top: 8px;
-    display: block;
-    left: -21px;
-    position: relative;
+  font-weight: bold;
+  list-style-type: none;
+  margin-top: 8px;
+  display: block;
+  left: -21px;
+  position: relative;
 }
 
 .skills-bullets {
@@ -292,12 +320,12 @@ li.resume-item-copy.resume-item-copy-header {
 }
 
 .summary-bullets {
-    li.resume-item-copy:last-child {
-      padding-bottom: 10px;
+  li.resume-item-copy:last-child {
+    padding-bottom: 10px;
 
-      @media print {
-        padding-bottom: 2px;
-      }
+    @media print {
+      padding-bottom: 2px;
+    }
   }
 }
 
@@ -307,7 +335,7 @@ li.resume-item-copy.resume-item-copy-header {
   left: -15%;
   position: relative;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     left: 0;
     width: 100%;
   }
@@ -349,20 +377,17 @@ li.resume-item-copy.resume-item-copy-header {
     min-height: 100px;
   }
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     display: none;
   }
 }
 
-
 .project-photo-description {
-  @media(max-width 800px) {
+  @media (max-width 800px) {
     width: 70%;
     margin: 0;
   }
 }
-
-
 
 // footer styles
 
@@ -375,7 +400,7 @@ li.resume-item-copy.resume-item-copy-header {
   .footer-line {
     margin: 0;
     margin-top: 10px;
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: #767676;
 
     > a {
@@ -385,17 +410,27 @@ li.resume-item-copy.resume-item-copy-header {
   }
 }
 
-.print-only { display: none !important }
+.print-only {
+  display: none !important;
+}
 
 @media print {
-  .no-print { display: none !important }
-  .print-only { display: block !important }
-  body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 0;
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .page-header {
+    padding: 1rem 0 0;
     .header-name {
       @include sans_bold;
       font-size: 2rem;
-      margin: 0 0 .2rem;
+      margin: 0 0 0.2rem;
       text-align: left;
     }
   }
@@ -469,4 +504,3 @@ li.resume-item-copy.resume-item-copy-header {
 @page {
   margin-bottom: 50px;
 }
-

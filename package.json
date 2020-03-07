@@ -1,10 +1,10 @@
 {
   "name": "harrymt.com",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Harry Mumford-Turner personal site",
-  "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "bundle install",
+    "start": "bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",

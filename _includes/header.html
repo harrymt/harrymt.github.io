@@ -8,53 +8,23 @@
 
       <header class="page-header">
 
+        <div class="heading-intro">
+          <h1>Hello! 👋</h1>
+          <h1>My name is Harry.</h1>
+        </div>
+
         {% if site.resume_avatar == 'true' %}
         <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
-
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
-
-        <section class="top-links content-section print-only">
-          <ul>
-            <li><span>{{ job_info.title }} in</span> {{ site.location }}</li>
-            <li>
-              &mdash;
-              <span>Email:</span>
-              <a onclick="gtag('event', 'contact_email_click', {'value': 1});" href="mailto:{{ site.resume_contact_email }}">
-                {{ site.resume_contact_email }}
-              </a>
-
-            </li>
-            {% for link in site.resume_print_links %}
-
-              <li>
-                &mdash;
-                <span>{{ link.name }}:</span>
-                <a href="https://{{ link.url }}">
-                  {{ link.url }}
-                </a>
-
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-
-        <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
-        <div class="header-contact-info print-only">
-          <p>{{ site.resume_header_contact_info }}</p>
-        </div>
-
-
-
+      
         <div class="title-bar no-print">
-          <h2 class="header-title" itemprop="jobTitle">{{ job_info.title }}</h2>
-
-          <!-- This is the markup for the icon links; moved out to an include because it's  verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          <h1 class="header-title">I'm a <span>Frontend Engineer</span> at <a target="_blank" href="https://www.oaknorth.co.uk/">OakNorth</a>.</h1>
+          
           {% include icon-links.html %}
         </div>
 
         <div class="executive-summary no-print" itemprop="description">
-          <p>
+          <p class="header-summary-intro">
             {{ job_info.intro }}
           </p>
           <div class="heatmap-container">
@@ -62,10 +32,5 @@
               <img src="//ghchart.rshah.org/harrymt" alt="harrymt's Github chart" />
             </a>
           </div>
-          <p>
-            I am currently working in {{ site.location }} for <a href="{{ site.company_url }}">{{ site.company }}</a>.
-          </p>
         </div>
-
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
       </header>
