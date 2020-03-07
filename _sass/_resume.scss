@@ -34,9 +34,12 @@ h5 {
 
   .heading-intro {
     text-align: center;
-    line-height: 1.4em;
+    line-height: 1.2em;
     padding-bottom: 1em;
     font-size: 20px;
+    @include media_larger_than_mobile {
+      line-height: 1.4em;
+    }
   }
 
   .avatar {
@@ -68,6 +71,10 @@ h5 {
   }
 
   .header-summary-intro {
+    @media(max-width: 600px) {
+      line-height: 1.9em;
+    }
+
     span {
       border-bottom: 6px solid #4f81c7;
       padding-bottom: 1px;
@@ -130,13 +137,14 @@ h5 {
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+ 
   padding-top: 0.4rem;
 
   @include media_larger_than_mobile {
     float: right;
     border-top: none;
     padding-top: 0;
+    border-top: 2px solid #c7c7c7;
   }
 
   .icon-link-item {
